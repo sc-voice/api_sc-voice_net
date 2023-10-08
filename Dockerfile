@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM node:18-bullseye-slim
+FROM node:20-bookworm-slim
 LABEL maintainer="karl@oyamist.com"
 RUN apt-get update && apt-get upgrade -y
 SHELL [ "/bin/bash", "-c" ]

@@ -1,0 +1,12 @@
+name: nodejs
+services:
+  scv-server:
+    image: scvoice/scv-server:latest
+    user: 1000:1000
+    ports: 
+      - "8080:8080"
+    volumes:
+      - scv-local:/home/node/scv-server/local
+volumes:
+  scv-local: 
+  
