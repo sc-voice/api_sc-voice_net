@@ -3,7 +3,7 @@
     <v-main>
       <v-app-bar color="brown-darken-2" flat >
         <v-app-bar-title > 
-          api.sc-voice.net 
+          api.sc-voice.net (future Voice Administration Site...)
           <div class="text-caption" style="margin-top:-5px"> 
             <div>{{settings.endpoint()}}</div>
           </div>
