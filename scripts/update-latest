@@ -24,7 +24,7 @@ fi
 
 if [ "$REBOOT" == "0" ]; then
   while true; do
-    echo -e "$SCRIPT: scv-server update requires a reboot"
+    echo -e "$SCRIPT: api.sc-voice.net update requires a reboot"
     read -p "$SCRIPT: Reboot after update? [y,n]:" REBOOT
     case $REBOOT in
       [y]* ) echo -e "$SCRIPT: (will reboot after update)"; break;;

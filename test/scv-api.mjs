@@ -563,7 +563,7 @@ typeof describe === "function" &&
       let res = await api.buildDownload({
         audioSuffix, lang, langs, maxResults, pattern, vroot, vtrans,
       });
-      should(res.filepath).match(/scv-server\/local\/sounds\/common/);
+      should(res.filepath).match(/api.sc-voice.net\/local\/sounds\/common/);
       should(res.filepath).match(/26eef1bb9d46a5aef5c4e4a283b30fb4.opus/);
       should(res.filename).equal('thig1.1-en-soma_pli+en_Matthew.opus');
       should.deepEqual(res.stats, {
@@ -599,7 +599,7 @@ typeof describe === "function" &&
         audioSuffix, lang, langs, maxResults, pattern, vroot, vtrans, task,
       });
       should(res.filename).equal('thig1.1-3-en-soma_pli+en_Matthew.opus');
-      should(res.filepath).match(/scv-server\/local\/sounds\/common/);
+      should(res.filepath).match(/api.sc-voice.net\/local\/sounds\/common/);
       should(res.filepath).match(/a613517f8cd8aa11a3d37f1d4bdd3e8b.opus/);
       let nSegments = 17;
       should.deepEqual(res.stats, {
@@ -700,7 +700,7 @@ typeof describe === "function" &&
         audioSuffix, lang, langs, maxResults, pattern, vroot, vtrans, task,
       });
       should(res.filename).equal('thig1.1-de_pli+de_Vicki.opus');
-      should(res.filepath).match(/scv-server\/local\/sounds\/common/);
+      should(res.filepath).match(/api.sc-voice.net\/local\/sounds\/common/);
       should(res.filepath).match(/f6a18c6c48f784475e73c9e9766dc5f3.opus/);
       let nSegments = 9;
       should.deepEqual(res.stats, {

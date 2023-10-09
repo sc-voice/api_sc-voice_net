@@ -1,4 +1,4 @@
-# scv-server
+# api.sc-voice.net
 
 NodeJS server for [voice.suttacentral.net](https://voice.suttacentral.net)
 
@@ -16,12 +16,12 @@ Initialization requires super user access for your computer and you may
 be asked to enter your computer superuser password.
 
 ```
-git clone https://github.com/sc-voice/scv-server
-cd scv-server
+git clone https://github.com/sc-voice/api.sc-voice.net
+cd api.sc-voice.net
 install
 ```
 
-To run scv-server locally on port 3000:
+To run api.sc-voice.net locally on port 3000:
 
 ```
 scripts/sc-voice --port:3000

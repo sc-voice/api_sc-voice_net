@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM node:20-bookworm-slim
-LABEL maintainer="karl@oyamist.com"
+LABEL maintainer="karl@firepick.org"
 RUN apt-get update && apt-get upgrade -y
 SHELL [ "/bin/bash", "-c" ]
 ENV INSTALL="apt-get --no-install-recommends install -y "
@@ -22,7 +22,7 @@ AUDIO
 
 ENV USER=node
 USER $USER
-ENV APPDIR=/home/$USER/scv-server/
+ENV APPDIR=/home/$USER/api.sc-voice.net/
 WORKDIR $APPDIR
 COPY --link --chown=$USER package* $APPDIR
 RUN <<SCV_SERVER

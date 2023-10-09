@@ -1,1 +1,1 @@
-export { default as ScvServer } from './src/scv-server.mjs';
+export { default as ScvServer } from './src/api.sc-voice.net.mjs';

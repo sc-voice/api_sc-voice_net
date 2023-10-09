@@ -3,7 +3,7 @@ DIR=`dirname $0`
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 APPDIR=`realpath $DIR/../..`
 LOCALDIR=$APPDIR/local
-NGINX_FILE=nginx-scv-server.conf
+NGINX_FILE=nginx-api.sc-voice.net.conf
 NGINX_CONF=$LOCALDIR/$NGINX_FILE
 
 echo $SCRIPT: BEGIN `date`
@@ -17,7 +17,7 @@ server {
 
   #access_log  /var/log/nginx/host.access.log  main;
 
-  location / { # scv-server Docker container
+  location / { # api.sc-voice.net Docker container
     proxy_pass http://localhost:8080; 
     proxy_http_version 1.1;
     proxy_set_header Upgrade \$http_upgrade;

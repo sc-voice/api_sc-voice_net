@@ -8,8 +8,8 @@ const SERVERS = [{
   title: 'voice.suttacentral.net (voice AWS)',
   value: 'https://voice.suttacentral.net/scv',
 },{
-  title: 's2.sc-voice.net (voice Linode)',
-  value: 'https://s2.sc-voice.net/scv',
+  title: 'www.api.sc-voice.net (api.sc-voice.net Linode)',
+  value: 'https://www.api.sc-voice.net/scv',
 }];
 
 const INITIAL_STATE = {

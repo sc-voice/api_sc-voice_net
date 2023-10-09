@@ -1,5 +1,5 @@
 {
-  "name": "scv-server",
+  "name": "api.sc-voice.net",
   "version": "1.203.3",
   "description": "SuttaCentral Voice Server",
   "main": "index.js",
@@ -75,6 +75,6 @@
     "Voice"
   ],
   "author": "Karl Lew",
-  "homepage": "https://github.com/sc-voice/scv-server",
+  "homepage": "https://github.com/sc-voice/api.sc-voice.net",
   "license": "MIT"
 }

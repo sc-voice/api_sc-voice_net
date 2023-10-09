@@ -21,7 +21,7 @@ const SHARED_TEST_PORT = 3001;
 logger.logLevel = 'warn';
 
 typeof describe === "function" &&
-  describe("scv-server", function() {
+  describe("api.sc-voice.net", function() {
     const msStart = Date.now();
     const TEST_SERVERS = {};
     this.timeout(15*1000);

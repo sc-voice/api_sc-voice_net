@@ -6,7 +6,7 @@ echo -e "${SCRIPT}: BEGIN `date`"
 
 # get token to be able to talk to Docker Hub
 TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "'${DKR_USER}'", "password": "'${DKR_PWD}'"}' https://hub.docker.com/v2/users/login/ | jq -r .token)
-REPO=scv-server
+REPO=api.sc-voice.net
 AGO="8 hours ago"
 
 
@@ -28,10 +28,10 @@ do
 done
 
 echo -e "$SCRIPT: removing local docker images"
-docker image ls scv-server 
-docker image ls scv-server -q | xargs docker image rm -f  
-docker image ls scvoice/scv-server 
-docker image ls scvoice/scv-server -q | xargs docker image rm -f  
+docker image ls $REPO 
+docker image ls $REPO -q | xargs docker image rm -f  
+docker image ls scvoice/$REPO 
+docker image ls scvoice/$REPO -q | xargs docker image rm -f  
 
 echo -e "$SCRIPT: building new local image for Dockerhub"
 npm run build:docker
@@ -39,6 +39,6 @@ docker image ls
 
 echo -e "$SCRIPT: pushing new image to Dockerhub"
 docker login -u $DKR_USER -p $DKR_PWD
-docker image push -a scvoice/scv-server
+docker image push -a scvoice/$REPO
 
 echo -e "${SCRIPT}: END `date`"

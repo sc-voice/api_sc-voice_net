@@ -3,7 +3,7 @@
     <v-main>
       <v-app-bar color="brown-darken-2" flat >
         <v-app-bar-title > 
-          scv-server 
+          api.sc-voice.net 
           <div class="text-caption" style="margin-top:-5px"> 
             <div>{{settings.endpoint()}}</div>
           </div>
