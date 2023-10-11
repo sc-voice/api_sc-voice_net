@@ -21,7 +21,7 @@ const SHARED_TEST_PORT = 3001;
 logger.logLevel = 'warn';
 
 typeof describe === "function" &&
-  describe("api.sc-voice.net", function() {
+  describe("scv-server", function() {
     const msStart = Date.now();
     const TEST_SERVERS = {};
     this.timeout(15*1000);
@@ -110,13 +110,13 @@ typeof describe === "function" &&
       });
       should(typeof scv.app).equal('function'); // express instance
     })
-    it("custom ctor()", async()=>{
+    it("TESTTESTcustom ctor()", async()=>{
       let port = 3000;
       let name = "testCustom";
       let appDir = "testAppDir";
       let distDir = "testDistDir";
       let apiUrl = "http://apiUrl";
-      let app = "testApp";
+      let app = { use: ()=>{}, }
       let scApi = "testScApi";
       let protocol = "https";
       let sslPath = "testSSLPath";
@@ -149,11 +149,11 @@ typeof describe === "function" &&
       should(scv.app).equal(app);
       should(scv.scApi).equal(scApi);
     })
-    it("custom ctor() protocol and port", async()=>{ 
+    it("TESTTESTcustom ctor() protocol and port", async()=>{ 
       let appDir = "testAppDir";
       let distDir = "testDistDir";
       let apiUrl = "http://apiUrl";
-      let app = "testApp";
+      let app = { use: ()=>{}, }
       let scApi = "testScApi";
       let protocol = "https";
       let sslPath = "testSSLPath";
