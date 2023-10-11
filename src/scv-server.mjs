@@ -18,6 +18,7 @@ import RestApi from './rest-api.cjs';
 import ScvApi from './scv-api.cjs';
 import ResourceMethod from './resource-method.cjs';
 import S3Creds from './s3-creds.cjs';
+import { default as ESMonitor  } from "@sc-voice/express-status-monitor";
 
 //TBD import ScvApi from "./scv-rest.js";
 
@@ -49,6 +50,7 @@ export default class ScvServer extends RestApi {
 
     // injection
     let app = opts.app || express();
+    app.use(ESMonitor());
     Object.defineProperty(this, "app", {value: app});
     let scApi = opts.scApi || new ScApi({apiUrl});
     Object.defineProperty(this, "scApi", {value: scApi});
