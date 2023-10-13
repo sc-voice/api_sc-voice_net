@@ -56,9 +56,10 @@ server {
 NGINX_HEREDOC
 
 if [ "$SERVERNAME" == "" ]; then
-  read -p "$SCRIPT => Enter server_name (localhost): " SERVERNAME
+  HOSTNAME=`hostname`
+  read -p "$SCRIPT => Enter server_name ($HOSTNAME): " SERVERNAME
   if [ "$SERVERNAME" == "" ]; then
-      export SERVERNAME=localhost
+      export SERVERNAME=$HOSTNAME
   fi
 fi
 echo -e "$SCRIPT: SERVERNAME is $SERVERNAME"
