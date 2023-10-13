@@ -9,6 +9,9 @@ echo $SCRIPT: BEGIN `date`
 echo $SCRIPT: install ufw
 sudo apt-get install ufw -y
 
+echo $SCRIPT: configure SSH port 22
+sudo ufw allow proto tcp from any to any port 22
+
 echo $SCRIPT: configure port 80 HTTP
 sudo ufw allow proto tcp from any to any port 80
 
