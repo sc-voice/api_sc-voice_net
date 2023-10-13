@@ -7,10 +7,11 @@ echo -e "${SCRIPT}: BEGIN `date`"
 
 set -e
 
+HOSTNAME=`hostname`
 if [ "$SERVERNAME" == "" ]; then
-  read -p "$SCRIPT => Enter server_name (localhost): " SERVERNAME
+  read -p "$SCRIPT => Enter server_name ($HOSTNAME): " SERVERNAME
   if [ "$SERVERNAME" == "" ]; then
-      export SERVERNAME=localhost
+      export SERVERNAME=$HOSTNAME
   fi
 fi
 
