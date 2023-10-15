@@ -22,7 +22,7 @@ AUDIO
 
 ENV USER=node
 USER $USER
-ENV APPDIR=/home/$USER/api.sc-voice.net/
+ENV APPDIR=/home/$USER/api_sc-voice_net/
 WORKDIR $APPDIR
 COPY --link --chown=$USER package* $APPDIR
 RUN <<SCV_SERVER

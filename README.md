@@ -16,12 +16,12 @@ Initialization requires super user access for your computer and you may
 be asked to enter your computer superuser password.
 
 ```
-git clone https://github.com/sc-voice/api.sc-voice.net
-cd api.sc-voice.net
+git clone https://github.com/sc-voice/api_sc-voice_net
+cd api_sc-voice_net
 install
 ```
 
-To run api.sc-voice.net locally on port 3000:
+To run api_sc-voice_net locally on port 3000:
 
 ```
 scripts/sc-voice --port:3000
