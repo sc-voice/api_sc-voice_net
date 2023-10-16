@@ -1,11 +1,11 @@
 name: nodejs
 services:
-  api.sc-voice.net:
-    image: scvoice/api.sc-voice.net:latest
+  api_sc-voice_net:
+    image: scvoice/api_sc-voice_net:latest
     user: 1000:1000
     ports: 
       - "8080:8080"
     volumes:
-      - scv-local:/home/node/api.sc-voice.net/local
+      - scv-local:/home/node/api_sc-voice_net/local
 volumes:
   scv-local:

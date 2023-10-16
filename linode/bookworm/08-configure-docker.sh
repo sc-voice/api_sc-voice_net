@@ -30,11 +30,11 @@ URLPATH=scv/play/segment/thig1.1/en/sujato/thig1.1%3A1.1/Amy
 echo -e "$SCRIPT: testing localhost:8080..."
 curl http://localhost:8080/$URLPATH;
 echo
-echo -e "$SCRIPT: api.sc-voice.net docker container is running (OK)"
+echo -e "$SCRIPT: api_sc-voice_net docker container is running (OK)"
 
 echo -e "$SCRIPT: testing https://$SERVERNAME..."
 curl https://$SERVERNAME/$URLPATH
 echo
-echo -e "$SCRIPT: reverse proxy => api.sc-voice.net docker container (OK)"
+echo -e "$SCRIPT: reverse proxy => api_sc-voice_net docker container (OK)"
 
 echo -e "${SCRIPT}: END `date`"

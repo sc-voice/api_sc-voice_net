@@ -14,14 +14,28 @@ if [ "$EMAIL" == "" ]; then
 fi
 echo -e "$SCRIPT: EMAIL is $EMAIL"
 
+if type snap >& /dev/null; then
+  echo $SCRIPT: snapd is installed
+else
+  echo $SCRIPT: installing snapd 
+  sudo apt install snapd -y
+  sudo snap install core
+  sudo snap install hello-world
+  hash -r
+  hello-world
+fi
+
 if type certbot >& /dev/null; then
   echo $SCRIPT: certbot is installed
 else
   echo $SCRIPT: installing certbot
-  sudo apt-get install -y certbot
-  sudo apt-get install python3-certbot-nginx
-fi
 
+  sudo snap install --classic certbot
+  sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+  #sudo apt-get install -y certbot
+  #sudo apt-get install python3-certbot-nginx
+fi
 
 if [ "$SERVERNAME" == "" ]; then
   read -p "$SCRIPT => Enter server_name (localhost): " SERVERNAME

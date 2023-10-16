@@ -8,16 +8,15 @@ echo -e "${SCRIPT}: BEGIN `date`"
 set -e
 
 crontab -l > /tmp/mycron
+
 if grep scv-cron /tmp/mycron; then
   echo -e "$SCRIPT: scv-cron.sh job already configured"
-  echo -e "${SCRIPT}: END `date`"
-  exit
-fi
-
+else
 echo -e "$SCRIPT: adding scv-cron.sh to cron "
-cat <<CRON_HEREDOC >> /tmp/mycron
-0 4,12,20 * * * /home/unroot/api_sc-voice_net/linode/bullseye/scv-cron.sh >> /home/unroot/scv-cron.log 2>&1
-CRON_HEREDOC
+cat <<SCV_HEREDOC >> /tmp/mycron
+0 4,12,20 * * * /home/unroot/api_sc-voice_net/linode/bookworm/scv-cron.sh >> /home/unroot/scv-cron.log 2>&1
+SCV_HEREDOC
+fi
 
 crontab /tmp/mycron
 

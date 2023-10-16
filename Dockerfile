@@ -13,6 +13,7 @@ RUN <<TOOLS
   $INSTALL apache2-utils  # rotatelogs
   git config --global pull.rebase true 
   apt-get install -y --reinstall ca-certificates
+  $INSTALL vim
 TOOLS
 
 RUN <<AUDIO

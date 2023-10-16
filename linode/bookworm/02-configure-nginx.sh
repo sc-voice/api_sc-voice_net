@@ -17,7 +17,7 @@ server {
 
   #access_log  /var/log/nginx/host.access.log  main;
 
-  location / { # api.sc-voice.net Docker container
+  location / { # api_sc-voice_net Docker container
     proxy_pass http://localhost:8080; 
     proxy_http_version 1.1;
     proxy_set_header Upgrade \$http_upgrade;

@@ -3,6 +3,7 @@ DIR=`dirname $0`;
 APPDIR=`realpath $DIR/../..`
 LOCALDIR=`realpath $APPDIR/local`
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+CONTAINER=api_sc-voice_net
 echo -e "${SCRIPT}: BEGIN `date`"
 
 #set -e
@@ -13,24 +14,24 @@ sudo /usr/bin/certbot renew --quiet
 echo -e "$SCRIPT: docker system prune"
 sudo /usr/bin/docker system prune -f
 
-echo -e "$SCRIPT: checking Dockerhub for scvoice/api.sc-voice.net:latest..."
-VERLOCAL=`sudo /usr/bin/docker image ls scvoice/api.sc-voice.net:latest -q`
-sudo /usr/bin/docker pull -q scvoice/api.sc-voice.net:latest
-VERDOCKERHUB=`sudo /usr/bin/docker image ls scvoice/api.sc-voice.net:latest -q`
+echo -e "$SCRIPT: checking Dockerhub for scvoice/$CONTAINER:latest..."
+VERLOCAL=`sudo /usr/bin/docker image ls scvoice/$CONTAINER:latest -q`
+sudo /usr/bin/docker pull -q scvoice/$CONTAINER:latest
+VERDOCKERHUB=`sudo /usr/bin/docker image ls scvoice/$CONTAINER:latest -q`
 if [ "$VERLOCAL" == "$VERDOCKERHUB" ]; then
-  echo -e "$SCRIPT: scvoice/api.sc-voice.net:latest $VERLOCAL is latest"
+  echo -e "$SCRIPT: scvoice/$CONTAINER:latest $VERLOCAL is latest"
 else
-  echo -e "$SCRIPT: scvoice/api.sc-voice.net:latest updated $VERLOCAL => $VERDOCKERHUB"
-  echo -e "$SCRIPT: shutting down api.sc-voice.net Docker container..."
+  echo -e "$SCRIPT: scvoice/$CONTAINER:latest updated $VERLOCAL => $VERDOCKERHUB"
+  echo -e "$SCRIPT: shutting down $CONTAINER Docker container..."
   sudo docker compose down
-  echo -e "$SCRIPT: starting updated api.sc-voice.net Docker container..."
+  echo -e "$SCRIPT: starting updated $CONTAINER Docker container..."
   sudo docker compose up -d
 fi
 
-if sudo docker ps | grep api.sc-voice.net; then
-  echo -e "$SCRIPT: api.sc-voice.net Docker container is running"
+if sudo docker ps | grep $CONTAINER; then
+  echo -e "$SCRIPT: $CONTAINER Docker container is running"
 else
-  echo -e "$SCRIPT: WARNING: api.sc-voice.net Docker container not found (RESTARTING)..."
+  echo -e "$SCRIPT: WARNING: $CONTAINER Docker container not found (RESTARTING)..."
   sudo docker compose up -d
 fi
 

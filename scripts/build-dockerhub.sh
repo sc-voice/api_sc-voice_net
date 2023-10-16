@@ -6,7 +6,7 @@ echo -e "${SCRIPT}: BEGIN `date`"
 
 # get token to be able to talk to Docker Hub
 TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "'${DKR_USER}'", "password": "'${DKR_PWD}'"}' https://hub.docker.com/v2/users/login/ | jq -r .token)
-REPO=api.sc-voice.net
+REPO=api_sc-voice_net
 AGO="8 hours ago"
 
 
