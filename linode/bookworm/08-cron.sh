@@ -7,7 +7,9 @@ echo -e "${SCRIPT}: BEGIN `date`"
 
 set -e
 
-crontab -l > /tmp/mycron
+if crontab -l > /tmp/mycron ; then
+  echo -e $SCRIPT: saving existing crontab file
+fi
 
 if grep scv-cron /tmp/mycron; then
   echo -e "$SCRIPT: scv-cron.sh job already configured"
