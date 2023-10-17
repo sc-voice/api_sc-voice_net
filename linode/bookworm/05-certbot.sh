@@ -32,9 +32,6 @@ else
 
   sudo snap install --classic certbot
   sudo ln -s /snap/bin/certbot /usr/bin/certbot
-
-  #sudo apt-get install -y certbot
-  #sudo apt-get install python3-certbot-nginx
 fi
 
 if [ "$SERVERNAME" == "" ]; then
@@ -58,9 +55,6 @@ if [ "$SERVERNAME" == "localhost" ]; then
   certonly --manual
 else
   sudo certbot --nginx -d $SERVERNAME --agree-tos -m $EMAIL 
-  echo -e "$SCRIPT: To renew SSL certificate automatically,"
-  echo -e "$SCRIPT: run \"crontab -e\" and add following line"
-  echo -e "0 12 * * * sudo /usr/bin/certbot renew --quiet"
 fi
 
 echo -e "${SCRIPT}: END `date`"

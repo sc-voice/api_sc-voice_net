@@ -26,6 +26,9 @@ sudo docker compose up -d
 echo -e "$SCRIPT: sudo cat local/scv.log"
 sudo cat local/scv.log
 
+echo -e "$SCRIPT: waiting for container..."
+sleep 20
+
 URLPATH=scv/play/segment/thig1.1/en/sujato/thig1.1%3A1.1/Amy
 echo -e "$SCRIPT: testing localhost:8080..."
 curl http://localhost:8080/$URLPATH;
