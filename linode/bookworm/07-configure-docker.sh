@@ -19,6 +19,7 @@ echo -e "$SCRIPT: SERVERNAME is $SERVERNAME"
 DOCKER_VOLUME=nodejs_scv-local
 echo -e "$SCRIPT: linking to $DOCKER_VOLUME as ./local" 
 ln -s -f /var/lib/docker/volumes/$DOCKER_VOLUME/_data local
+ln -s -f /var/lib/docker/volumes/$DOCKER_VOLUME/_data $APPDIR/local
 
 echo -e "$SCRIPT: sudo docker compose up -d"
 sudo docker compose up -d
