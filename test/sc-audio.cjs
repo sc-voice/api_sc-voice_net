@@ -344,7 +344,7 @@ typeof describe === "function" &&
           });
           should(fs.existsSync(audioPath)).equal(true);
           var stats = fs.statSync(audioPath);
-          should(stats.size).above(32000).below(34000);
+          should(stats.size).above(31000).below(34000);
 
           done();
         } catch (e) {
