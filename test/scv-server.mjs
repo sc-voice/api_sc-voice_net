@@ -110,7 +110,7 @@ typeof describe === "function" &&
       });
       should(typeof scv.app).equal('function'); // express instance
     })
-    it("TESTTESTcustom ctor()", async()=>{
+    it("custom ctor()", async()=>{
       let port = 3000;
       let name = "testCustom";
       let appDir = "testAppDir";
@@ -149,7 +149,7 @@ typeof describe === "function" &&
       should(scv.app).equal(app);
       should(scv.scApi).equal(scApi);
     })
-    it("TESTTESTcustom ctor() protocol and port", async()=>{ 
+    it("custom ctor() protocol and port", async()=>{ 
       let appDir = "testAppDir";
       let distDir = "testDistDir";
       let apiUrl = "http://apiUrl";

@@ -79,7 +79,7 @@ typeof describe === "function" &&
 
       should(res).equal(api);
     });
-    it("TESTTESTgetEbtSite() => thig1.1", async()=>{
+    it("getEbtSite() => thig1.1", async()=>{
       let api = await testScvApi();
       let sutta_uid = 'thig1.1';
       let lang = 'de';

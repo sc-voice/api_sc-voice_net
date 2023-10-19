@@ -52,7 +52,6 @@ export default class ScvServer extends RestApi {
 
     // injection
     let app = opts.app || express();
-    console.log(msg, app);
     app.use(ExpressStatusMonitor());
     Object.defineProperty(this, "app", {value: app});
     let scApi = opts.scApi || new ScApi({apiUrl});
