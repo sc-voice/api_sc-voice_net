@@ -155,6 +155,18 @@ TODO*/
       return parms;
     }
 
+    async get_statfs(req, res) {
+      const msg = 'ScvApi.get_statfs()';
+      let path = LOCAL;
+      let result = await fs.promises.statfs(path);
+      //result.path = path;
+      result.ffree_percent = 
+        Math.round(100 * result.ffree / result.files);
+      result.bavail_percent = 
+        Math.round(100 * result.bavail / result.blocks);
+      return result;
+    }
+
     async getEbtSite(req, res) {
       const msg = 'ScvApi.getEbtSite() ';
       let result = {};

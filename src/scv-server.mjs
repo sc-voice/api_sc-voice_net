@@ -70,6 +70,10 @@ export default class ScvServer extends RestApi {
     let jsonMime = "application/json";
     let { resourceMethods, scvApi } = this;
 
+    // monitoring
+    resourceMethods.push(new ResourceMethod( "get",
+      "statfs", (req,res)=>scvApi.get_statfs(req,res) ));
+
     // ebt-site
     resourceMethods.push(new ResourceMethod( "get", 
       "ebt-site/:sutta_uid", (req,res)=>scvApi.getEbtSite(req,res) ));

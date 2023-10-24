@@ -755,6 +755,17 @@ typeof describe === "function" &&
       should(resDone.filename).equal('thig1.1-de_pli+de_Vicki.ogg');
       should(resDone.guid).equal('f6a18c6c48f784475e73c9e9766dc5f3');
     });
+    it("TESTTESTget_statfs()", async()=>{
+      let api = await testScvApi();
+      let res = await api.get_statfs();
+      should(res.bavail_percent).above(0).below(100);
+      should(res.ffree_percent).above(0).below(100);
+      console.log(res);
+      should(res).properties([
+        'type', 'bsize', 'blocks', 'bfree', 'bavail',
+        'files', 'ffree',
+      ]);
+    });
   });
 
 /*TODO
