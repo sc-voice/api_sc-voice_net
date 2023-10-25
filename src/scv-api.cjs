@@ -16,6 +16,7 @@
   const SCAudio = require("./sc-audio.cjs");
   const SoundStore = require("./sound-store.cjs");
   const SuttaStore = require("./sutta-store.cjs");
+  const STATE_LOG = import("@sc-voice/state-log");
   var Links = import("./links.mjs");
   //const S3Creds = require("./s3-creds.cjs");
   const Task = require("./task.cjs");
@@ -26,34 +27,6 @@
   const LANG_MAP = {
     ja: "jpn",
   };
-
-/*TODO
-  const { RestBundle, UserStore } = require("rest-bundle");
-
-  const ContentUpdater = require("./content-updater");
-  const { FilePruner } = require("memo-again");
-  const { GuidStore } = require("memo-again");
-  const MdAria = require("./md-aria");
-  const Playlist = require("./playlist");
-  const S3Bucket = require("./s3-bucket");
-  const S3Creds = require("./s3-creds");
-  const Section = require("./section");
-  const { ScApi, SuttaCentralId } = require("suttacentral-api");
-  const SuttaFactory = require("./sutta-factory");
-  const Sutta = require("./sutta");
-  const Task = require("./task");
-  const Voice = require("./voice");
-  const VsmStore = require("./vsm-store");
-  const Words = require("./words");
-
-  const PATH_SOUNDS = path.join(LOCAL, "sounds/");
-  const DEFAULT_USER = {
-    username: "admin",
-    isAdmin: true,
-    credentials:
-      '{"hash":"13YYGuRGjiQad/G1+MOOmxmLC/1znGYBcHWh2vUgkdq7kzTAZ6dk76S3zpP0OwZq1eofgUUJ2kq45+TxOx5tvvag","salt":"Qf1NbN3Jblo8sCL9bo32yFmwiApHSeRkr3QOJZu3KJ0Q8hbWMXAaHdoQLUWceW83tOS0jN4tuUXqWQWCH2lNCx0S","keyLength":66,"hashMethod":"pbkdf2","iterations":748406}',
-  };
-TODO*/
 
   const JWT_SECRET = `JWT${Math.random()}`;
   const APP_NAME = "scv"; // DO NOT CHANGE THIS
@@ -88,6 +61,7 @@ TODO*/
       this.info(msg, bilaraData.root);
       this.download = null;
       let { autoSyncSeconds } = opts;
+      this.monitorOpts = opts.monitors;
 
       Object.defineProperty(this, "audioUrls", {
         value: opts.audioUrls || new AudioUrls(),
@@ -108,16 +82,32 @@ TODO*/
 
     async initialize() {
       try {
+        const msg = 'ScvApi.initialize()';
         if (this.initialized) {
           return this;
         }
+        let { monitorOpts } = this;
         this.initialized = false;
         this.info(`ScvApi initialize() BEGIN`);
         //await this.scApi.initialize();
         //await this.suttaFactory.initialize();
         await this.suttaStore.initialize();
         this.voices = Voice.loadVoices();
-        this.info(`ScvApi initialize() COMPLETED`);
+        if (monitorOpts) {
+          var { StateLog, Monitor } = await STATE_LOG;
+          this.monitors = monitorOpts.map(opts=>{
+            let { interval, type, probes } = opts;
+            let monitor = new Monitor({ interval, type, });
+            probes.forEach(probeOpts=>{
+              monitor.probeUrl(probeOpts);
+              this.info(msg, `probe@${probeOpts.url}`);
+            });
+            monitor.start();
+            this.info(msg, `monitor@${monitor.interval}ms`);
+            return monitor;
+          });
+        }
+        this.info(msg, 'COMPLETED');
         this.initialized = true;
         return this;
       } catch (e) {
@@ -165,6 +155,19 @@ TODO*/
       result.bavail_percent = 
         Math.round(100 * result.bavail / result.blocks);
       return result;
+    }
+
+    async getMonitors(req, res) {
+      const msg = 'ScvApi.getMonitors()';
+      this.info(msg, this.monitors.length);
+      let { monitors } = this;
+      return this.monitors;
+    }
+    
+    async getProbes(req, res) {
+      const msg = 'ScvApi.getProbes()';
+      this.info(msg, this.monitors.length);
+      return this.monitors.reduce((a,m)=>[...a, ...m.probes], []);
     }
 
     async getEbtSite(req, res) {

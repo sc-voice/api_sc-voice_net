@@ -56,7 +56,10 @@ export default class ScvServer extends RestApi {
     Object.defineProperty(this, "app", {value: app});
     let scApi = opts.scApi || new ScApi({apiUrl});
     Object.defineProperty(this, "scApi", {value: scApi});
-    let scvApi = opts.scvApi || new ScvApi({autoSyncSeconds});
+    let scvApi = opts.scvApi || new ScvApi({
+      autoSyncSeconds,
+      monitors: opts.monitors,
+    });
     Object.defineProperty(this, "scvApi", {value: scvApi});
 
     this.debug("ctor", opts);
@@ -73,6 +76,10 @@ export default class ScvServer extends RestApi {
     // monitoring
     resourceMethods.push(new ResourceMethod( "get",
       "statfs", (req,res)=>scvApi.get_statfs(req,res) ));
+    resourceMethods.push(new ResourceMethod( "get",
+      "monitors", (req,res)=>scvApi.getMonitors(req,res) ));
+    resourceMethods.push(new ResourceMethod( "get",
+      "probes", (req,res)=>scvApi.getProbes(req,res) ));
 
     // ebt-site
     resourceMethods.push(new ResourceMethod( "get", 
