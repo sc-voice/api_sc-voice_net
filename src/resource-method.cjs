@@ -30,19 +30,26 @@
       try {
         res.type(mime);
         let { statusCode } = res;
+        console.log(msg, 'before', req.method, req.url);
         let value = await handler(req, res);
+        console.log(msg, 'ok', req.method, req.url);
         if (!res.headersSent) {
           res.status(statusOk);
           res.send(value);
         }
       } catch(e) {
+        console.log(msg, 'error1', req.method, req.url);
         this.warn(msg, `HTTP${res.statusCode}:`, e.message);
         if (!res.headersSent) {
+          console.log(msg, 'error2', req.method, req.url);
           res.type("application/json");
           let { statusCode = statusOk } = res;
+          console.log(msg, 'error2.1', req.method, req.url);
           statusCode === statusOk && res.status(500);
+          console.log(msg, 'error2.2', req.method, req.url);
           res.send({error:e.message});
         }
+        console.log(msg, 'error3', req.method, req.url);
       }
     }
 
