@@ -33,6 +33,8 @@
 
   var fwsEn;
 
+  const msg = 'ScvApi.';
+
   class ScvApi {
     constructor(
       opts = {
@@ -158,15 +160,15 @@
     }
 
     async getMonitors(req, res) {
-      const msg = 'ScvApi.getMonitors()';
-      this.info(msg, this.monitors.length);
+      // DANGER: Log explosion 
+      // this.info("DANGER", msg+'getMonitors()', this.monitors.length);
       let { monitors } = this;
       return this.monitors;
     }
     
     async getProbes(req, res) {
-      const msg = 'ScvApi.getProbes()';
-      this.info(msg, this.monitors.length);
+      // DANGER: Log explosion 
+      //this.info("DANGER", msg+'getProbes()', this.monitors.length);
       return this.monitors.reduce((a,m)=>[...a, ...m.probes], []);
     }
 
