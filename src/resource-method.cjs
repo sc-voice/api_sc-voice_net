@@ -30,9 +30,9 @@
       try {
         res.type(mime);
         let { statusCode } = res;
-        console.log(msg, 'before', req.method, req.url);
+        //console.log("DANGER", msg, 'before', req.method, req.url);
         let value = await handler(req, res);
-        console.log(msg, 'ok', req.method, req.url);
+        //console.log("DANGER", msg, 'ok', req.method, req.url);
         if (!res.headersSent) {
           res.status(statusOk);
           res.send(value);
