@@ -805,7 +805,6 @@ typeof describe === "function" && describe("scv-api", function() {
 
     // wait for logged result from probe
     await nap(1.5*interval);
-    console.log("TESTTEST", monitor0);
     monitor0.stop();
     should(stateLog.state).properties({status:200});
     should.deepEqual(Object.keys(stateLog.state.json), ['datetime']);
@@ -839,7 +838,6 @@ typeof describe === "function" && describe("scv-api", function() {
 
     // wait for logged result from probe
     await nap(2*interval);
-    console.log("TESTTEST", JSON.stringify(probes,null,2));
     api.monitors[0].stop();
     should(stateLog.state).properties({status:200});
     should.deepEqual(Object.keys(stateLog.state.json), ['datetime']);
