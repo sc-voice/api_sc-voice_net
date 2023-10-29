@@ -1,4 +1,5 @@
 import { SuttaRef }  from "scv-esm/main.mjs";
+import { logger } from "log-instance";
 
 export default class Links {
   constructor() {
@@ -17,7 +18,9 @@ export default class Links {
 
   ebtSuttaRefLink(sref) {
     const msg = "Links.ebtSuttaRefLink() ";
-    let suttaRef = SuttaRef.create(sref, 'en');
+    logger.info(msg, 'before SuttaRef', sref);
+    let suttaRef = SuttaRef.createWithError(sref, 'en');
+    logger.info(msg, 'after SuttaRef', sref);
     let { sutta_uid, lang='en', author, segnum } = suttaRef;
     let sr = suttaRef.toString();
 

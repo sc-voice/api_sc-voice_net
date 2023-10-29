@@ -208,11 +208,15 @@
       const msg = 'ScvApi.getLinks() ';
       try {
         if (Links instanceof Promise) {
+          logger.info(msg, "before await");
           Links = (await Links).default;
+          logger.info(msg, "after await");
         }
         let links = new Links();
         let { sutta_uid, lang, author } = req.params;
+        logger.info(msg, "before ebtSuttaRefLink");
         let link =  links.ebtSuttaRefLink({sutta_uid, lang, author});
+        logger.info(msg, "after ebtSuttaRefLink");
         return {
           sutta_uid,
           lang,
