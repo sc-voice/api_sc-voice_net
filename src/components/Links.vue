@@ -68,7 +68,7 @@
   const url = computed(()=>{
     let { sutta_uid, langTrans, translator } = settings;
     sutta_uid = sutta_uid && sutta_uid.toLowerCase().trim();
-    let endpoint = settings.endpoint();
+    let endpoint = settings.scvEndpoint();
     let url = [
       endpoint,
       `links`,

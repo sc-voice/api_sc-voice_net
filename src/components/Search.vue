@@ -55,7 +55,7 @@
   const url = computed(()=>{
     let { search } = settings;
     let pattern = search && search.toLowerCase().trim();
-    let endpoint = settings.endpoint();
+    let endpoint = settings.scvEndpoint();
     let url = [
       endpoint,
       `search`,

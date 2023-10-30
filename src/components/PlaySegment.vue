@@ -96,7 +96,7 @@
 
   const url = computed(()=>{
     let { sutta_uid, scid, langTrans, translator, vnameTrans } = settings;
-    let endpoint = settings.endpoint();
+    let endpoint = settings.scvEndpoint();
     let url = [
       endpoint,
       `play/segment`,
@@ -118,7 +118,7 @@
     let { 
       sutta_uid, scid, langTrans, translator, vnameTrans, vnameRoot,
     } = settings;
-    let endpoint = settings.endpoint();
+    let endpoint = settings.scvEndpoint();
     return Object.keys(audio).reduce((a, k) => {
       if (k !== "vnameTrans") {
         let prefix = [endpoint, 'audio', sutta_uid, k];

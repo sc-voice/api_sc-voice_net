@@ -153,7 +153,7 @@
       audioSuffix, langs, maxDuration, maxResults, 
       vnameRoot, vnameTrans, search, langTrans
     } = settings;
-    let endpoint = settings.endpoint();
+    let endpoint = settings.scvEndpoint();
     let url = [
       endpoint,
       `build-download`,
@@ -179,7 +179,7 @@
       audioSuffix, langs, maxDuration, maxResults, 
       vnameRoot, vnameTrans, search, langTrans 
     } = settings;
-    let endpoint = settings.endpoint();
+    let endpoint = settings.scvEndpoint();
     let url = [
       endpoint,
       `download`,
