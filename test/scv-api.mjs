@@ -759,7 +759,24 @@ typeof describe === "function" && describe("scv-api", function() {
       should(resDone.guid).equal('f6a18c6c48f784475e73c9e9766dc5f3');
     });
 
-  it("TETTESTget_statfs()", async()=>{
+  it("TESTTESTgetVoices()", async()=>{
+    let api = await testScvApi();
+    let voices = await api.getVoices();
+    let mathieu = voices.find(v=>v.name==='Mathieu');
+    let celine = voices.find(v=>v.name==='Celine');
+    should(mathieu).properties({
+      name: 'Mathieu',
+      locale: 'fr-FR',
+      gender: 'male',
+      iVoice: 10,
+      service: 'aws-polly',
+      langTrans: 'fr',
+      label: '🤖 Mathieu',
+    });
+    should(Object.keys(celine).length).equal(7);
+    should(voices.length).equal(16);
+  });
+  it("get_statfs()", async()=>{
     let api = await testScvApi();
     let res = await api.get_statfs();
     should(res.blocks).above(0);

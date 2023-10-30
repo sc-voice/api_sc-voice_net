@@ -73,6 +73,10 @@ export default class ScvServer extends RestApi {
     let jsonMime = "application/json";
     let { resourceMethods, scvApi } = this;
 
+    // voices
+    resourceMethods.push(new ResourceMethod( "get",
+      "voices", (req,res)=>scvApi.getVoices(req,res) ));
+
     // monitoring
     resourceMethods.push(new ResourceMethod( "get",
       "statfs", (req,res)=>scvApi.get_statfs(req,res) ));

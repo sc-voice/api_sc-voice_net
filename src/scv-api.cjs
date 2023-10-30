@@ -147,6 +147,18 @@
       return parms;
     }
 
+    async getVoices(req, res) {
+      let { voices } = this;
+      return voices.map(voice=>{
+        let {
+          name, label, langTrans, gender, iVoice, locale, service,
+        } = voice;
+        return {
+          name, label, langTrans, gender, iVoice, locale, service,
+        }
+      });
+    }
+
     async get_statfs(req, res) {
       const msg = 'ScvApi.get_statfs()';
       let path = LOCAL;
