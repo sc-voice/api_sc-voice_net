@@ -21,7 +21,9 @@ sudo ufw allow proto tcp from any to any port 443
 echo $SCRIPT: configure port 8000 HTTP for NGINX verification
 sudo ufw allow proto tcp from any to any port 8000
 
+echo $SCRIPT: ============================================
 echo $SCRIPT: Enable Firewall 
+echo $SCRIPT: ============================================
 sudo ufw enable
 
 echo $SCRIPT: Firewall status
