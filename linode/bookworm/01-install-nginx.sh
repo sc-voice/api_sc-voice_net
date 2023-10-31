@@ -9,7 +9,7 @@ echo $SCRIPT: BEGIN `date`
 # https://nginx.org/en/linux_packages.html#Debian
 
 echo $SCRIPT: Install the prerequisites:
-sudo apt install curl gnupg2 ca-certificates lsb-release debian-archive-keyring
+sudo apt install -y curl gnupg2 ca-certificates lsb-release debian-archive-keyring
 
 echo $SCRIPT:  Import an official nginx signing key so apt could verify the packages authenticity. Fetch the key:
 curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
@@ -49,6 +49,6 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 
 echo $SCRIPT: installing nginx
 sudo apt update
-sudo apt install nginx
+sudo apt install -y nginx
 
 echo $SCRIPT: END `date`
