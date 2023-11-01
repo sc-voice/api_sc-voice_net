@@ -9,3 +9,4 @@ npm run build:dist
 VERSION=`$APPDIR/linode/bookworm/version.sh`
 echo Dockerfile $VERSION
 sed -e "s/APISCV_VERSION.*/APISCV_VERSION=$VERSION/" -i $APPDIR/Dockerfile
+git commit -am "Dockerfile APISCV_VERSION=$VERSION"
