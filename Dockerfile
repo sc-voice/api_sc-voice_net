@@ -35,6 +35,7 @@ SCV_SERVER
 COPY --link --chown=$USER . $APPDIR
 
 # Start application server
+ENV APISCV_VERSION=`linode/bookworm/version.sh`
 ENV START=start:8080
 EXPOSE 8080
 CMD npm run $START
