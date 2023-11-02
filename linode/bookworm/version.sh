@@ -9,6 +9,8 @@ VERSION=`cat $APPDIR/package.json\
 
 if [ "$1" == "--major" ]; then
   echo $VERSION | sed -e 's/\..*//'
+elif [ "$1" == "--minor" ]; then
+  echo $VERSION | sed -e 's/\.[0-9]*$//'
 else
   echo $VERSION
 fi
