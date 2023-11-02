@@ -3,10 +3,10 @@ DIR=`dirname $0`
 APPDIR=$DIR/..
 
 cd $APPDIR
-DKRMINOR=`./scripts/image-version.sh --minor`
-DKRMAJOR=`echo $1 | sed -e "s/\..*//"`
-GITMAJOR=`$APPDIR/linode/bookworm/version.sh --major`
-GITMINOR=`$APPDIR/linode/bookworm/version.sh --minor`
+DKRMINOR=`scripts/image-version.sh --minor`
+DKRMAJOR=`echo $DKRMINOR | sed -e "s/\..*$//"`
+GITMAJOR=`linode/bookworm/version.sh --major`
+GITMINOR=`linode/bookworm/version.sh --minor`
 
 echo DKRMINOR=$DKRMINOR DKRMAJOR=$DKRMAJOR
 echo GITMINOR=$GITMINOR GITMAJOR=$GITMAJOR
@@ -21,11 +21,11 @@ fi
 HOSTNAME=`hostname | grep -i staging`
 
 if [ "$DKRMINOR" == "$GITMINOR" ]; then
-  echo "DKRMINOR==GITMINOR => staging+production"
+  echo "DKRMINOR==GITMINOR => release (content only))"
 elif (( $DKRMAJOR < $GITMAJOR )); then
-  echo "DKRMAJOR<GITMAJOR => staging+production"
+  echo "DKRMAJOR<GITMAJOR => release (software+content)"
 else
-  echo "DKRMAJOR>GITMAJOR => Release blocked on major version"
+  echo "DKRMAJOR>GITMAJOR => release blocked on major version"
   exit 1
 fi
 
