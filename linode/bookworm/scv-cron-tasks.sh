@@ -17,7 +17,8 @@ sudo /usr/bin/docker system prune -f
 VERLOCAL=`sudo /usr/bin/docker image ls scvoice/$CONTAINER:latest -q`
 
 GITVERSION=`$APPDIR/scripts/git-version.sh`
-if [ `../../scripts/can-release.sh` ]; then
+$APPDIR/scripts/can-release.sh; RC=$?
+if [ "$RC" == "0" ]; then
   echo -e "$SCRIPT: release $GITVERSION in progress..."
   echo -e "$SCRIPT: checking Dockerhub for scvoice/$CONTAINER:latest..."
   sudo /usr/bin/docker pull -q scvoice/$CONTAINER:latest
