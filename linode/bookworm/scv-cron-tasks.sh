@@ -14,22 +14,22 @@ sudo /usr/bin/certbot renew --quiet
 echo -e "$SCRIPT: docker system prune"
 sudo /usr/bin/docker system prune -f
 
-if [ `../../scripts/can-release.sh` ]; then
-  echo -e "$SCRIPT: release in progress..."
-else
-  echo -e "$SCRIPT: release blocked..."
-fi
-
 VERLOCAL=`sudo /usr/bin/docker image ls scvoice/$CONTAINER:latest -q`
 
-echo -e "$SCRIPT: checking Dockerhub for scvoice/$CONTAINER:latest..."
-sudo /usr/bin/docker pull -q scvoice/$CONTAINER:latest
+GITVERSION=`$APPDIR/scripts/git-version.sh`
+if [ `../../scripts/can-release.sh` ]; then
+  echo -e "$SCRIPT: release $GITVERSION in progress..."
+  echo -e "$SCRIPT: checking Dockerhub for scvoice/$CONTAINER:latest..."
+  sudo /usr/bin/docker pull -q scvoice/$CONTAINER:latest
+else
+  echo -e "$SCRIPT: release $GITVERSION blocked..."
+fi
 
 VERDOCKERHUB=`sudo /usr/bin/docker image ls scvoice/$CONTAINER:latest -q`
 if [ "$VERLOCAL" == "$VERDOCKERHUB" ]; then
-  echo -e "$SCRIPT: scvoice/$CONTAINER:latest $VERLOCAL is latest"
+  echo -e "$SCRIPT: local scvoice/$CONTAINER:latest $VERLOCAL is unchanged"
 else
-  echo -e "$SCRIPT: scvoice/$CONTAINER:latest updated $VERLOCAL => $VERDOCKERHUB"
+  echo -e "$SCRIPT: local scvoice/$CONTAINER:latest updated $VERLOCAL=>$VERDOCKERHUB"
   echo -e "$SCRIPT: shutting down $CONTAINER Docker container..."
   sudo docker compose down
   echo -e "$SCRIPT: starting updated $CONTAINER Docker container..."
