@@ -5,6 +5,7 @@ const ApiConfig = {
       url: 'https://www.api.sc-voice.net/scv/statfs', 
       type: "statfs",
       jsonFilter: {
+        api_scvoice_version: true,
         blocks: true,
         bavail_percent: true,
         ffree_percent: true
@@ -13,6 +14,7 @@ const ApiConfig = {
       url: 'https://staging.api.sc-voice.net/scv/statfs', 
       type: "statfs",
       jsonFilter: {
+        api_scvoice_version: true,
         blocks: true,
         bavail_percent: true,
         ffree_percent: true
