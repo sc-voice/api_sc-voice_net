@@ -1,6 +1,6 @@
 {
   "name": "api_sc-voice_net",
-  "version": "2.36.0",
+  "version": "2.37.0",
   "description": "SuttaCentral Voice Server",
   "main": "index.js",
   "private": false,
@@ -42,7 +42,7 @@
     "why-is-node-running": "^2.2.2"
   },
   "scripts": {
-    "version": "scripts/version.sh",
+    "version": "scripts/git-version.sh",
     "dev": "vite",
     "serve": "vite preview",
     "build": "scripts/build-dist.sh",
