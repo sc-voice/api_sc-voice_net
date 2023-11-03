@@ -5,8 +5,8 @@ APPDIR=$DIR/..
 cd $APPDIR
 DKRMINOR=`scripts/image-version.sh --minor`
 DKRMAJOR=`echo $DKRMINOR | sed -e "s/\..*$//"`
-GITMAJOR=`linode/bookworm/version.sh --major`
-GITMINOR=`linode/bookworm/version.sh --minor`
+GITMAJOR=`scripts/git-version.sh --major`
+GITMINOR=`scripts/git-version.sh --minor`
 
 echo DKRMINOR=$DKRMINOR DKRMAJOR=$DKRMAJOR
 echo GITMINOR=$GITMINOR GITMAJOR=$GITMAJOR

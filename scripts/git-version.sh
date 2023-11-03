@@ -1,6 +1,6 @@
 #!/bin/bash
 DIR=`dirname $0`
-APPDIR=`realpath $DIR/../..`
+APPDIR=`realpath $DIR/..`
 VERSION=`cat $APPDIR/package.json\
 | grep version\
 | head -1\
