@@ -22,6 +22,7 @@
   const Task = require("./task.cjs");
   const Voice = require("./voice.cjs");
   const VoiceFactory = require("./voice-factory.cjs");
+  const PACKAGE = require("../package.json");
 
   const LOCAL = path.join(__dirname, "../local");
   const LANG_MAP = {
@@ -168,6 +169,7 @@
         Math.round(100 * result.ffree / result.files);
       result.bavail_percent = 
         Math.round(100 * result.bavail / result.blocks);
+      result.api_scvoice_version = PACKAGE.version;
       return result;
     }
 
