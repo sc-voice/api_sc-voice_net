@@ -8,8 +8,14 @@ LOGDIR="${APP_DIR}/local/logs"
 mkdir -p ${LOGDIR}
 LOGFILE="${LOGDIR}/scv-%Y%m%d.log"
 SCVLOG="${APP_DIR}/local/scv.log" 
+INDEXLOCK="${APP_DIR}/local/ebt-data/.git/index.lock"
 echo -e "$SCRIPT: logging to SCVLOG and $LOGDIR"
 rm -f $SCVLOG
+
+if [ -e $INDEXLOCK ]; then
+  echo -e "$SCRIPT: removing $INDEXLOCK" | tee -a ${SCVLOG}
+  rm -f $INDEXLOCK
+fi
 
 node ${SCRIPT_DIR}/sc-voice.mjs $* 2>&1 | rotatelogs -L ${SCVLOG} -f ${LOGFILE} 86400
 
