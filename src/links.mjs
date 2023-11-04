@@ -18,20 +18,20 @@ export default class Links {
 
   ebtSuttaRefLink(sref) {
     const msg = "Links.ebtSuttaRefLink() ";
-    logger.info(msg, 'before SuttaRef', sref);
-    let suttaRef = SuttaRef.createWithError(sref, 'en');
-    logger.info(msg, 'after SuttaRef', sref);
-    let { sutta_uid, lang='en', author, segnum } = suttaRef;
-    let sr = suttaRef.toString();
+    let { lang='en' }= sref;
+    let suttaRef = SuttaRef.create(sref, lang);
+    lang = suttaRef && suttaRef.lang || lang;
+    let pathSutta = suttaRef == null
+      ? ''
+      : `#/sutta/${suttaRef.toString()}`;
 
     switch (lang) {
       case 'de':
-        return `https://dhammaregen.net/#/sutta/${sr}`;
+        return `https://dhammaregen.net/${pathSutta}`;
       case 'pli':
       case 'en':
       default: 
-        return `https://sc-voice.net/#/sutta/${sr}`;
-        //return this.voiceLink(suttaRef);
+        return `https://sc-voice.net/${pathSutta}`;
     }
   }
 }
