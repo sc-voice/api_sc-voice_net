@@ -16,14 +16,14 @@ export default class Links {
     ].join('/');
   }
 
-  ebtSuttaRefLink(sref) {
+  ebtSuttaRefLink(sref,src="sc") {
     const msg = "Links.ebtSuttaRefLink() ";
     let { lang='en' }= sref;
     let suttaRef = SuttaRef.create(sref, lang);
     lang = suttaRef && suttaRef.lang || lang;
     let pathSutta = suttaRef == null
-      ? ''
-      : `#/sutta/${suttaRef.toString()}`;
+      ? `?src=${src}`
+      : `?src=${src}#/sutta/${suttaRef.toString()}`;
 
     switch (lang) {
       case 'de':

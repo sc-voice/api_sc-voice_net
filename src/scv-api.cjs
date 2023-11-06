@@ -199,6 +199,7 @@
         let { sutta_uid, lang, author } = req.params;
         emsg = `${msg} ${sutta_uid} ${lang} ${author} [NOT FOUND]`;
         link =  links.ebtSuttaRefLink({sutta_uid, lang, author});
+        logger.info(msg, link);
         result = {
           sutta_uid,
           lang,
@@ -228,9 +229,8 @@
         }
         let links = new Links();
         let { sutta_uid, lang, author } = req.params;
-        logger.info(msg, "before ebtSuttaRefLink");
         let link =  links.ebtSuttaRefLink({sutta_uid, lang, author});
-        logger.info(msg, "after ebtSuttaRefLink");
+        logger.info(msg, link);
         return {
           sutta_uid,
           lang,

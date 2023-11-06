@@ -82,7 +82,7 @@ typeof describe === "function" && describe("scv-api", function() {
 
       should(res).equal(api);
     });
-    it("getEbtSite() => thig1.1", async()=>{
+    it("TESTTESTgetEbtSite() => thig1.1", async()=>{
       let api = await testScvApi();
       let sutta_uid = 'thig1.1';
       let lang = 'de';
@@ -91,10 +91,10 @@ typeof describe === "function" && describe("scv-api", function() {
       let response = new MockResponse();
       let httpRes = await api.getEbtSite({params}, response);
       should(response).properties({
-        mockRedirect: 'https://dhammaregen.net/#/sutta/thig1.1/de',
+        mockRedirect: 'https://dhammaregen.net/?src=sc#/sutta/thig1.1/de',
       });
     });
-    it("getLinks() => thig1.1", async()=>{
+    it("TESTTESTgetLinks() => thig1.1", async()=>{
       let api = await testScvApi();
       let sutta_uid = 'thig1.1';
       let lang = 'de';
@@ -102,10 +102,10 @@ typeof describe === "function" && describe("scv-api", function() {
       let params = { sutta_uid, lang, author };
       let res = await api.getLinks({params});
       should(res).properties({
-        link: 'https://dhammaregen.net/#/sutta/thig1.1/de',
+        link: 'https://dhammaregen.net/?src=sc#/sutta/thig1.1/de',
       });
     });
-    it("getLinks() => thig1.1:2.3", async()=>{
+    it("TESTTESTgetLinks() => thig1.1:2.3", async()=>{
       let api = await testScvApi();
       let sutta_uid = 'thig1.1:1.2';
       let lang = 'en';
@@ -113,7 +113,7 @@ typeof describe === "function" && describe("scv-api", function() {
       let params = { sutta_uid, lang, author };
       let res = await api.getLinks({params});
       should(res).properties({
-        link: `${SC_VOICE_NET}/#/sutta/${sutta_uid}/${lang}/${author}`,
+        link: `${SC_VOICE_NET}/?src=sc#/sutta/${sutta_uid}/${lang}/${author}`,
       });
     });
     it("getSearch() => mn28 -dl de", async()=>{

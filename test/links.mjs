@@ -3,8 +3,8 @@ import { SuttaRef }  from "scv-esm/main.mjs";
 import should from "should";
 
 const VOICE="https://voice.suttacentral.net/scv/";
-const DHAMMAREGEN = "https://dhammaregen.net/";
-const SC_VOICE_NET = "https://sc-voice.net/";
+const DHAMMAREGEN = "https://dhammaregen.net/?src=sc";
+const SC_VOICE_NET = "https://sc-voice.net/?src=sc";
 
 typeof describe === "function" && describe("links", function() {
   it ("TESTTESTebtSuttaRefLink)()", ()=>{
