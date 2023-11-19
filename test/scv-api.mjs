@@ -82,7 +82,7 @@ typeof describe === "function" && describe("scv-api", function() {
 
       should(res).equal(api);
     });
-    it("TESTTESTgetEbtSite() => thig1.1", async()=>{
+    it("getEbtSite() => thig1.1", async()=>{
       let api = await testScvApi();
       let sutta_uid = 'thig1.1';
       let lang = 'de';
@@ -94,7 +94,7 @@ typeof describe === "function" && describe("scv-api", function() {
         mockRedirect: 'https://dhammaregen.net/?src=sc#/sutta/thig1.1/de',
       });
     });
-    it("TESTTESTgetLinks() => thig1.1", async()=>{
+    it("getLinks() => thig1.1", async()=>{
       let api = await testScvApi();
       let sutta_uid = 'thig1.1';
       let lang = 'de';
@@ -105,7 +105,7 @@ typeof describe === "function" && describe("scv-api", function() {
         link: 'https://dhammaregen.net/?src=sc#/sutta/thig1.1/de',
       });
     });
-    it("TESTTESTgetLinks() => thig1.1:2.3", async()=>{
+    it("getLinks() => thig1.1:2.3", async()=>{
       let api = await testScvApi();
       let sutta_uid = 'thig1.1:1.2';
       let lang = 'en';
@@ -130,6 +130,7 @@ typeof describe === "function" && describe("scv-api", function() {
       let mld0 = res.mlDocs[0];
       should(mld0).not.equal(undefined);
       let seg0_2 = mld0.segMap['mn28:0.2'];
+      should(results[0].stats.seconds).above(1000).below(1500);
 
       should(docAuthor).equal('sabbamitta');
       should(docLang).equal('de');
@@ -192,7 +193,7 @@ typeof describe === "function" && describe("scv-api", function() {
       }
       should(eCaught.message).match(/expected number for maxResults/i);
     });
-    it("getSearch() => root of suffering", async()=>{
+    it("TESTTESTgetSearch() => root of suffering", async()=>{
       let api = await testScvApi();
       let params = {pattern: "root of suffering"};
       
@@ -215,6 +216,8 @@ typeof describe === "function" && describe("scv-api", function() {
         should(method).equal('phrase');
         should(results).instanceOf(Array);
         should(results.length).equal(5);
+        console.log("TESTTEST", results[0]);
+        should(results[0].stats.seconds).above(300).below(500);
         should.deepEqual(results[0].audio,undefined);
         should.deepEqual(results.map(r => r.uid),[
           'sn42.11', 'mn105', 'mn1', 'sn56.21', 'mn116',
@@ -759,7 +762,7 @@ typeof describe === "function" && describe("scv-api", function() {
       should(resDone.guid).equal('f6a18c6c48f784475e73c9e9766dc5f3');
     });
 
-  it("TESTTESTgetVoices()", async()=>{
+  it("getVoices()", async()=>{
     let api = await testScvApi();
     let voices = await api.getVoices();
     let mathieu = voices.find(v=>v.name==='Mathieu');

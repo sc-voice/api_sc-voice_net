@@ -365,6 +365,7 @@
         let author_short = author_uid
           ? author_uid.charAt(0).toUpperCase() + author_uid.slice(1)
           : null
+        let stats = this.suttaDuration.measure(sutta);
         return {
           count: mld.score,
           uid: sutta_uid,
@@ -380,7 +381,7 @@
           quote,
           suttaplex,
           sutta: sectSutta,
-          stats: this.suttaDuration.measure(sutta),
+          stats,
         };
       } catch (e) {
         this.warn(`mldResult()`, {

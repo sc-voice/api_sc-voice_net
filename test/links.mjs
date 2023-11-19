@@ -7,7 +7,7 @@ const DHAMMAREGEN = "https://dhammaregen.net/?src=sc";
 const SC_VOICE_NET = "https://sc-voice.net/?src=sc";
 
 typeof describe === "function" && describe("links", function() {
-  it ("TESTTESTebtSuttaRefLink)()", ()=>{
+  it ("ebtSuttaRefLink)()", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });

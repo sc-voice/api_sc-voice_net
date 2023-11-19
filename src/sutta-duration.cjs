@@ -15,7 +15,11 @@
             this.network = Network.fromJSON(json);
         }
 
-        measure(sutta, lang='en') {
+        measure(sutta, lang){
+            const msg = 'SuttaDuration.measure()';
+            if (lang == null) {
+              lang = sutta.lang === 'en' ? 'en' : 'ref';
+            }
             var nSections = sutta.sections.length;
             var segments = sutta.segments;
             var nSegments = segments.length;

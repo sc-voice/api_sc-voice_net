@@ -180,7 +180,7 @@ typeof describe === "function" &&
         },
       });
     });
-    it("TESTTESTaddSutta(sutta) adds dn33", async () => {
+    it("addSutta(sutta) adds dn33", async () => {
       var factory = await testSuttaFactory();
       var sutta = await factory.loadSutta("dn33");
       var pl = new Playlist();
