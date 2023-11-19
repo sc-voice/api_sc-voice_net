@@ -188,14 +188,14 @@ typeof describe === "function" &&
       should.deepEqual(pl.stats(), {
         tracks: 12,
         chars: {
-          en: 84889,
+          en: 84813,
           pli: 78866,
         },
         segments: {
           en: 1129,
           pli: 1167,
         },
-        duration: 14517,
+        duration: 14511,
       });
     });
     it("addTrack(sutta_uid, segmentsOrMessage) adds a track", async()=>{
