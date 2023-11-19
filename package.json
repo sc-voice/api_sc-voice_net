@@ -22,7 +22,7 @@
     "promise-queue": "^2.2.5",
     "roboto-fontface": "*",
     "say-again": "^0.7.0",
-    "scv-bilara": "^3.106.3",
+    "scv-bilara": "^3.106.4",
     "serve-favicon": "^2.5.0",
     "suttacentral-api": "^2.9.0",
     "vue": "^3.2.37",
