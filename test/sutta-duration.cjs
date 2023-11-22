@@ -212,7 +212,7 @@ typeof describe === "function" &&
       });
       testTolerance(resMeasure.seconds, 719);
     });
-    it("measure(sutta, lang) measures dn33", async () => {
+    it("TESTTESTmeasure(sutta, lang) measures dn33", async () => {
       var factory = await testSuttaFactory();
       var scd = new SuttaDuration();
       var sutta = await factory.loadSutta("dn33");
@@ -225,9 +225,9 @@ typeof describe === "function" &&
         nSections: 12,
       });
       should(resMeasure.text).above(84700).below(84900);
-      testTolerance(resMeasure.seconds, 7500);
+      testTolerance(resMeasure.seconds, 8171);
     });
-    it("TESTTESTmeasure(sutta, lang) measures mn1", async () => {
+    it("measure(sutta, lang) measures mn1", async () => {
       var factory = await testSuttaFactory();
       var scd = new SuttaDuration();
       var sutta = await factory.loadSutta("mn1");

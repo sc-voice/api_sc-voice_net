@@ -116,6 +116,40 @@ typeof describe === "function" && describe("scv-api", function() {
         link: `${SC_VOICE_NET}/?src=sc#/sutta/${sutta_uid}/${lang}/${author}`,
       });
     });
+    it("getSearch() => dn16 -dl en", async()=>{
+      let api = await testScvApi();
+      let suid = 'dn16';
+      let lang = 'en';
+      let pattern = `${suid} -dl ${lang}`;
+      let params = { lang, pattern}; 
+      //logger.logLevel = 'debug';
+      let res = await api.getSearch({params, query});
+      let { 
+        trilingual, method, results,
+        author, docAuthor, docLang, refAuthor, refLang,
+      } = res;
+      let mld0 = res.mlDocs[0];
+      should(mld0).not.equal(undefined);
+      let seg0_2 = mld0.segMap['mn28:0.2'];
+      should(results[0].stats.seconds).above(10000).below(15000);
+    });
+    it("getSearch() => dn16 -dl de", async()=>{
+      let api = await testScvApi();
+      let suid = 'dn16';
+      let lang = 'de';
+      let pattern = `${suid} -dl ${lang} -rl en`;
+      let params = { lang, pattern}; 
+      //logger.logLevel = 'debug';
+      let res = await api.getSearch({params, query});
+      let { 
+        trilingual, method, results,
+        author, docAuthor, docLang, refAuthor, refLang,
+      } = res;
+      let mld0 = res.mlDocs[0];
+      should(mld0).not.equal(undefined);
+      let seg0_2 = mld0.segMap['mn28:0.2'];
+      should(results[0].stats.seconds).above(10000).below(15000);
+    });
     it("getSearch() => mn28 -dl de", async()=>{
       let api = await testScvApi();
       let suid = 'mn28';
@@ -193,7 +227,7 @@ typeof describe === "function" && describe("scv-api", function() {
       }
       should(eCaught.message).match(/expected number for maxResults/i);
     });
-    it("TESTTESTgetSearch() => root of suffering", async()=>{
+    it("getSearch() => root of suffering", async()=>{
       let api = await testScvApi();
       let params = {pattern: "root of suffering"};
       
@@ -216,7 +250,7 @@ typeof describe === "function" && describe("scv-api", function() {
         should(method).equal('phrase');
         should(results).instanceOf(Array);
         should(results.length).equal(5);
-        console.log("TESTTEST", results[0]);
+        //console.log("TESTTEST", results[0]);
         should(results[0].stats.seconds).above(300).below(500);
         should.deepEqual(results[0].audio,undefined);
         should.deepEqual(results.map(r => r.uid),[

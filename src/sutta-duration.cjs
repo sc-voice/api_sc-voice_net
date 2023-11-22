@@ -38,6 +38,11 @@
             var et = nEmptySegments  / (nSections * lst);
             var logistic = (x, x0, k) => 1 / (1 + Math.exp(-k*(x - x0)));
             var cet = logistic(et, .679, 18);
+            if (nSegments > 1000) {
+              // DN16 de returns negative seconds
+              // so we set cet to a middle value between 0 and 1
+              cet = 0.5; 
+            }
             var dataToTarget = d => [ d.elapsed/d.text.en ];
             var resAct = this.network.activate([
                 (1-cet) * text,
@@ -45,7 +50,7 @@
                 Math.log(nSegments-nEmptySegments+1),
             ]);
             var seconds = resAct[0] * text/1000;
-            return {
+            let result =  {
                 text,
                 lang,
                 nSegments,
@@ -53,6 +58,8 @@
                 nSections,
                 seconds,
             };
+            //console.log(msg, {result, cet, et, lst});
+            return result;
         }
     }
 
