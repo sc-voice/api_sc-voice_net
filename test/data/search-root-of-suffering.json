@@ -1004,7 +1004,7 @@
               {
                 "scid": "mn105:19.2",
                 "pli": "Tassa mittāmaccā ñātisālohitā bhisakkaṁ sallakattaṁ upaṭṭhāpeyyuṁ. ",
-                "en": "Their friends and colleagues, relatives and kin would get a field surgeon to treat them. "
+                "en": "Their friends and colleagues, relatives and kin would get a surgeon to treat them. "
               },
               {
                 "scid": "mn105:19.3",
@@ -1139,7 +1139,7 @@
               {
                 "scid": "mn105:22.1",
                 "pli": "Maraṇañhetaṁ, sunakkhatta, ariyassa vinaye yo sikkhaṁ paccakkhāya hīnāyāvattati; ",
-                "en": "For it is death in the training of the Noble One to resign the training and return to a lesser life. "
+                "en": "For it is death in the training of the Noble One to reject the training and return to a lesser life. "
               },
               {
                 "scid": "mn105:22.2",
@@ -1184,7 +1184,7 @@
               {
                 "scid": "mn105:24.2",
                 "pli": "Tassa mittāmaccā ñātisālohitā bhisakkaṁ sallakattaṁ upaṭṭhāpeyyuṁ. ",
-                "en": "Their friends and colleagues, relatives and kin would get a field surgeon to treat them. "
+                "en": "Their friends and colleagues, relatives and kin would get a surgeon to treat them. "
               },
               {
                 "scid": "mn105:24.3",
@@ -1349,7 +1349,7 @@
               {
                 "scid": "mn105:27.8",
                 "pli": "bhisakko sallakattoti kho, sunakkhatta, tathāgatassetaṁ adhivacanaṁ arahato sammāsambuddhassa. ",
-                "en": "‘Field surgeon’ is a term for the Realized One, the perfected one, the fully awakened Buddha. "
+                "en": "‘Surgeon’ is a term for the Realized One, the perfected one, the fully awakened Buddha. "
               },
               {
                 "scid": "mn105:28.1",
@@ -1481,12 +1481,12 @@
         "blurb": "Not all of those who claim to be awakened are genuine. The Buddha teaches how true spiritual progress depends on an irreversible letting go of the forces that lead to suffering."
       },
       "stats": {
-        "text": 14405,
+        "text": 14387,
         "lang": "en",
         "nSegments": 188,
         "nEmptySegments": 8,
         "nSections": 2,
-        "seconds": 1243.252463295592
+        "seconds": 1241.9129261349824
       }
     },
     {
@@ -3423,7 +3423,7 @@
               {
                 "scid": "mn66:1.2",
                 "pli": "ekaṁ samayaṁ bhagavā aṅguttarāpesu viharati āpaṇaṁ nāma aṅguttarāpānaṁ nigamo. ",
-                "en": "At one time the Buddha was staying in the land of the Northern Āpaṇas, near the town of theirs named Āpaṇa. "
+                "en": "At one time the Buddha was staying in the land of the Aṅguttarāpans, near the town of theirs named Āpaṇa. "
               },
               {
                 "scid": "mn66:2.1",
@@ -4428,12 +4428,12 @@
         "blurb": "Again raising the rule regarding eating, but this time as a reflection of gratitude for the Buddha in eliminating things that cause complexity and stress. The Buddha emphasizes how attachment even to little things can be dangerous."
       },
       "stats": {
-        "text": 15793,
+        "text": 15791,
         "lang": "en",
         "nSegments": 202,
         "nEmptySegments": 5,
         "nSections": 2,
-        "seconds": 1703.9464532053953
+        "seconds": 1703.7117206502296
       }
     }
   ]

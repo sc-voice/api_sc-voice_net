@@ -188,7 +188,7 @@ typeof describe === "function" &&
       should.deepEqual(pl.stats(), {
         tracks: 12,
         chars: {
-          en: 84813,
+          en: 84814,
           pli: 78866,
         },
         segments: {
