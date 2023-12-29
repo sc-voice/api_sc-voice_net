@@ -1,6 +1,6 @@
 {
   "name": "api_sc-voice_net",
-  "version": "7.0.110",
+  "version": "7.0.111",
   "description": "SuttaCentral Voice Server",
   "main": "index.js",
   "private": false,
@@ -22,7 +22,7 @@
     "promise-queue": "^2.2.5",
     "roboto-fontface": "*",
     "say-again": "^0.8.0",
-    "scv-bilara": "^3.109.1",
+    "scv-bilara": "^3.109.2",
     "serve-favicon": "^2.5.0",
     "suttacentral-api": "^2.9.13",
     "vue": "^3.2.37",
