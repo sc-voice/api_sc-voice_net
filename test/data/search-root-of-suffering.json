@@ -5,9 +5,9 @@
       "count": 5.091,
       "uid": "sn42.11",
       "lang": "en",
-      "author": "Dr Joongpyo Lee",
-      "author_short": "Davis",
-      "author_uid": "davis",
+      "author": "Bhikkhu Sujato",
+      "author_short": "Sujato",
+      "author_uid": "sujato",
       "blurb": "The chief Bhadraka asks the Buddha about the origin and ending of suffering, and the Buddha points out that a loss among Bhadraka’s own community would cause him suffering, due to his attachment.",
       "nSegments": 55,
       "title": "1. Chiefs • With Bhadraka",
@@ -32,17 +32,18 @@
         "translated_title": "With Bhadraka ",
         "translations": [
           {
-            "author": "davis",
-            "author_short": "Andrew Davis",
-            "author_uid": "davis",
-            "is_root": false,
             "lang": "en",
             "lang_name": "English",
-            "id": "en_sn42.11_davis",
-            "segmented": true,
+            "is_root": false,
+            "author": "Bhikkhu Sujato",
+            "author_short": "sujato",
+            "author_uid": "sujato",
             "publication_date": null,
-            "title": false,
-            "volpage": null
+            "id": "sn42.11_translation-en-sujato",
+            "segmented": true,
+            "title": "With Bhadraka ",
+            "volpage": null,
+            "has_comment": false
           }
         ],
         "parallel_count": 2,
@@ -52,7 +53,7 @@
       },
       "sutta": {
         "sutta_uid": "sn42.11",
-        "author_uid": "davis",
+        "author_uid": "sujato",
         "support": true,
         "suttaplex": {
           "acronym": "SN 42.11",
@@ -68,17 +69,18 @@
           "translated_title": "With Bhadraka ",
           "translations": [
             {
-              "author": "davis",
-              "author_short": "Andrew Davis",
-              "author_uid": "davis",
-              "is_root": false,
               "lang": "en",
               "lang_name": "English",
-              "id": "en_sn42.11_davis",
-              "segmented": true,
+              "is_root": false,
+              "author": "Bhikkhu Sujato",
+              "author_short": "sujato",
+              "author_uid": "sujato",
               "publication_date": null,
-              "title": false,
-              "volpage": null
+              "id": "sn42.11_translation-en-sujato",
+              "segmented": true,
+              "title": "With Bhadraka ",
+              "volpage": null,
+              "has_comment": false
             }
           ],
           "parallel_count": 2,
@@ -87,7 +89,7 @@
           "verseNo": ""
         },
         "translation": {
-          "author_uid": "davis",
+          "author_uid": "sujato",
           "lang": "en"
         },
         "titles": [
@@ -95,7 +97,7 @@
           "1. Chiefs",
           "With Bhadraka"
         ],
-        "author": "Dr Joongpyo Lee",
+        "author": "Bhikkhu Sujato",
         "lang": "en",
         "sections": [
           {
@@ -398,7 +400,7 @@
             "expandable": false
           }
         ],
-        "suttaCode": "sn42.11/en/davis",
+        "suttaCode": "sn42.11/en/sujato",
         "blurb": "The chief Bhadraka asks the Buddha about the origin and ending of suffering, and the Buddha points out that a loss among Bhadraka’s own community would cause him suffering, due to his attachment."
       },
       "stats": {
@@ -3334,7 +3336,7 @@
             "segmented": true,
             "title": "The Simile of the Quail ",
             "volpage": null,
-            "has_comment": false
+            "has_comment": true
           }
         ],
         "parallel_count": 5,
@@ -3374,7 +3376,7 @@
               "segmented": true,
               "title": "The Simile of the Quail ",
               "volpage": null,
-              "has_comment": false
+              "has_comment": true
             }
           ],
           "parallel_count": 5,
@@ -3573,7 +3575,7 @@
               {
                 "scid": "mn66:6.20",
                 "pli": "Bhūtapubbāhaṁ, bhante, rattandhakāratimisāyaṁ piṇḍāya carāmi. ",
-                "en": "Once it so happened that I wandered for alms in the dark of the night. "
+                "en": "Once it so happened that I was wandering for alms in the dark of the night. "
               },
               {
                 "scid": "mn66:6.21",
@@ -3588,7 +3590,7 @@
               {
                 "scid": "mn66:6.23",
                 "pli": "‘abhumme pisāco vata man’ti. ",
-                "en": "‘Bloody hell! A goblin’s upon me!’ "
+                "en": "‘Woe is me! It’s a damn goblin!’ "
               },
               {
                 "scid": "mn66:6.24",
@@ -3608,12 +3610,12 @@
               {
                 "scid": "mn66:6.27",
                 "pli": "‘Bhikkhussa ātumārī, bhikkhussa mātumārī. ",
-                "en": "‘Then it’s a mendicant whose ma died and pa died! "
+                "en": "‘Die, mendicant’s father! Die, mendicant’s mother! "
               },
               {
                 "scid": "mn66:6.28",
                 "pli": "Varaṁ te, bhikkhu, tiṇhena govikantanena kucchi parikanto, na tveva varaṁ yaṁ rattandhakāratimisāyaṁ kucchihetu piṇḍāya carasī’ti. ",
-                "en": "You’d be better off having your belly sliced open with a meat cleaver than to wander for alms in the dark of night for the sake of your belly.’ "
+                "en": "Better to have your belly sliced open with a meat cleaver than to wander for alms in the dark of night for the sake of your belly!’ "
               },
               {
                 "scid": "mn66:6.29",
@@ -4428,12 +4430,12 @@
         "blurb": "Again raising the rule regarding eating, but this time as a reflection of gratitude for the Buddha in eliminating things that cause complexity and stress. The Buddha emphasizes how attachment even to little things can be dangerous."
       },
       "stats": {
-        "text": 15791,
+        "text": 15783,
         "lang": "en",
         "nSegments": 202,
         "nEmptySegments": 5,
         "nSections": 2,
-        "seconds": 1703.7117206502296
+        "seconds": 1702.7728384253376
       }
     }
   ]

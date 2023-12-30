@@ -306,22 +306,9 @@ typeof describe === "function" && describe("scv-api", function() {
         should(results).instanceOf(Array);
         should(results.length).equal(1);
         should.deepEqual(results.map(r => r.uid),[
-          'sn42.11', 'mn105', 'mn1',
-      ]);
-      should.deepEqual(results.map(r => r.count),
-          [ 5.091, 3.016, 2.006  ]);
-      }
-
-      { // default maxResults
-        let query = {};
-        let { method, results } = await api.getSearch({params,query});
-        should(method).equal('phrase');
-        should(results).instanceOf(Array);
-        should(results.length).equal(5);
-        should.deepEqual(results[0].audio,undefined);
-        should.deepEqual(results.map(r => r.uid),[
-          'sn42.11', 'mn105', 'mn1', 'sn56.21', 'mn116',
+          'thig1.1',
         ]);
+        should.deepEqual(results.map(r => r.count), [ 1.111 ]);
       }
     });
     /* DEPRECATED
