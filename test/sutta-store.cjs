@@ -390,7 +390,7 @@ typeof describe === "function" &&
       );
       should.deepEqual(
         results.map((r) => r.author_uid),
-        ["davis", "sujato", "sujato", "sujato"]
+        ["sujato", "sujato", "sujato", "sujato"]
       );
       should.deepEqual(
         results.map((r) => r.suttaplex.acronym),

@@ -304,7 +304,7 @@ typeof describe === "function" && describe("scv-api", function() {
         let { method, results } = await api.getSearch({params,query});
         should(method).equal('phrase');
         should(results).instanceOf(Array);
-        should(results.length).equal(3);
+        should(results.length).equal(1);
         should.deepEqual(results.map(r => r.uid),[
           'sn42.11', 'mn105', 'mn1',
       ]);

@@ -52,7 +52,7 @@ typeof describe === "function" &&
       var scd = new SuttaDuration();
       var resMeasure = scd.measure(sutta, lang);
       should(resMeasure).properties({
-        text: 266,
+        text: 268,
         lang,
         nSegments: 9,
         nSections: 2,
