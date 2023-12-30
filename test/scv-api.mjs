@@ -287,6 +287,43 @@ typeof describe === "function" && describe("scv-api", function() {
         ]);
       }
     });
+    it("TESTTESTgetSearch()  sleep with ease", async()=>{
+      let api = await testScvApi();
+      let pattern = [
+        "sleep with ease",
+        '-dl en',
+        '-da soma',
+        '-rl en',
+        '-ra sujato',
+        '-ml1',
+      ].join(' ');
+      let params = {pattern};
+      
+      { // maxResults: 3
+        let query = {maxResults:3};
+        let { method, results } = await api.getSearch({params,query});
+        should(method).equal('phrase');
+        should(results).instanceOf(Array);
+        should(results.length).equal(3);
+        should.deepEqual(results.map(r => r.uid),[
+          'sn42.11', 'mn105', 'mn1',
+      ]);
+      should.deepEqual(results.map(r => r.count),
+          [ 5.091, 3.016, 2.006  ]);
+      }
+
+      { // default maxResults
+        let query = {};
+        let { method, results } = await api.getSearch({params,query});
+        should(method).equal('phrase');
+        should(results).instanceOf(Array);
+        should(results.length).equal(5);
+        should.deepEqual(results[0].audio,undefined);
+        should.deepEqual(results.map(r => r.uid),[
+          'sn42.11', 'mn105', 'mn1', 'sn56.21', 'mn116',
+        ]);
+      }
+    });
     /* DEPRECATED
     it("getAwsCreds() => obfuscated", async()=>{
       let api = await testScvApi();

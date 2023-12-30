@@ -5,6 +5,9 @@
   const { exec } = require("child_process");
   const { BilaraData, BilaraPath, ExecGit, Seeker } = require("scv-bilara");
   const { ScApi, SuttaCentralId } = require("suttacentral-api");
+  const {
+    DBG_SEARCH,
+  } = require('./defines.cjs');
   const Playlist = require("./playlist.cjs");
   const Sutta = require("./sutta.cjs");
   const Task = require("./task.cjs");
@@ -397,6 +400,7 @@
 
     async search(...args) {
       const msg = 'sutta-store.search()';
+      const dbg = DBG_SEARCH;
       try {
         if (!this.isInitialized) {
           throw new Error(`initialize() is required`);
@@ -446,6 +450,7 @@
           trilingual,
         };
         try {
+          dbg && console.log(msg, '[1]find', findOpts);
           bdres = await this.seeker.find(findOpts);
         } catch (e) {
           bdres = { error: e, mlDocs: [] };
