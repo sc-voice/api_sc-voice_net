@@ -36,7 +36,7 @@
     "mocha": "^10.0.0",
     "should": "^13.2.3",
     "supertest": "^6.2.3",
-    "vite": "^2.9.14",
+    "vite": "^2.9.17",
     "vite-plugin-vuetify": "^1.0.0-alpha.0",
     "vue-cli-plugin-vuetify": "~2.5.1",
     "why-is-node-running": "^2.2.2"
