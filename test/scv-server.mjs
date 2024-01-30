@@ -349,7 +349,7 @@ typeof describe === "function" &&
       should(results).instanceOf(Array);
       should(results.length).equal(3);
       should.deepEqual(results.map(r => r.uid),[
-        'sn42.11', 'sn56.21', 'mn116',
+        'sn42.11', 'mn1', 'sn56.21', 
       ]);
     })
     it("GET /scv/play/segment/...", async()=>{

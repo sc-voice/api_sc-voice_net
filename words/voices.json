@@ -858,7 +858,7 @@
 },{
     "service": "aws-polly",
     "name": "Ricardo",
-    "label": "\ud83e\udd16 Ricardo",
+    "label": "\ud83e\udd16 Ricardo (BR)",
     "langTrans": "pt",
     "locale": "pt-BR",
     "localeIPA": "pli",
@@ -960,7 +960,7 @@
 },{
     "service": "aws-polly",
     "name": "Ines",
-    "label": "\ud83e\udd16 Inés",
+    "label": "\ud83e\udd16 Inés (PT)",
     "langTrans": "pt",
     "locale": "pt-PT",
     "localeIPA": "pli",
