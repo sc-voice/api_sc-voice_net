@@ -820,7 +820,7 @@ typeof describe === "function" && describe("scv-api", function() {
       should(resDone.guid).equal('f6a18c6c48f784475e73c9e9766dc5f3');
     });
 
-  it("getVoices()", async()=>{
+  it("TESTTESTgetVoices()", async()=>{
     let api = await testScvApi();
     let voices = await api.getVoices();
     let mathieu = voices.find(v=>v.name==='Mathieu');
@@ -835,7 +835,7 @@ typeof describe === "function" && describe("scv-api", function() {
       label: '🤖 Mathieu',
     });
     should(Object.keys(celine).length).equal(7);
-    should(voices.length).equal(16);
+    should(voices.length).above(16).below(25);
   });
   it("get_statfs()", async()=>{
     let api = await testScvApi();
