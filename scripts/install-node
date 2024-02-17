@@ -1,7 +1,7 @@
 #!/bin/bash
 SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
-RQDVER=16
+RQDVER=$1
 if [ ! -x /usr/bin/curl ]; then
     echo -e "${SCRIPT}: apt-get install curl"
     sudo apt-get install -y curl
@@ -17,7 +17,7 @@ if [ -e /usr/bin/node ]; then
     echo -e "${SCRIPT}: apt-get autoremove ... "
     sudo apt-get autoremove -y
     echo -e "${SCRIPT}: apt-get install nodejs@${RQDVER} "
-    curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+    curl -sL https://deb.nodesource.com/setup_${RQDVER}.x | sudo bash -
     sudo apt-get install -y nodejs
     exit 0;
 fi
