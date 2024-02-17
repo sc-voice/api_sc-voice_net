@@ -11,7 +11,7 @@ echo -e "${SCRIPT}: updating dependencies..."
 npm install 
 
 echo -e "$SCRIPT: updating Dockerhub..."
-npm run gh-pages
 npm run build:dockerhub
+#npm run gh-pages
 
 echo -e "${SCRIPT}: END `date`"
