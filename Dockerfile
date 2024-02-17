@@ -35,17 +35,7 @@ SCV_SERVER
 COPY --link --chown=$USER . $APPDIR
 
 # Start application server
-<<<<<<< HEAD
-<<<<<<< HEAD
 ENV APISCV_VERSION=12.3.0
-=======
-ENV APISCV_VERSION=12.3.0
-=======
-ENV APISCV_VERSION=12.3.0
-=======
-ENV APISCV_VERSION=12.3.0
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
 ENV START=start:8080
 EXPOSE 8080
 CMD npm run $START
