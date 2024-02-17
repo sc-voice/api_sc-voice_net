@@ -37,13 +37,13 @@ COPY --link --chown=$USER . $APPDIR
 # Start application server
 <<<<<<< HEAD
 <<<<<<< HEAD
-ENV APISCV_VERSION=12.1.0
+ENV APISCV_VERSION=12.2.0
 =======
-ENV APISCV_VERSION=12.1.0
+ENV APISCV_VERSION=12.2.0
 =======
-ENV APISCV_VERSION=12.0.21
+ENV APISCV_VERSION=12.2.0
 =======
-ENV APISCV_VERSION=12.0.21
+ENV APISCV_VERSION=12.2.0
 >>>>>>> refs/remotes/origin/main
 >>>>>>> refs/remotes/origin/main
 ENV START=start:8080
