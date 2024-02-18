@@ -7,19 +7,26 @@ const DHAMMAREGEN = "https://dhammaregen.net/?src=sc";
 const SC_VOICE_NET = "https://sc-voice.net/?src=sc";
 
 typeof describe === "function" && describe("links", function() {
-  it ("ebtSuttaRefLink)() site", ()=>{
+  it ("TESTTESTebtSuttaRefLink)() site", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
 
     // site
+    should(test('site', 'jpn')).equal(`${SC_VOICE_NET}`);
     should(test('site')).equal(`${SC_VOICE_NET}`);
     should(test('site', 'de')).equal(`${DHAMMAREGEN}`);
   });
-  it ("TESTTESTebtSuttaRefLink)() suttaplex", ()=>{
+  it ("ebtSuttaRefLink)() suttaplex", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
+
+    // Unsupported languages
+    should(test('mil1/ru')).equal(
+      `${SC_VOICE_NET}#/sutta/mil1/en`);
+    should(test('mil1/in')).equal(
+      `${SC_VOICE_NET}#/sutta/mil1/en`);
 
     // de
     should(test('thig1.1', 'de')).equal(

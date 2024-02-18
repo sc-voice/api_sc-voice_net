@@ -750,4 +750,16 @@ typeof describe === "function" &&
         '<break time="0.300s"/>',
       ]);
     });
+    it("TESTTESTsupportedLanguages", ()=>{
+      should.deepEqual(Voice.supportedLanguages, {
+        "en": true,
+        "fr": true,
+        "pt": true,
+        "es": true,
+        "de": true,
+        "ja": true, // BD:jpn Polly:ja-JP
+        "jpn": true, // BD:jpn Polly:ja-JP
+        "pli": true,
+      });
+    });
   });

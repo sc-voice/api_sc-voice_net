@@ -16,6 +16,8 @@
     return a.localeCompare(b) === 0;
   }
 
+  var supportedLanguages;
+
   class Voice {
     constructor(opts = {}) {
       (opts.logger || logger).logInstance(this, opts);
@@ -98,6 +100,22 @@
         return voice;
       });
       return voicesCache;
+    }
+
+    static get supportedLanguages() {
+      let voices = Voice.loadVoices();
+      if (supportedLanguages == null) {
+        supportedLanguages = voices.reduce((a,voice)=>{
+          a[voice.langTrans] = true;
+          switch (voice.langTrans) {
+            case 'ja':
+              a.jpn = true;
+              break;
+          }
+          return a;
+        }, {});
+      }
+      return supportedLanguages;
     }
 
     static voiceOfName(name = "Amy") {

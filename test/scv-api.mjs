@@ -600,15 +600,19 @@ typeof describe === "function" && describe("scv-api", function() {
         .properties({audioSuffix: '.mp3'});
       should.throws(()=>api.downloadArgs({pattern, audioSuffix:"bad"}));
 
-      should(api.downloadArgs({pattern})).properties({langs: ['pli', 'en']});
+      should(api.downloadArgs({pattern}))
+      .properties({langs: ['pli', 'en']});
       should(api.downloadArgs({pattern, langs})).properties({langs});
-      should(api.downloadArgs({pattern, langs:'de+pli'})).properties({langs});
+      should(api.downloadArgs({pattern, langs:'de+pli'}))
+      .properties({langs});
       should.throws(()=>api.downloadArgs({pattern, langs:911}));
       should.throws(()=>api.downloadArgs({pattern, langs:{BAD:911}}));
 
       should(api.downloadArgs({pattern})).properties({lang: 'en'});
-      should(api.downloadArgs({pattern, lang:'jpn'})).properties({lang: 'jpn'});
-      should(api.downloadArgs({pattern, lang:'jpn'})).properties({lang: 'jpn'});
+      should(api.downloadArgs({pattern, lang:'jpn'}))
+      .properties({lang: 'jpn'});
+      should(api.downloadArgs({pattern, lang:'jpn'}))
+      .properties({lang: 'jpn'});
       should(api.downloadArgs({pattern, lang})).properties({lang});
       should.throws(()=>api.downloadArgs({pattern, lang:911}));
     });
