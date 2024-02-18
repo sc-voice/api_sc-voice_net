@@ -91,7 +91,8 @@ typeof describe === "function" && describe("scv-api", function() {
       let response = new MockResponse();
       let httpRes = await api.getEbtSite({params}, response);
       should(response).properties({
-        mockRedirect: 'https://dhammaregen.net/?src=sc#/sutta/thig1.1/de',
+        mockRedirect: 
+          'https://dhammaregen.net/?src=sc#/sutta/thig1.1/de/sabbamitta',
       });
     });
     it("getLinks() => thig1.1", async()=>{
@@ -102,7 +103,8 @@ typeof describe === "function" && describe("scv-api", function() {
       let params = { sutta_uid, lang, author };
       let res = await api.getLinks({params});
       should(res).properties({
-        link: 'https://dhammaregen.net/?src=sc#/sutta/thig1.1/de',
+        link: 
+          'https://dhammaregen.net/?src=sc#/sutta/thig1.1/de/sabbamitta',
       });
     });
     it("getLinks() => thig1.1:2.3", async()=>{
@@ -287,7 +289,7 @@ typeof describe === "function" && describe("scv-api", function() {
         ]);
       }
     });
-    it("TESTTESTgetSearch()  sleep with ease", async()=>{
+    it("getSearch()  sleep with ease", async()=>{
       let api = await testScvApi();
       let pattern = [
         "sleep with ease",
@@ -820,7 +822,7 @@ typeof describe === "function" && describe("scv-api", function() {
       should(resDone.guid).equal('f6a18c6c48f784475e73c9e9766dc5f3');
     });
 
-  it("TESTTESTgetVoices()", async()=>{
+  it("getVoices()", async()=>{
     let api = await testScvApi();
     let voices = await api.getVoices();
     let mathieu = voices.find(v=>v.name==='Mathieu');

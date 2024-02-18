@@ -7,7 +7,7 @@ const DHAMMAREGEN = "https://dhammaregen.net/?src=sc";
 const SC_VOICE_NET = "https://sc-voice.net/?src=sc";
 
 typeof describe === "function" && describe("links", function() {
-  it ("ebtSuttaRefLink)()", ()=>{
+  it ("ebtSuttaRefLink)() site", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
@@ -15,21 +15,37 @@ typeof describe === "function" && describe("links", function() {
     // site
     should(test('site')).equal(`${SC_VOICE_NET}`);
     should(test('site', 'de')).equal(`${DHAMMAREGEN}`);
+  });
+  it ("TESTTESTebtSuttaRefLink)() suttaplex", ()=>{
+    let links = new Links();
+    let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
+      sutta_uid, lang, author });
+
+    // de
+    should(test('thig1.1', 'de')).equal(
+      `${DHAMMAREGEN}#/sutta/thig1.1/de/sabbamitta`);
+
+    // en
+    should(test('mil1')).equal(
+      `${SC_VOICE_NET}#/sutta/mil1/en`);
+    should(test('mil3.1.1')).equal(
+      `${SC_VOICE_NET}#/sutta/mil3.1.1/en/kelly`);
+    should(test('thig1.1:1.2')).equal(
+      `${SC_VOICE_NET}#/sutta/thig1.1:1.2/en/sujato`);
+    should(test('thig1.1')).equal(
+      `${SC_VOICE_NET}#/sutta/thig1.1/en/sujato`);
+    should(test('thig1.1:1.2')).equal(
+      `${SC_VOICE_NET}#/sutta/thig1.1:1.2/en/sujato`);
+    should(test('thig1.1', 'en')).equal(
+      `${SC_VOICE_NET}#/sutta/thig1.1/en/sujato`);
+  });
+  it ("ebtSuttaRefLink)() sutta", ()=>{
+    let links = new Links();
+    let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
+      sutta_uid, lang, author });
 
     // de
     should(test('thig1.1', 'de', 'sabbamitta')).equal(
       `${DHAMMAREGEN}#/sutta/thig1.1/de/sabbamitta`);
-    should(test('thig1.1', 'de')).equal(
-      `${DHAMMAREGEN}#/sutta/thig1.1/de`);
-
-    // en
-    should(test('thig1.1')).equal(
-      `${SC_VOICE_NET}#/sutta/thig1.1/en`);
-    should(test('thig1.1:1.2')).equal(
-      `${SC_VOICE_NET}#/sutta/thig1.1:1.2/en`);
-    should(test('thig1.1', 'en')).equal(
-      `${SC_VOICE_NET}#/sutta/thig1.1/en`);
-
-    //`${VOICE}/?search=thig1.1&lang=en`);
   });
 })
