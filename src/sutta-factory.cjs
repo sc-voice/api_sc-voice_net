@@ -43,7 +43,7 @@
     nd: [],
     po: [],
     is: [],
-    ja: [
+    jpn: [
       "kaz", // supported
       "taikan",
     ],
@@ -53,7 +53,7 @@
     sabbamitta: true,
     sujato: true,
     "sujato-walton": true,
-    kaz: false, // ja vs jpn?
+    kaz: true, // ja vs jpn?
     bodhi: true,
     geiger: true,
     horner: true,
@@ -67,6 +67,7 @@
     hi: true,
     is: true,
     ja: true,
+    jpn: true,
     nb: true,
     nl: true,
     pl: true,

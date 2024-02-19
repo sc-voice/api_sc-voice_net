@@ -15,7 +15,7 @@ import en from './i18n/en.ts';
 import fr from './i18n/fr.ts';
 import hi from './i18n/hi.ts';
 import is from './i18n/is.ts';
-import ja from './i18n/ja.ts';
+import jpn from './i18n/jpn.ts';
 import nb from './i18n/nb.ts';
 import nl from './i18n/nl.ts';
 import pl from './i18n/pl.ts';
@@ -29,32 +29,6 @@ const vuetifyOpts = {
     defaultTheme: 'dark',
   },
 };
-
-//import { createI18n, useI18n } from 'vue-i18n';
-//import { createVueI18nAdapter } from 'vuetify/locale/adapters/vue-i18n';
-//const i18n = new createI18n({
-  //legacy: false,
-  //locale: "en",
-  //fallbackLocale: "en",
-  //messages: { 
-    //cs,
-    //da,
-    //de,
-    //en,
-    //fr,
-    //hi,
-    //is,
-    //ja,
-    //nb,
-    //nl,
-    //pl,
-    //pt,
-    //ro,
-    //si,
-    //vi,
-  //},
-//});
-//vuetifyOpts.locale = createVueI18nAdapter({ i18n, useI18n });
 
 // Vuetify
 import { createVuetify, } from "vuetify"

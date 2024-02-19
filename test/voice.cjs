@@ -757,8 +757,7 @@ typeof describe === "function" &&
         "pt": true,
         "es": true,
         "de": true,
-        "ja": true, // BD:jpn Polly:ja-JP
-        "jpn": true, // BD:jpn Polly:ja-JP
+        "jpn": true, // Web:ja SC:jpn Polly:ja-JP
         "pli": true,
       });
     });
