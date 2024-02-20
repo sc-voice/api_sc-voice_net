@@ -1,1 +1,1 @@
-<template>v15.1.0</template>
+<template>v16.0.0</template>
