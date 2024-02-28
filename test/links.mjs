@@ -46,10 +46,14 @@ typeof describe === "function" && describe("links", function() {
     should(test('thig1.1', 'en')).equal(
       `${SC_VOICE_NET}#/sutta/thig1.1/en/sujato`);
   });
-  it ("ebtSuttaRefLink)() sutta", ()=>{
+  it ("TESTTESTebtSuttaRefLink)() sutta", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
+
+    // soma
+    should(test('thig1.1', 'en', 'soma')).equal(
+      `${SC_VOICE_NET}#/sutta/thig1.1/en/soma`);
 
     // de
     should(test('thig1.1', 'de', 'sabbamitta')).equal(
