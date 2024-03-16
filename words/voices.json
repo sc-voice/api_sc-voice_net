@@ -1636,7 +1636,7 @@
 },{
     "service": "aws-polly",
     "name": "Bianca",
-    "label": "\ud83e\udd16 Amy (lento)",
+    "label": "\ud83e\udd16 Bianca (lento)",
     "gender": "female",
     "langTrans": "it",
     "locale": "it-IT",
@@ -1648,7 +1648,7 @@
     "usage": "recite",
     "rates": {
         "navigate": "+5%", 
-        "recite": "-30%"
+        "recite": "0%"
     },
     "usages": {
         "navigate": {
@@ -1657,7 +1657,7 @@
         },
         "recite": {
             "priority": 1,
-            "rate": "-30%",
+            "rate": "0%",
             "breaks": [0.001,0.1,0.2,0.6,1]
         },
         "review": {
