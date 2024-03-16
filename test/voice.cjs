@@ -48,9 +48,11 @@ typeof describe === "function" &&
         [
           "Aditi",
           "Amy",
+          "Bianca",
           "Brian",
           "Celine",
           "Enrique",
+          "Giorgio",
           "Ines",
           "Lucia",
           "Hans",
@@ -657,7 +659,7 @@ typeof describe === "function" &&
       should(resSpeak.file).match(new RegExp(resSpeak.signature.guid));
       should(fs.existsSync(resSpeak.file)).equal(true);
     });
-    it("voiceOfName(name) returns voice of name", ()=>{
+    it("TESTTESTvoiceOfName(name) returns voice of name", ()=>{
       should(Voice.voiceOfName("amy")).properties({ name: "Amy" });
       should(Voice.voiceOfName("Amy")).properties({ name: "Amy" });
       should(Voice.voiceOfName("0")).properties({ name: "Amy" });
@@ -754,6 +756,7 @@ typeof describe === "function" &&
       should.deepEqual(Voice.supportedLanguages, {
         "en": true,
         "fr": true,
+        "it": true,
         "pt": true,
         "es": true,
         "de": true,
