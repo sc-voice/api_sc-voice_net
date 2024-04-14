@@ -19,12 +19,6 @@ const ApiConfig = {
         bavail_percent: true,
         ffree_percent: true
       },
-    },{
-      url: 'https://voice.suttacentral.net/scv/play/segment/thig1.1/en/soma/thig1.1%3A1.1/Amy',
-      type: "play/segment",
-      jsonFilter: {
-        segment: true,
-      },
     }],
   }],
 }
