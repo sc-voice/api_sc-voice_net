@@ -7,7 +7,7 @@ const DHAMMAREGEN = "https://dhammaregen.net/?src=sc";
 const SC_VOICE_NET = "https://sc-voice.net/?src=sc";
 
 typeof describe === "function" && describe("links", function() {
-  it ("TESTTESTebtSuttaRefLink)() site", ()=>{
+  it ("ebtSuttaRefLink)() site", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
@@ -46,7 +46,7 @@ typeof describe === "function" && describe("links", function() {
     should(test('thig1.1', 'en')).equal(
       `${SC_VOICE_NET}#/sutta/thig1.1/en/sujato`);
   });
-  it ("TESTTESTebtSuttaRefLink)() sutta", ()=>{
+  it ("ebtSuttaRefLink)() sutta", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });

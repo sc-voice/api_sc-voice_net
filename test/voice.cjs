@@ -659,7 +659,7 @@ typeof describe === "function" &&
       should(resSpeak.file).match(new RegExp(resSpeak.signature.guid));
       should(fs.existsSync(resSpeak.file)).equal(true);
     });
-    it("TESTTESTvoiceOfName(name) returns voice of name", ()=>{
+    it("voiceOfName(name) returns voice of name", ()=>{
       should(Voice.voiceOfName("amy")).properties({ name: "Amy" });
       should(Voice.voiceOfName("Amy")).properties({ name: "Amy" });
       should(Voice.voiceOfName("0")).properties({ name: "Amy" });
@@ -752,7 +752,7 @@ typeof describe === "function" &&
         '<break time="0.300s"/>',
       ]);
     });
-    it("TESTTESTsupportedLanguages", ()=>{
+    it("supportedLanguages", ()=>{
       should.deepEqual(Voice.supportedLanguages, {
         "en": true,
         "fr": true,
