@@ -1,7 +1,7 @@
 [{
     "service": "aws-polly",
     "name": "Amy",
-    "label": "\ud83e\udd16 Amy (slower)",
+    "label": "\ud83e\udd16 Amy-robot (slower)",
     "gender": "female",
     "langTrans": "en",
     "locale": "en-GB",
@@ -95,7 +95,7 @@
 },{
     "service": "aws-polly",
     "name": "Raveena",
-    "label": "\ud83e\udd16 Raveena (faster)",
+    "label": "\ud83e\udd16 Raveena-robot (faster)",
     "gender": "female",
     "langTrans": "en",
     "locale": "en-IN",
@@ -180,7 +180,7 @@
 },{
     "service": "aws-polly",
     "name": "Matthew",
-    "label": "\ud83e\udd16 Matthew (fastest)",
+    "label": "\ud83e\udd16 Matthew-robot (fastest)",
     "gender": "male",
     "langTrans": "en",
     "locale": "en-US",
@@ -270,7 +270,7 @@
 },{
     "service": "aws-polly",
     "name": "Aditi",
-    "label": "\ud83e\udd16 Aditi",
+    "label": "\ud83e\udd16 Aditi-robot",
     "maxSegment": 400,
     "syllableVowels": "aeiouāīū",
     "syllabifyLength": 5,
@@ -395,7 +395,7 @@
 },{
     "service": "aws-polly",
     "name": "Brian",
-    "label": "\ud83e\udd16 Brian (medium)",
+    "label": "\ud83e\udd16 Brian-robot (medium)",
     "gender": "male",
     "langTrans": "en",
     "locale": "en-AU",
@@ -499,7 +499,7 @@
 },{
     "service": "aws-polly",
     "name": "Vicki",
-    "label": "\ud83e\udd16 Vicki (langsamer)",
+    "label": "\ud83e\udd16 Vicki-robot (langsamer)",
     "langTrans": "de",
     "locale": "de-DE",
     "localeIPA": "pli",
@@ -608,7 +608,7 @@
 },{
     "service": "aws-polly",
     "name": "Hans",
-    "label": "\ud83e\udd16 Hans (mittel)",
+    "label": "\ud83e\udd16 Hans-robot (mittel)",
     "langTrans": "de",
     "locale": "de-DE",
     "localeIPA": "pli",
@@ -717,7 +717,7 @@
 },{
     "service": "aws-polly",
     "name": "Marlene",
-    "label": "\ud83e\udd16 Marlene (schneller)",
+    "label": "\ud83e\udd16 Marlene-robot (schneller)",
     "langTrans": "de",
     "locale": "de-DE",
     "localeIPA": "pli",
@@ -858,7 +858,7 @@
 },{
     "service": "aws-polly",
     "name": "Enrique",
-    "label": "\ud83e\udd16 Enrique (ES)",
+    "label": "\ud83e\udd16 Enrique-robot (ES)",
     "langTrans": "es",
     "locale": "es-ES",
     "localeIPA": "pli",
@@ -960,7 +960,7 @@
 },{
     "service": "aws-polly",
     "name": "Lucia",
-    "label": "\ud83e\udd16 Lucia (ES)",
+    "label": "\ud83e\udd16 Lucia-robot (ES)",
     "langTrans": "es",
     "locale": "es-ES",
     "localeIPA": "pli",
@@ -1062,7 +1062,7 @@
 },{
     "service": "aws-polly",
     "name": "Ricardo",
-    "label": "\ud83e\udd16 Ricardo (BR)",
+    "label": "\ud83e\udd16 Ricardo-robot (BR)",
     "langTrans": "pt",
     "locale": "pt-BR",
     "localeIPA": "pli",
@@ -1164,7 +1164,7 @@
 },{
     "service": "aws-polly",
     "name": "Ines",
-    "label": "\ud83e\udd16 Inés (PT)",
+    "label": "\ud83e\udd16 Inés-robot (PT)",
     "langTrans": "pt",
     "locale": "pt-PT",
     "localeIPA": "pli",
@@ -1266,7 +1266,7 @@
 },{
     "service": "aws-polly",
     "name": "Celine",
-    "label": "\ud83e\udd16 Celine",
+    "label": "\ud83e\udd16 Celine-robot",
     "langTrans": "fr",
     "locale": "fr-FR",
     "localeIPA": "pli",
@@ -1368,7 +1368,7 @@
 },{
     "service": "aws-polly",
     "name": "Mathieu",
-    "label": "\ud83e\udd16 Mathieu",
+    "label": "\ud83e\udd16 Mathieu-robot",
     "langTrans": "fr",
     "locale": "fr-FR",
     "localeIPA": "pli",
@@ -1470,7 +1470,7 @@
 },{
     "service": "aws-polly",
     "name": "Takumi",
-    "label": "\ud83e\udd16 Takumi",
+    "label": "\ud83e\udd16 Takumi-robot",
     "langTrans": "jpn",
     "locale": "ja-JP",
     "localeIPA": "ja-JP",
@@ -1553,7 +1553,7 @@
 },{
     "service": "aws-polly",
     "name": "Mizuki",
-    "label": "\ud83e\udd16 Mizuki",
+    "label": "\ud83e\udd16 Mizuki-robot",
     "langTrans": "jpn",
     "locale": "ja-JP",
     "localeIPA": "ja-JP",
@@ -1636,7 +1636,7 @@
 },{
     "service": "aws-polly",
     "name": "Bianca",
-    "label": "\ud83e\udd16 Bianca (lento)",
+    "label": "\ud83e\udd16 Bianca-robot (lento)",
     "gender": "female",
     "langTrans": "it",
     "locale": "it-IT",
@@ -1730,7 +1730,7 @@
 },{
     "service": "aws-polly",
     "name": "Giorgio",
-    "label": "\ud83e\udd16 Giorgio (veloce)",
+    "label": "\ud83e\udd16 Giorgio-robot (veloce)",
     "gender": "male",
     "langTrans": "it",
     "locale": "it-IT",
