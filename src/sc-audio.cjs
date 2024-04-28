@@ -76,6 +76,7 @@
       author = this.author,
       reader = this.reader
     ) {
+      const msg = 'sc-audio.aeneasMap()';
       var that = this;
       return new Promise((resolve, reject) => {
         (async function () {
@@ -134,7 +135,7 @@
                 reject(e);
               })
               .on("timeout", (e) => {
-                that.warn(e.stack);
+                that.warn(msg, 'timeout')
                 req.abort();
               });
           } catch (e) {
@@ -145,6 +146,7 @@
     }
 
     catalogOpts(opts = {}) {
+      const msg = 'sc-audio.catalogOpts()';
       var that = this;
       return new Promise((resolve, reject) => {
         (async function () {
@@ -225,8 +227,8 @@
               .on("error", (e) => {
                 reject(e);
               })
-              .on("timeout", (e) => {
-                logger.warn(e.stack);
+              .on("timeout", () => {
+                logger.warn(msg, 'timeout');
                 req.abort();
               });
           } catch (e) {
@@ -367,6 +369,7 @@
     }
 
     downloadSegmentAudio(opts = {}) {
+      const msg = 'sc-audio.downloadSegmentAudio()';
       var { suttaSegId, audioPath, language, author, reader } = opts;
       if (suttaSegId == null) {
         return Promise.reject(new Error(`expected suttaSegId`));
@@ -422,8 +425,8 @@
                 logger.warn(e.stack);
                 reject(e);
               })
-              .on("timeout", (e) => {
-                logger.warn(e.stack);
+              .on("timeout", () => {
+                logger.warn(msg, 'timeout');
                 req.abort();
               });
           } catch (e) {
