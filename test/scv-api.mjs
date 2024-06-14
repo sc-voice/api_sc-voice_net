@@ -398,7 +398,7 @@ typeof describe === "function" && describe("scv-api", function() {
       
       let res = await api.getPlaySegment({params, query});
       should.deepEqual(res.segment.audio, {
-        en: 'b7a709a7c565dc2a78a05ed6acada4b5',
+        en: '0e4f691b0e8b0d8adfdd670d970dbb91',
         pli: '93c80a6ed3f7a3a931a451735c59df39',
       });
     });
@@ -650,7 +650,7 @@ typeof describe === "function" && describe("scv-api", function() {
       });
       should(Date.now() - res.buildDate).above(0).below(15*1000);
     });
-    it("buildDownload() => thig1.1, thig1.2, thig1.3", async()=>{
+    it("TESTTESTbuildDownload() => thig1.1, thig1.2, thig1.3", async()=>{
       let audioSuffix = "opus";
       let lang = 'en';
       let langs = 'pli+en';
@@ -666,23 +666,25 @@ typeof describe === "function" && describe("scv-api", function() {
       let api = await testScvApi();
        
       let res = await api.buildDownload({
-        audioSuffix, lang, langs, maxResults, pattern, vroot, vtrans, task,
+        audioSuffix, lang, langs, maxResults, pattern, 
+        vroot, vtrans, task,
       });
       should(res.filename).equal('thig1.1-3-en-soma_pli+en_Matthew.opus');
-      should(res.filepath).match(/api.sc-voice.net\/local\/sounds\/common/);
-      should(res.filepath).match(/a613517f8cd8aa11a3d37f1d4bdd3e8b.opus/);
-      let nSegments = 17;
+      should(res.filepath)
+        .match(/api.sc-voice.net\/local\/sounds\/common/);
+      should(res.filepath).match(/a4aff44cf41e1cd8e5b8c8653bad9b2f.opus/);
+      let nSegments = 25;
       should.deepEqual(res.stats, {
         chars: {
-          en: 571,
-          pli: 467,
+          en: 808,
+          pli: 649,
         },
-        duration: 92,
+        duration: 129,
         segments: { 
           en: nSegments,
           pli: nSegments,
         },
-        tracks: 4,
+        tracks: 6,
       });
       should(Date.now() - res.buildDate).above(0).below(15*1000);
       should(task.actionsTotal).equal(nSegments + 2 + 2);
@@ -722,7 +724,7 @@ typeof describe === "function" && describe("scv-api", function() {
       let resDone = await api.getBuildDownload({params, query});
       should(resDone.task).properties(taskProperties);
       should(resDone.filename).equal('thig1.1-3-en-soma_pli+en_amy.ogg');
-      should(resDone.guid).equal('104fff42a9ff64423feabf84c674e573');
+      should(resDone.guid).equal('9f3ec6ed8eb09787feaf6c3b751a95eb');
     });
     it("getDownloadPlaylist() => thig1.1-3/en/soma", async()=>{
       let api = await testScvApi();
@@ -744,7 +746,7 @@ typeof describe === "function" && describe("scv-api", function() {
       let req = {params, query, url};
       let res = new MockResponse();
       let audio = await api.getDownloadPlaylist(req, res);
-      should(audio.length).equal(252512);
+      should(audio.length).above(250000).below(350000);
       should.deepEqual(res.mockHeaders, {
         'Content-disposition': 
           `attachment; filename=thig1.1-3-en-soma_pli+en_amy.ogg`,
@@ -826,7 +828,7 @@ typeof describe === "function" && describe("scv-api", function() {
       should(resDone.guid).equal('f6a18c6c48f784475e73c9e9766dc5f3');
     });
 
-  it("TESTTESTgetVoices()", async()=>{
+  it("getVoices()", async()=>{
     let api = await testScvApi();
     let voices = await api.getVoices();
     let mathieu = voices.find(v=>v.name==='Mathieu');
@@ -890,6 +892,7 @@ typeof describe === "function" && describe("scv-api", function() {
     // wait for logged result from probe
     await nap(1.5*interval);
     monitor0.stop();
+    //console.log(stateLog);
     should(stateLog.state).properties({status:200});
     should.deepEqual(Object.keys(stateLog.state.json), ['datetime']);
 

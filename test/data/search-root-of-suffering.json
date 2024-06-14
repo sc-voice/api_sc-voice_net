@@ -425,7 +425,7 @@
       "collection_id": "mn",
       "quote": {
         "scid": "mn105:28.2",
-        "pli": "iti viditvā nirupadhi upadhisaṅkhaye vimutto upadhismiṁ vā kāyaṁ upasaṁharissati cittaṁ vā uppādessatīti—netaṁ ṭhānaṁ vijjati. ",
+        "pli": "‘Upadhi dukkhassa mūlan’ti—iti viditvā nirupadhi upadhisaṅkhaye vimutto upadhismiṁ vā kāyaṁ upasaṁharissati cittaṁ vā uppādessatīti—netaṁ ṭhānaṁ vijjati. ",
         "en": "Understanding that attachment <span class=\"scv-matched\">is the root of suffering</span>, they are freed with the ending of attachments. It’s not possible that they would apply their body or interest their mind in any attachment. ",
         "matched": true
       },
@@ -457,7 +457,7 @@
             "segmented": true,
             "title": "With Sunakkhatta ",
             "volpage": null,
-            "has_comment": false
+            "has_comment": true
           }
         ],
         "parallel_count": 1,
@@ -497,7 +497,7 @@
               "segmented": true,
               "title": "With Sunakkhatta ",
               "volpage": null,
-              "has_comment": false
+              "has_comment": true
             }
           ],
           "parallel_count": 1,
@@ -621,7 +621,7 @@
               {
                 "scid": "mn105:5.4",
                 "pli": "Tatra, sunakkhatta, ye te bhikkhū sammadeva aññaṁ byākaṁsu tesaṁ taṁ tatheva hoti; ",
-                "en": "Now, when mendicants declare enlightenment rightly, that’s how it is for them. "
+                "en": "Now, when mendicants declare enlightenment rightly, that is their truth. "
               },
               {
                 "scid": "mn105:5.5",
@@ -1026,7 +1026,7 @@
               {
                 "scid": "mn105:19.6",
                 "pli": "Saupādisesoti jānamāno so evaṁ vadeyya: ",
-                "en": "Thinking that no residue remained, the surgeon would say: "
+                "en": "Imagining that no residue remained, the surgeon would say: "
               },
               {
                 "scid": "mn105:19.7",
@@ -1036,7 +1036,7 @@
               {
                 "scid": "mn105:19.8",
                 "pli": "Analañca te antarāyāya. ",
-                "en": "It’s not capable of harming you. "
+                "en": "It is still capable of harming you. "
               },
               {
                 "scid": "mn105:19.9",
@@ -1355,12 +1355,12 @@
               },
               {
                 "scid": "mn105:28.1",
-                "pli": "So vata, sunakkhatta, bhikkhu chasu phassāyatanesu saṁvutakārī ‘upadhi dukkhassa mūlan’ti—",
+                "pli": "So vata, sunakkhatta, bhikkhu chasu phassāyatanesu saṁvutakārī. ",
                 "en": "Truly, Sunakkhatta, that mendicant practices restraint regarding the six fields of contact. "
               },
               {
                 "scid": "mn105:28.2",
-                "pli": "iti viditvā nirupadhi upadhisaṅkhaye vimutto upadhismiṁ vā kāyaṁ upasaṁharissati cittaṁ vā uppādessatīti—netaṁ ṭhānaṁ vijjati. ",
+                "pli": "‘Upadhi dukkhassa mūlan’ti—iti viditvā nirupadhi upadhisaṅkhaye vimutto upadhismiṁ vā kāyaṁ upasaṁharissati cittaṁ vā uppādessatīti—netaṁ ṭhānaṁ vijjati. ",
                 "en": "Understanding that attachment <span class=\"scv-matched\">is the root of suffering</span>, they are freed with the ending of attachments. It’s not possible that they would apply their body or interest their mind in any attachment. ",
                 "matched": true
               },
@@ -1401,12 +1401,12 @@
               },
               {
                 "scid": "mn105:29.8",
-                "pli": "“Evameva kho, sunakkhatta, so vata bhikkhu chasu phassāyatanesu saṁvutakārī ‘upadhi dukkhassa mūlan’ti—",
+                "pli": "“Evameva kho, sunakkhatta, so vata bhikkhu chasu phassāyatanesu saṁvutakārī. ",
                 "en": "“In the same way, Sunakkhatta, that mendicant practices restraint regarding the six fields of contact. "
               },
               {
                 "scid": "mn105:29.9",
-                "pli": "iti viditvā nirupadhi upadhisaṅkhaye vimutto upadhismiṁ vā kāyaṁ upasaṁharissati cittaṁ vā uppādessatīti—netaṁ ṭhānaṁ vijjati. ",
+                "pli": "‘Upadhi dukkhassa mūlan’ti—iti viditvā nirupadhi upadhisaṅkhaye vimutto upadhismiṁ vā kāyaṁ upasaṁharissati cittaṁ vā uppādessatīti—netaṁ ṭhānaṁ vijjati. ",
                 "en": "Understanding that attachment <span class=\"scv-matched\">is the root of suffering</span>, they are freed with the ending of attachments. It’s not possible that they would apply their body or interest their mind in any attachment. ",
                 "matched": true
               },
@@ -1442,12 +1442,12 @@
               },
               {
                 "scid": "mn105:30.7",
-                "pli": "“Evameva kho, sunakkhatta, so vata bhikkhu chasu phassāyatanesu saṁvutakārī ‘upadhi dukkhassa mūlan’ti—",
+                "pli": "“Evameva kho, sunakkhatta, so vata bhikkhu chasu phassāyatanesu saṁvutakārī. ",
                 "en": "“In the same way, Sunakkhatta, that mendicant practices restraint regarding the six fields of contact. "
               },
               {
                 "scid": "mn105:30.8",
-                "pli": "iti viditvā nirupadhi upadhisaṅkhaye vimutto upadhismiṁ vā kāyaṁ upasaṁharissati cittaṁ vā uppādessatīti—",
+                "pli": "‘Upadhi dukkhassa mūlan’ti—iti viditvā nirupadhi upadhisaṅkhaye vimutto upadhismiṁ vā kāyaṁ upasaṁharissati cittaṁ vā uppādessatīti—",
                 "en": "Understanding that attachment <span class=\"scv-matched\">is the root of suffering</span>, they are freed with the ending of attachments. It’s not possible that they would apply their body or interest their mind in any attachment.” ",
                 "matched": true
               },
@@ -1483,12 +1483,12 @@
         "blurb": "Not all of those who claim to be awakened are genuine. The Buddha teaches how true spiritual progress depends on an irreversible letting go of the forces that lead to suffering."
       },
       "stats": {
-        "text": 14387,
+        "text": 14385,
         "lang": "en",
         "nSegments": 188,
         "nEmptySegments": 8,
         "nSections": 2,
-        "seconds": 1241.9129261349824
+        "seconds": 1241.7640556198594
       }
     },
     {
@@ -3109,7 +3109,7 @@
               {
                 "scid": "mn1:171.6",
                 "pli": "Tasmātiha, bhikkhave, ‘tathāgato sabbaso taṇhānaṁ khayā virāgā nirodhā cāgā paṭinissaggā anuttaraṁ sammāsambodhiṁ abhisambuddho’ti vadāmi. ",
-                "en": "That’s why the Realized One—with the ending, fading away, cessation, giving up, and letting go of all cravings—has awakened to the supreme perfect Awakening, I say. "
+                "en": "That’s why the Realized One—with the ending, fading away, cessation, giving up, and letting go of all cravings—has awakened to the supreme perfect awakening, I say. "
               },
               {
                 "scid": "mn1:172.1",
@@ -3339,7 +3339,7 @@
             "has_comment": true
           }
         ],
-        "parallel_count": 5,
+        "parallel_count": 6,
         "biblio": null,
         "priority_author_uid": "sujato",
         "verseNo": ""
@@ -3379,7 +3379,7 @@
               "has_comment": true
             }
           ],
-          "parallel_count": 5,
+          "parallel_count": 6,
           "biblio": null,
           "priority_author_uid": "sujato",
           "verseNo": ""

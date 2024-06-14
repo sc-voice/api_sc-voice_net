@@ -425,8 +425,10 @@ typeof describe === "function" &&
       var { method, results } = await store.search(opts);
       should(results).instanceOf(Array);
       should(method).equal("sutta_uid");
-      should.deepEqual(results.map((r) => r.uid), ["thig1.1", "thig1.2", ]);
-      should.deepEqual(results.map((r) => r.author_uid), ["soma", "soma", ]);
+      should.deepEqual(results.map((r) => r.uid), [
+        "thig1.1", "thig1.2", "thig1.3"]);
+      should.deepEqual(results.map((r) => r.author_uid), [
+        "soma", "soma", "soma"]);
     });
     it("search(pattern) => dn7/de", async () => {
       var voice = Voice.createVoice({
