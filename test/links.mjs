@@ -4,10 +4,11 @@ import should from "should";
 
 const VOICE="https://voice.suttacentral.net/scv/";
 const DHAMMAREGEN = "https://dhammaregen.net/?src=sc";
+const FR_SC_VOICE_NET = "https://fr.sc-voice.net/?src=sc";
 const SC_VOICE_NET = "https://sc-voice.net/?src=sc";
 
 typeof describe === "function" && describe("links", function() {
-  it ("ebtSuttaRefLink)() site", ()=>{
+  it ("TESTTESTebtSuttaRefLink)() site", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
@@ -16,8 +17,9 @@ typeof describe === "function" && describe("links", function() {
     should(test('site', 'jpn')).equal(`${SC_VOICE_NET}`);
     should(test('site')).equal(`${SC_VOICE_NET}`);
     should(test('site', 'de')).equal(`${DHAMMAREGEN}`);
+    should(test('site', 'fr')).equal(`${FR_SC_VOICE_NET}`);
   });
-  it ("ebtSuttaRefLink)() suttaplex", ()=>{
+  it ("TESTTESTebtSuttaRefLink)() suttaplex", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
@@ -27,6 +29,10 @@ typeof describe === "function" && describe("links", function() {
       `${SC_VOICE_NET}#/sutta/mil1/en`);
     should(test('mil1/in')).equal(
       `${SC_VOICE_NET}#/sutta/mil1/en`);
+
+    // de
+    should(test('mn8', 'fr')).equal(
+      `${FR_SC_VOICE_NET}#/sutta/mn8/fr/noeismet`);
 
     // de
     should(test('thig1.1', 'de')).equal(
@@ -46,7 +52,7 @@ typeof describe === "function" && describe("links", function() {
     should(test('thig1.1', 'en')).equal(
       `${SC_VOICE_NET}#/sutta/thig1.1/en/sujato`);
   });
-  it ("ebtSuttaRefLink)() sutta", ()=>{
+  it ("TESTTESTebtSuttaRefLink)() sutta", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
@@ -54,6 +60,10 @@ typeof describe === "function" && describe("links", function() {
     // soma
     should(test('thig1.1', 'en', 'soma')).equal(
       `${SC_VOICE_NET}#/sutta/thig1.1/en/soma`);
+
+    // fr
+    should(test('mn8', 'fr', 'noeismet')).equal(
+      `${FR_SC_VOICE_NET}#/sutta/mn8/fr/noeismet`);
 
     // de
     should(test('thig1.1', 'de', 'sabbamitta')).equal(

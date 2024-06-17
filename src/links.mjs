@@ -41,6 +41,8 @@ export default class Links {
       : `?src=${src}#/sutta/${suttaRef.toString()}`;
 
     switch (lang) {
+      case 'fr':
+        return `https://fr.sc-voice.net/${pathSutta}`;
       case 'de':
         return `https://dhammaregen.net/${pathSutta}`;
       case 'pli':
