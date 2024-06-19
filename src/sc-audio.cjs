@@ -393,7 +393,7 @@
         (async function () {
           try {
             let httpx = url.startsWith("https") ? https : http;
-            let request = httpx
+            let req = httpx
               .get(url, function (response) {
                 let contentType = response.headers["content-type"];
                 let os = fs.createWriteStream(audioPath);
