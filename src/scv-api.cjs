@@ -23,6 +23,7 @@
   const Voice = require("./voice.cjs");
   const VoiceFactory = require("./voice-factory.cjs");
   const PACKAGE = require("../package.json");
+  const { DBG } = require("./defines.cjs");
 
   const LOCAL = path.join(__dirname, "../local");
   const LANG_MAP = {
@@ -35,6 +36,9 @@
   var fwsEn;
 
   const msg = 'ScvApi.';
+
+  var customIpaLimit = 10;
+  var cacheHits = 0;
 
   class ScvApi {
     constructor(
@@ -394,7 +398,8 @@
 
     async getDictionary(req, res) {
       const msg = "ScvApi.getDictionary()";
-      const dbg = 0;
+      const dbg = DBG.GET_DICTIONARY;;
+      const dbgv = DBG.VERBOSE && dbg;
       let { 
         dictionary:dict, soundStore, voiceFactory,
       } = this;
@@ -434,24 +439,35 @@
         let definition = dict.parseDefinition(entry.definition);
         let ssml = service.wordSSML(paliWord, language);
         let parts = ssml.split('"');
-        if (ipa) { // custom ipa
-          parts[3] = ipa;
+        if (ipa) { 
+          if (customIpaLimit>0) {
+            parts[3] = ipa; // custom ipa
+          } else {
+            ipa = parts[3]; // default ipa
+          }
           ssml = parts.join('"');
-        } else { // default ipa
-          ipa = parts[3];
+        } else { 
+          ipa = parts[3]; // default ipa
         }
         let resSpeak = await service.synthesizeSSML(ssml, {
           language,
           usage,
           volume,
         });
-        let { signature={} } = resSpeak;
+        let { misses, hits, signature={} } = resSpeak;
+        let cached = hits - cacheHits;
+        cacheHits = hits;
         dbg && console.log(msg, '[1] resSpeak', resSpeak);
         let { 
           guid:paliGuid,
         } = signature;
+        if (!cached && req.params.ipa) {
+          customIpaLimit--;
+        }
 
         result = {
+          customIpaLimit,
+          cached,
           ipa,
           paliGuid,
           paliWord,
@@ -466,6 +482,7 @@
         result = {
           error: e.message,
 
+          customIpaLimit,
           ipa,
           paliWord,
           vnameRoot,
@@ -473,7 +490,7 @@
           volume,
         }
       }
-      dbg && console.log(msg, '[2]result', result);
+      dbgv && console.log(msg, '[2]result', result);
       return result;
     }
 

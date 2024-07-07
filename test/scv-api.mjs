@@ -969,6 +969,7 @@ typeof describe === "function" && describe("scv-api", function() {
     should(res.ssml).match(/<phoneme alphabet="ipa" ph="ɖhəm mə">/);
     should(res.vnameRoot).equal('Aditi');
     should(res.vnameTrans).equal('Amy');
+    should(res.customIpaLimit).above(1).below(50);
   });
   it("TESTTESTgetDictionary() custom IPA", async()=>{
     let api = new ScvApi({bilaraData});
@@ -991,6 +992,7 @@ typeof describe === "function" && describe("scv-api", function() {
     should.deepEqual(Object.keys(definition[0]), [
       'type', 'meaning', 'literal', 'construction',
     ]);
+    should(res.customIpaLimit).above(1).below(50);
   });
 });
 
