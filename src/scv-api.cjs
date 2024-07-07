@@ -393,122 +393,68 @@
     }
 
     async getPlayDictionary(req, res) {
-      let { suttaStore, soundStore } = this;
-      let { 
-        sutta_uid, langTrans, translator, scid, vnameTrans, vnameRoot,
-      } = this.suttaParms(req);
-      if (/[0-9]+/.test(vnameTrans)) {
-        var iVoice = Number(vnameTrans);
-      }
-      var scAudio = this.scAudio;
-      var voice = Voice.voiceOfName(vnameTrans);
-      var voiceRoot = this.voiceFactory.voiceOfName(vnameRoot);
-      this.debug(`GET ${req.url}`);
-      var usage = voice.usage || 'recite';
-      var sutta = await suttaStore.loadSutta({
-        scid: sutta_uid,
-        translator,
-        language: langTrans, // deprecated
-        langTrans,
-        expand: true,
-        minLang: 1,
-        trilingual: true,
-      });
-      if (iSection < 0 || sutta.sections.length <= iSection) {
-        var suttaRef = `${sutta_uid}/${langTrans}/${translator}`;
-        throw new Error(`Sutta ${suttaRef} has no section:${iSection}`);
-      }
-      var voiceTrans = Voice.createVoice({
-        name: voice.name,
-        usage,
-        soundStore: soundStore,
-        localeIPA: "pli",
-        audioFormat: soundStore.audioFormat,
-        audioSuffix: soundStore.audioSuffix,
-        scAudio,
-      });
-      var sections = sutta.sections;
-      var iSegment = sutta.segments
-        .reduce((acc,seg,i) => seg.scid == scid ? i : acc, null);
-      if (iSegment == null) {
-        throw new Error(`segment ${scid} not found`);
-      }
-      var segment = sutta.segments[iSegment];
-      var iSection = 0;
-      var section = sutta.sections[iSection];
-      let nSegs = section.segments.length;
-      for (let i=iSegment; section && (nSegs.length <= i); ) {
-        i -= section.segments.length;
-        section = sutta.sections[++iSection];
-      }
-      segment.audio = {};
-      let result = {
-        sutta_uid,
-        scid,
-        language: langTrans, // deprecated
-        langTrans,
-        translator,
-        title: section.title,
-        section:iSection,
-        nSections: sutta.sections.length,
-        vnameTrans: voiceTrans.name,
-        vnameRoot,
-        iSegment,
-        segment,
-      }
+      const msg = "ScvApi.getPlayDictionary()";
+      const dbg = 0;
+      let result;
       try {
-        if (segment[langTrans]) {
-          var resSpeak = await voiceTrans.speakSegment({
-            sutta_uid,
-            segment,
-            language: langTrans, 
-            translator,
-            usage,
-          });
-          segment.audio[langTrans] = resSpeak.signature.guid;
-          let { voice, signature } = resSpeak;
-          switch (signature.api) {
-            case 'human-tts':
-              result.vnameTrans = signature.reader || voice;
-              break;
-            default:
-            case 'aws-polly':
-              result.vnameTrans = signature.voice || voice;
-              break;
-          }
+        const { Dictionary } = await import("@sc-voice/pali/main.mjs");
+        const language = 'pli';
+        let { 
+          dictionary:dict, soundStore, voiceFactory,
+        } = this;
+        let { word, ipa, vnameRoot='Aditi' } = req.params;
+        if (!dict) {
+          this.dictionary = dict = Dictionary.create();
         }
-        if (segment.pli) {
-          var pali = new Pali();
-          var resSpeak = await voiceRoot.speakSegment({
-            sutta_uid,
-            segment,
-            language: 'pli',
-            translator,
-            usage: 'recite',
-          });
-          //segment.audio.vnamePali = resSpeak.altTts;
-          let { signature } = resSpeak;
-          segment.audio.pli = signature.guid;
-          switch (signature.api) {
-            case 'human-tts':
-              result.vnameRoot = signature.reader;
-              break;
-            default:
-            case 'ffmegConcat':
-            case 'aws-polly':
-              result.vnameRoot = signature.voice || 'Aditi';
-              break;
-          }
+        dict = await dict;
+
+        var voiceRoot = voiceFactory.voiceOfName(vnameRoot);
+        let { usage, services } = voiceRoot;
+        let service = services[usage];
+        if (!service) {
+          throw new Error(`${msg} service?`);
         }
-        var audio = segment.audio;
-        this.info(`GET ${req.url} =>`, 
-          audio[langTrans] ? `${langTrans}:${audio[langTrans]}` : ``,
-          audio.pli ? `pli:${audio.pli}` : ``,
+        var volume = SoundStore.suttaVolumeName(
+          'dpd',
+          language,
+          'ms',
+          voiceRoot.name,
         );
+        let entry = dict.entryOf(word);
+        if (!entry) {
+          throw new Error(`${msg} entryOf? [${word}]`);
+        }
+        let ssml = service.wordSSML(word, language);
+        let parts = ssml.split('"');
+        if (ipa) { // custom ipa
+          parts[3] = ipa;
+          ssml = parts.join('"');
+        } else { // default ipa
+          ipa = parts[3];
+        }
+        let resSpeak = await service.synthesizeSSML(ssml, {
+          language,
+          usage,
+          volume,
+        });
+        let { signature={} } = resSpeak;
+        let { 
+          guid:wordGuid,
+        } = signature;
+
+        result = {
+          word,
+          vnameRoot,
+          ssml,
+          ipa,
+          wordGuid,
+          volume,
+        }
       } catch(e) {
         this.warn(e);
         result.error = e.message;
       }
+      dbg && console.log(msg, '[1]result', result);
       return result;
     }
 

@@ -929,5 +929,35 @@ typeof describe === "function" && describe("scv-api", function() {
     should(stateLog.state).properties({status:200});
     should.deepEqual(Object.keys(stateLog.state.json), ['datetime']);
   });
+  it("TESTTESTgetPlayDictionary()", async()=>{
+    let api = new ScvApi({bilaraData});
+    await api.initialize();
+    let word = "dhamma";
+    let ipa;
+    let params = {  word, ipa };
+    let req = {params};
+    let query = {};
+    let res = await api.getPlayDictionary({params, query});
+    should(res.word).equal(word);
+    should(res.volume).equal('dpd_pli_mahasangiti_aditi');
+    should(res.ipa).equal('ɖhəm mə');
+    should(res.wordGuid).equal('9937cb38e7d47725b5c00449d72eb40e');
+    should(res.ssml).match(/<phoneme alphabet="ipa" ph="ɖhəm mə">/);
+  });
+  it("TESTTESTgetPlayDictionary() custom IPA", async()=>{
+    let api = new ScvApi({bilaraData});
+    await api.initialize();
+    let word = "dhamma";
+    let ipa = 'ɖhəm mə ma';
+    let params = {  word, ipa };
+    let req = {params};
+    let query = {};
+    let res = await api.getPlayDictionary({params, query});
+    should(res.word).equal(word);
+    should(res.volume).equal('dpd_pli_mahasangiti_aditi');
+    should(res.ipa).equal(ipa);
+    should(res.ssml).match(/<phoneme alphabet="ipa" ph="ɖhəm mə ma">/);
+    should(res.wordGuid).equal('20ac202d2334d12e78f74aa88f7c75a3');
+  });
 });
 
