@@ -127,6 +127,14 @@ export default class ScvServer extends RestApi {
       "audio/:sutta_uid/:langTrans/:translator/:vnameTrans/:guid", 
       (req,res)=>scvApi.getAudio(req,res), scvApi.audioMIME ));
 
+    // Dictionary
+    resourceMethods.push(new ResourceMethod( "get", 
+      "dictionary/dpd/en/:paliWord/:vnameRoot/:vnameTrans", 
+      (req,res)=>scvApi.getDictionary(req,res) ));
+    resourceMethods.push(new ResourceMethod( "get", 
+      "dictionary/dpd/en/:paliWord/:vnameRoot/:vnameTrans/:ipa", 
+      (req,res)=>scvApi.getDictionary(req,res) ));
+
     // download
     resourceMethods.push(new ResourceMethod( "get", [
       'build-download',

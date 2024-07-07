@@ -31,6 +31,7 @@ const INITIAL_STATE = {
   localApi: true,
   isLocalStorage: false,
   id: 1,
+  paliWord: 'dhamma',
 };
 
 var id = 1;

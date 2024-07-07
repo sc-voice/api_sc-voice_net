@@ -392,9 +392,9 @@
       return result;
     }
 
-    async getPlayDictionary(req, res) {
-      const msg = "ScvApi.getPlayDictionary()";
-      const dbg = 0;
+    async getDictionary(req, res) {
+      const msg = "ScvApi.getDictionary()";
+      const dbg = 1;
       let result;
       try {
         const { Dictionary } = await import("@sc-voice/pali/main.mjs");
@@ -402,7 +402,12 @@
         let { 
           dictionary:dict, soundStore, voiceFactory,
         } = this;
-        let { word, ipa, vnameRoot='Aditi' } = req.params;
+        let { 
+          paliWord='dhamma', 
+          ipa='', 
+          vnameRoot='Aditi', 
+          vnameTrans='Amy',
+        } = req.params;
         if (!dict) {
           this.dictionary = dict = Dictionary.create();
         }
@@ -414,17 +419,13 @@
         if (!service) {
           throw new Error(`${msg} service?`);
         }
-        var volume = SoundStore.suttaVolumeName(
-          'dpd',
-          language,
-          'ms',
-          voiceRoot.name,
-        );
-        let entry = dict.entryOf(word);
+        var volume = 'dpd';
+        let entry = dict.entryOf(paliWord);
         if (!entry) {
-          throw new Error(`${msg} entryOf? [${word}]`);
+          throw new Error(`${msg} entryOf? [${paliWord}]`);
         }
-        let ssml = service.wordSSML(word, language);
+        let definition = dict.parseDefinition(entry.definition);
+        let ssml = service.wordSSML(paliWord, language);
         let parts = ssml.split('"');
         if (ipa) { // custom ipa
           parts[3] = ipa;
@@ -438,23 +439,26 @@
           volume,
         });
         let { signature={} } = resSpeak;
+        dbg && console.log(msg, '[1] resSpeak', resSpeak);
         let { 
-          guid:wordGuid,
+          guid:paliGuid,
         } = signature;
 
         result = {
-          word,
-          vnameRoot,
-          ssml,
           ipa,
-          wordGuid,
+          paliGuid,
+          paliWord,
+          ssml,
+          vnameRoot,
+          vnameTrans,
           volume,
+          definition,
         }
       } catch(e) {
         this.warn(e);
         result.error = e.message;
       }
-      dbg && console.log(msg, '[1]result', result);
+      dbg && console.log(msg, '[2]result', result);
       return result;
     }
 
@@ -462,10 +466,22 @@
       var { 
         filename, guid, sutta_uid, langTrans, translator, vnameTrans 
       } = req.params;
-      var volume =
-        !sutta_uid || sutta_uid === "word"
-          ? "play-word"
-          : SoundStore.suttaVolumeName(sutta_uid, langTrans, translator, vnameTrans);
+      var volume;
+      switch (sutta_uid) {
+        case undefined:
+        case null:
+        case '':
+        case 'word':
+          volume = "play-word";
+          break;
+        case 'dpd':
+          volume = "dpd";
+          break;
+        default:
+          volume = SoundStore.suttaVolumeName(sutta_uid, 
+            langTrans, translator, vnameTrans);
+          break;
+      }
       var soundOpts = { volume };
       var filePath = this.soundStore.guidPath(guid, soundOpts);
       var data = fs.readFileSync(filePath);

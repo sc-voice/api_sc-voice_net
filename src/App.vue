@@ -11,11 +11,12 @@
         <v-spacer/>
         <div class="pr-5"> <Version/> </div>
       </v-app-bar>
-      <v-expansion-panels variant="inset">
+      <v-expansion-panels v-if="settings" variant="inset">
         <EbtSite/>
         <Links/>
         <Search/>
         <PlaySegment/>
+        <Dictionary/>
         <Download/>
         <v-expansion-panel variant="popout">
           <v-expansion-panel-title expand-icon="mdi-dots-vertical">
@@ -47,6 +48,7 @@ import EbtSite from './components/EbtSite.vue'
 import Links from './components/Links.vue'
 import Search from './components/Search.vue'
 import PlaySegment from './components/PlaySegment.vue'
+import Dictionary from './components/Dictionary.vue'
 import Download from './components/Download.vue'
 
 export default {
@@ -61,6 +63,7 @@ export default {
     Links,
     Search,
     PlaySegment,
+    Dictionary,
     Download,
   },
   methods: {

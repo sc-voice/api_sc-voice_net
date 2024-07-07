@@ -544,7 +544,7 @@ typeof describe === "function" && describe("scv-api", function() {
         },
       });
     });
-    it("getAudio() => Soma", async()=>{
+    it("TESTTESTgetAudio() => Soma", async()=>{
       let filename = 'test-file.mp3';
       let guid = '37cedc61727373870e197793e653330d';
       let sutta_uid = 'thig1.1';
@@ -560,6 +560,30 @@ typeof describe === "function" && describe("scv-api", function() {
 
       let data = await api.getAudio({params, query}, response);
       should(data.length).equal(13524); // audio
+      should(response).properties({
+        mockHeaders: {
+          'accept-ranges': 'bytes',
+          'do_stream' : 'true',
+          'Content-disposition': `attachment; filename=${filename}`
+        }
+      });
+    });
+    it("TESTTESTgetAudio() dhamma", async()=>{
+      let filename = 'test-file.mp3';
+      let guid = '9937cb38e7d47725b5c00449d72eb40e';
+      let langTrans = 'en';
+      let translator = 'pli';
+      let vnameTrans = 'Aditi';
+      let api = await testScvApi();
+      let sutta_uid = 'dpd';
+      let params = { 
+        filename, guid, sutta_uid, langTrans, translator, vnameTrans,
+      };
+      let query = {};
+      let response = new MockResponse();
+
+      let data = await api.getAudio({params, query}, response);
+      should(data.length).equal(6157); // audio
       should(response).properties({
         mockHeaders: {
           'accept-ranges': 'bytes',
@@ -929,35 +953,44 @@ typeof describe === "function" && describe("scv-api", function() {
     should(stateLog.state).properties({status:200});
     should.deepEqual(Object.keys(stateLog.state.json), ['datetime']);
   });
-  it("TESTTESTgetPlayDictionary()", async()=>{
+  it("TESTTESTgetDictionary()", async()=>{
     let api = new ScvApi({bilaraData});
     await api.initialize();
-    let word = "dhamma";
+    let paliWord = "dhamma";
     let ipa;
-    let params = {  word, ipa };
+    let params = {  paliWord, ipa };
     let req = {params};
     let query = {};
-    let res = await api.getPlayDictionary({params, query});
-    should(res.word).equal(word);
-    should(res.volume).equal('dpd_pli_mahasangiti_aditi');
+    let res = await api.getDictionary({params, query});
+    should(res.paliWord).equal(paliWord);
+    should(res.volume).equal('dpd');
     should(res.ipa).equal('ɖhəm mə');
-    should(res.wordGuid).equal('9937cb38e7d47725b5c00449d72eb40e');
+    should(res.paliGuid).equal('9937cb38e7d47725b5c00449d72eb40e');
     should(res.ssml).match(/<phoneme alphabet="ipa" ph="ɖhəm mə">/);
+    should(res.vnameRoot).equal('Aditi');
+    should(res.vnameTrans).equal('Amy');
   });
-  it("TESTTESTgetPlayDictionary() custom IPA", async()=>{
+  it("TESTTESTgetDictionary() custom IPA", async()=>{
     let api = new ScvApi({bilaraData});
     await api.initialize();
-    let word = "dhamma";
+    let paliWord = "dhamma";
     let ipa = 'ɖhəm mə ma';
-    let params = {  word, ipa };
+    let params = {  paliWord, ipa };
     let req = {params};
     let query = {};
-    let res = await api.getPlayDictionary({params, query});
-    should(res.word).equal(word);
-    should(res.volume).equal('dpd_pli_mahasangiti_aditi');
+    let res = await api.getDictionary({params, query});
+    should(res.paliWord).equal(paliWord);
+    should(res.volume).equal('dpd');
     should(res.ipa).equal(ipa);
     should(res.ssml).match(/<phoneme alphabet="ipa" ph="ɖhəm mə ma">/);
-    should(res.wordGuid).equal('20ac202d2334d12e78f74aa88f7c75a3');
+    should(res.paliGuid).equal('20ac202d2334d12e78f74aa88f7c75a3');
+    should(res.vnameRoot).equal('Aditi');
+    should(res.vnameTrans).equal('Amy');
+    let { definition } = res;
+    should(definition.length).equal(17);
+    should.deepEqual(Object.keys(definition[0]), [
+      'type', 'meaning', 'literal', 'construction',
+    ]);
   });
 });
 
