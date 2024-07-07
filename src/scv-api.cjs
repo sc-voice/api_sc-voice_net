@@ -394,32 +394,39 @@
 
     async getDictionary(req, res) {
       const msg = "ScvApi.getDictionary()";
-      const dbg = 1;
+      const dbg = 0;
+      let { 
+        dictionary:dict, soundStore, voiceFactory,
+      } = this;
+      let { 
+        paliWord='dhamma', 
+        ipa='', 
+        vnameRoot='Aditi', 
+        vnameTrans='Amy',
+      } = req.params;
+      var volume = 'dpd';
       let result;
       try {
         const { Dictionary } = await import("@sc-voice/pali/main.mjs");
         const language = 'pli';
-        let { 
-          dictionary:dict, soundStore, voiceFactory,
-        } = this;
-        let { 
-          paliWord='dhamma', 
-          ipa='', 
-          vnameRoot='Aditi', 
-          vnameTrans='Amy',
-        } = req.params;
         if (!dict) {
           this.dictionary = dict = Dictionary.create();
         }
         dict = await dict;
 
         var voiceRoot = voiceFactory.voiceOfName(vnameRoot);
+        if (!voiceRoot || voiceRoot.locale !== 'hi-IN') {
+          throw new Error(`${msg} vnameRoot? ${vnameRoot}`);
+        }
+        var voiceTrans = voiceFactory.voiceOfName(vnameTrans);
+        if (!voiceTrans || !voiceTrans.locale.startsWith('en')) {
+          throw new Error(`${msg} vnameTrans? ${vnameTrans}`);
+        }
         let { usage, services } = voiceRoot;
         let service = services[usage];
         if (!service) {
           throw new Error(`${msg} service?`);
         }
-        var volume = 'dpd';
         let entry = dict.entryOf(paliWord);
         if (!entry) {
           throw new Error(`${msg} entryOf? [${paliWord}]`);
@@ -456,7 +463,15 @@
         }
       } catch(e) {
         this.warn(e);
-        result.error = e.message;
+        result = {
+          error: e.message,
+
+          ipa,
+          paliWord,
+          vnameRoot,
+          vnameTrans,
+          volume,
+        }
       }
       dbg && console.log(msg, '[2]result', result);
       return result;

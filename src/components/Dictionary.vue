@@ -2,7 +2,7 @@
 <template>
   <v-expansion-panel variant="popout">
     <v-expansion-panel-title expand-icon="mdi-dots-vertical">
-      GET /scv/dictionary/dpd/en/:paliWord/:vnameRoot/:vnameTrans/:ipa
+      GET /scv/dictionary/en/dpd/:paliWord/:vnameRoot/:vnameTrans
     </v-expansion-panel-title>
     <v-expansion-panel-text>
       <v-form :disabled="volatile.waiting">
@@ -25,17 +25,18 @@
                 placeholder='E.g., "Aditi"'>
               </v-text-field>
               <v-text-field v-model="settings.vnameTrans" 
+                v-if="!ipa"
                 clearable density="compact" variant="underlined"
                 @keypress="onFetchKey"
                 label="vnameTrans (AWS Polly voice)" 
                 required
-                placeholder='E.g., "Amy"'>
+                placeholder='Default is "Amy"'>
               </v-text-field>
               <v-text-field v-model="ipa" 
                 clearable density="compact" variant="underlined"
                 @keypress="onFetchKey"
-                label="IPA (optional)"
-                required
+                label="custom IPA (optional)"
+                optional
                 >
               </v-text-field>
             </v-col>
@@ -57,7 +58,7 @@
               </audio>
             </div>
             <div class="ml-5">
-              <a :href="audioUrl.url">{{audioUrl.text}}</a>
+              <a :href="audioUrl.url" target="_blank">{{audioUrl.text}}</a>
             </div>
           </v-row>
           <v-row v-if="results">
@@ -92,15 +93,21 @@
   const url = computed(()=>{
     let { paliWord, vnameRoot, vnameTrans, } = settings;
     let endpoint = settings.scvEndpoint();
-    let url = [
-      endpoint,
-      `dictionary/dpd/en`,
-      encodeURIComponent(paliWord),
-      encodeURIComponent(vnameRoot),
-      encodeURIComponent(vnameTrans),
-    ];
+    let url = [ endpoint, 'dictionary', 'en' ];
     if (ipa.value) {
-      url.push(encodeURIComponent(ipa.value));
+      url = [ ...url,
+        'dpd-ipa',
+        encodeURIComponent(paliWord),
+        encodeURIComponent(vnameRoot),
+        encodeURIComponent(ipa.value),
+      ];
+    } else {
+      url = [ ...url,
+        'dpd',
+        encodeURIComponent(paliWord),
+        encodeURIComponent(vnameRoot),
+        encodeURIComponent(vnameTrans),
+      ];
     }
     return url.join('/');
   })

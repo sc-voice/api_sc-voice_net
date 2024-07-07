@@ -129,10 +129,11 @@ export default class ScvServer extends RestApi {
 
     // Dictionary
     resourceMethods.push(new ResourceMethod( "get", 
-      "dictionary/dpd/en/:paliWord/:vnameRoot/:vnameTrans", 
+      "dictionary/en/dpd/:paliWord/:vnameRoot/:vnameTrans", 
       (req,res)=>scvApi.getDictionary(req,res) ));
+    // DANGER: Dictionary custom IPA
     resourceMethods.push(new ResourceMethod( "get", 
-      "dictionary/dpd/en/:paliWord/:vnameRoot/:vnameTrans/:ipa", 
+      "dictionary/en/dpd-ipa/:paliWord/:vnameRoot/:ipa", 
       (req,res)=>scvApi.getDictionary(req,res) ));
 
     // download
