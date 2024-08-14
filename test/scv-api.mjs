@@ -913,7 +913,7 @@ typeof describe === "function" && describe("scv-api", function() {
     should(probe0).properties({url, jsonFilter});
 
     // wait for logged result from probe
-    await nap(1.5*interval);
+    await nap(3*interval);
     monitor0.stop();
     //console.log(stateLog);
     should(stateLog.state).properties({status:200});
@@ -947,7 +947,7 @@ typeof describe === "function" && describe("scv-api", function() {
     should(probe0).properties({url, jsonFilter});
 
     // wait for logged result from probe
-    await nap(2*interval);
+    await nap(4*interval);
     api.monitors[0].stop();
     should(stateLog.state).properties({status:200});
     should.deepEqual(Object.keys(stateLog.state.json), ['datetime']);
