@@ -921,8 +921,7 @@ typeof describe === "function" && describe("scv-api", function() {
 
     //console.log("TEST monitor0", probe0.stateLog);
   });
-  it("TESTTESTgetProbes()", async()=>{
-    const msg = "test.scv-api@925";
+  it("getProbes()", async()=>{
     let interval = 500;
     let url="http://worldtimeapi.org/api/timezone/America/Los_Angeles";
     let jsonFilter = {datetime: true};
@@ -950,7 +949,6 @@ typeof describe === "function" && describe("scv-api", function() {
     // wait for logged result from probe
     await nap(2*interval);
     api.monitors[0].stop();
-    console.log(msg, "stateLog", stateLog);
     should(stateLog.state).properties({status:200});
     should.deepEqual(Object.keys(stateLog.state.json), ['datetime']);
   });
