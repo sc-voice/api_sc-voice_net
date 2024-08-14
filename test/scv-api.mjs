@@ -882,7 +882,8 @@ typeof describe === "function" && describe("scv-api", function() {
   });
   it("TESTTESTgetMonitors()", async()=>{
     let interval = 500;
-    let url="http://worldtimeapi.org/api/timezone/America/Los_Angeles";
+    //let url="http://worldtimeapi.org/api/timezone/America/Los_Angeles";
+    let url="https://raw.githubusercontent.com/sc-voice/scv-bilara/main/package.json";
     let jsonFilter = {datetime: true};
     let type = 'test-type';
     let monitorOpts = [{
@@ -923,7 +924,8 @@ typeof describe === "function" && describe("scv-api", function() {
   });
   it("getProbes()", async()=>{
     let interval = 500;
-    let url="http://worldtimeapi.org/api/timezone/America/Los_Angeles";
+    //let url="http://worldtimeapi.org/api/timezone/America/Los_Angeles";
+    let url="https://raw.githubusercontent.com/sc-voice/scv-bilara/main/package.json";
     let jsonFilter = {datetime: true};
     let type = 'test-type';
     let monitorOpts = [{
