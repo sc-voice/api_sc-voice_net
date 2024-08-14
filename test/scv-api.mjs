@@ -252,7 +252,6 @@ typeof describe === "function" && describe("scv-api", function() {
         should(method).equal('phrase');
         should(results).instanceOf(Array);
         should(results.length).equal(5);
-        //console.log("TESTTEST", results[0]);
         should(results[0].stats.seconds).above(300).below(500);
         should.deepEqual(results[0].audio,undefined);
         should.deepEqual(results.map(r => r.uid),[
@@ -544,7 +543,7 @@ typeof describe === "function" && describe("scv-api", function() {
         },
       });
     });
-    it("TESTTESTgetAudio() => Soma", async()=>{
+    it("getAudio() => Soma", async()=>{
       let filename = 'test-file.mp3';
       let guid = '37cedc61727373870e197793e653330d';
       let sutta_uid = 'thig1.1';
@@ -568,7 +567,7 @@ typeof describe === "function" && describe("scv-api", function() {
         }
       });
     });
-    it("TESTTESTgetAudio() dhamma", async()=>{
+    it("getAudio() dhamma", async()=>{
       let filename = 'test-file.mp3';
       let guid = '9937cb38e7d47725b5c00449d72eb40e';
       let langTrans = 'en';
@@ -674,7 +673,7 @@ typeof describe === "function" && describe("scv-api", function() {
       });
       should(Date.now() - res.buildDate).above(0).below(15*1000);
     });
-    it("TESTTESTbuildDownload() => thig1.1, thig1.2, thig1.3", async()=>{
+    it("buildDownload() => thig1.1, thig1.2, thig1.3", async()=>{
       let audioSuffix = "opus";
       let lang = 'en';
       let langs = 'pli+en';
@@ -881,7 +880,7 @@ typeof describe === "function" && describe("scv-api", function() {
       'files', 'ffree',
     ]);
   });
-  it("getMonitors()", async()=>{
+  it("TESTTESTgetMonitors()", async()=>{
     let interval = 500;
     let url="http://worldtimeapi.org/api/timezone/America/Los_Angeles";
     let jsonFilter = {datetime: true};
@@ -922,7 +921,8 @@ typeof describe === "function" && describe("scv-api", function() {
 
     //console.log("TEST monitor0", probe0.stateLog);
   });
-  it("getProbes()", async()=>{
+  it("TESTTESTgetProbes()", async()=>{
+    const msg = "test.scv-api@925";
     let interval = 500;
     let url="http://worldtimeapi.org/api/timezone/America/Los_Angeles";
     let jsonFilter = {datetime: true};
@@ -950,10 +950,11 @@ typeof describe === "function" && describe("scv-api", function() {
     // wait for logged result from probe
     await nap(2*interval);
     api.monitors[0].stop();
+    console.log(msg, "stateLog", stateLog);
     should(stateLog.state).properties({status:200});
     should.deepEqual(Object.keys(stateLog.state.json), ['datetime']);
   });
-  it("TESTTESTgetDictionary()", async()=>{
+  it("getDictionary()", async()=>{
     let api = new ScvApi({bilaraData});
     await api.initialize();
     let paliWord = "dhamma";
@@ -971,7 +972,7 @@ typeof describe === "function" && describe("scv-api", function() {
     should(res.vnameTrans).equal('Amy');
     should(res.customIpaLimit).above(1).below(50);
   });
-  it("TESTTESTgetDictionary() custom IPA", async()=>{
+  it("getDictionary() custom IPA", async()=>{
     let api = new ScvApi({bilaraData});
     await api.initialize();
     let paliWord = "dhamma";

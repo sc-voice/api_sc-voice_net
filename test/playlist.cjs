@@ -180,7 +180,7 @@ typeof describe === "function" &&
         },
       });
     });
-    it("addSutta(sutta) adds dn33", async () => {
+    it("TESTTESTaddSutta(sutta) adds dn33", async () => {
       var factory = await testSuttaFactory();
       var sutta = await factory.loadSutta("dn33");
       var pl = new Playlist();
@@ -188,14 +188,14 @@ typeof describe === "function" &&
       should.deepEqual(pl.stats(), {
         tracks: 12,
         chars: {
-          en: 84712,
+          en: 84823,
           pli: 78866,
         },
         segments: {
           en: 1129,
           pli: 1167,
         },
-        duration: 14502,
+        duration: 14512,
       });
     });
     it("addTrack(sutta_uid, segmentsOrMessage) adds a track", async()=>{
@@ -265,7 +265,7 @@ typeof describe === "function" &&
       });
       should(result.signature.guid).match(/f497ee752fd1bb6fdbf578f1ec4f8da6/);
     });
-    it("speak(opts) creates opus audio file", async () => {
+    it("TESTTESTspeak(opts) creates opus audio file", async () => {
       var factory = await testSuttaFactory();
       var sutta = await factory.loadSutta("sn2.3");
       var voiceTrans = Voice.createVoice({ name: "matthew" });
@@ -278,7 +278,7 @@ typeof describe === "function" &&
         voices,
         volume: "test-playlist",
       });
-      should(result.signature.guid).match(/138aa18fd821f3622094a2faf97e0c87/);
+      should(result.signature.guid).match(/bc705e3f17c1716d6e1a98ee06999173/);
     });
     it("speak(opts) => task progress", async () => {
       let factory = await testSuttaFactory();

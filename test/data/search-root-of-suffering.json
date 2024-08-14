@@ -556,7 +556,7 @@
               {
                 "scid": "mn105:2.2",
                 "pli": "“‘khīṇā jāti, vusitaṁ brahmacariyaṁ, kataṁ karaṇīyaṁ, nāparaṁ itthattāyā’ti pajānāmā”ti. ",
-                "en": "“We understand: ‘Rebirth is ended, the spiritual journey has been completed, what had to be done has been done, there is no return to any state of existence.’” "
+                "en": "“We understand: ‘Rebirth is ended, the spiritual journey has been completed, what had to be done has been done, there is nothing further for this place.’” "
               },
               {
                 "scid": "mn105:2.3",
@@ -646,7 +646,7 @@
               {
                 "scid": "mn105:5.9",
                 "pli": "Atha ca panidhekacce moghapurisā pañhaṁ abhisaṅkharitvā abhisaṅkharitvā tathāgataṁ upasaṅkamitvā pucchanti. ",
-                "en": "but then certain foolish men, having carefully planned a question, approach the Realized One and ask it, "
+                "en": "but then certain futile men, having carefully planned a question, approach the Realized One and ask it, "
               },
               {
                 "scid": "mn105:5.10",
@@ -696,7 +696,7 @@
               {
                 "scid": "mn105:7.3",
                 "pli": "Cakkhuviññeyyā rūpā iṭṭhā kantā manāpā piyarūpā kāmūpasaṁhitā rajanīyā, ",
-                "en": "Sights known by the eye that are likable, desirable, agreeable, pleasant, sensual, and arousing. "
+                "en": "Sights known by the eye, which are likable, desirable, agreeable, pleasant, sensual, and arousing. "
               },
               {
                 "scid": "mn105:7.4",
@@ -716,7 +716,7 @@
               {
                 "scid": "mn105:7.7",
                 "pli": "kāyaviññeyyā phoṭṭhabbā iṭṭhā kantā manāpā piyarūpā kāmūpasaṁhitā rajanīyā—",
-                "en": "Touches known by the body that are likable, desirable, agreeable, pleasant, sensual, and arousing. "
+                "en": "Touches known by the body, which are likable, desirable, agreeable, pleasant, sensual, and arousing. "
               },
               {
                 "scid": "mn105:7.8",
@@ -1066,7 +1066,7 @@
               {
                 "scid": "mn105:20.2",
                 "pli": "‘ubbhataṁ kho me sallaṁ, apanīto visadoso anupādiseso. ",
-                "en": "‘The dart has been extracted and the poison expelled without residue. "
+                "en": "‘The dart has been extracted and the poison expelled with no residue. "
               },
               {
                 "scid": "mn105:20.3",
@@ -1211,7 +1211,7 @@
               {
                 "scid": "mn105:24.7",
                 "pli": "‘ambho purisa, ubbhataṁ kho te sallaṁ, apanīto visadoso anupādiseso. ",
-                "en": "‘My good man, the dart has been extracted and the poison expelled without residue. "
+                "en": "‘My good man, the dart has been extracted and the poison expelled with no residue. "
               },
               {
                 "scid": "mn105:24.8",
@@ -1246,7 +1246,7 @@
               {
                 "scid": "mn105:25.2",
                 "pli": "‘ubbhataṁ kho me sallaṁ, apanīto visadoso anupādiseso. ",
-                "en": "‘The dart has been extracted and the poison expelled without residue. "
+                "en": "‘The dart has been extracted and the poison expelled with no residue. "
               },
               {
                 "scid": "mn105:25.3",
@@ -1464,7 +1464,7 @@
               {
                 "scid": "mn105:30.11",
                 "pli": "Attamano sunakkhatto licchaviputto bhagavato bhāsitaṁ abhinandīti. ",
-                "en": "Satisfied, Sunakkhatta of the Licchavi clan was happy with what the Buddha said. "
+                "en": "Satisfied, Sunakkhatta of the Licchavi clan approved what the Buddha said. "
               },
               {
                 "scid": "mn105:30.12",
@@ -1483,12 +1483,12 @@
         "blurb": "Not all of those who claim to be awakened are genuine. The Buddha teaches how true spiritual progress depends on an irreversible letting go of the forces that lead to suffering."
       },
       "stats": {
-        "text": 14385,
+        "text": 14377,
         "lang": "en",
         "nSegments": 188,
         "nEmptySegments": 8,
         "nSections": 2,
-        "seconds": 1241.7640556198594
+        "seconds": 1241.1685074537006
       }
     },
     {
@@ -1505,7 +1505,7 @@
       "quote": {
         "scid": "mn1:171.4",
         "pli": "‘Nandī dukkhassa mūlan’ti—",
-        "en": "Because he has understood that taking pleasure <span class=\"scv-matched\">is the root of suffering</span>, ",
+        "en": "Because he has understood that approval <span class=\"scv-matched\">is the root of suffering</span>, ",
         "matched": true
       },
       "suttaplex": {
@@ -1680,7 +1680,7 @@
               {
                 "scid": "mn1:3.3",
                 "pli": "pathaviṁ pathavito saññatvā pathaviṁ maññati, pathaviyā maññati, pathavito maññati, pathaviṁ meti maññati, pathaviṁ abhinandati. ",
-                "en": "Having perceived earth as earth, they conceive it to be earth, they conceive it in earth, they conceive it as earth, they conceive that ‘earth is mine’, they take pleasure in earth. "
+                "en": "Having perceived earth as earth, they conceive it to be earth, they conceive it in earth, they conceive it as earth, they conceive that ‘earth is mine’, they approve earth. "
               },
               {
                 "scid": "mn1:3.4",
@@ -1855,12 +1855,12 @@
               {
                 "scid": "mn1:12.1",
                 "pli": "Subhakiṇhe subhakiṇhato sañjānāti; ",
-                "en": "They perceive those replete with glory as those replete with glory. "
+                "en": "They perceive those of universal beauty as those of universal beauty. "
               },
               {
                 "scid": "mn1:12.2",
                 "pli": "subhakiṇhe subhakiṇhato saññatvā subhakiṇhe maññati, subhakiṇhesu maññati, subhakiṇhato maññati, subhakiṇhe meti maññati, subhakiṇhe abhinandati. ",
-                "en": "Having perceived those replete with glory as those replete with glory, they conceive it to be those replete with glory … "
+                "en": "But then they identify with those of universal beauty … "
               },
               {
                 "scid": "mn1:12.3",
@@ -2140,7 +2140,7 @@
               {
                 "scid": "mn1:26.2",
                 "pli": "nibbānaṁ nibbānato saññatvā nibbānaṁ maññati, nibbānasmiṁ maññati, nibbānato maññati, nibbānaṁ meti maññati, nibbānaṁ abhinandati. ",
-                "en": "Having perceived extinguishment as extinguishment, they conceive it to be extinguishment, they conceive it in extinguishment, they conceive it as extinguishment, they conceive that ‘extinguishment is mine’, they take pleasure in extinguishment. "
+                "en": "Having perceived extinguishment as extinguishment, they conceive it to be extinguishment, they conceive it in extinguishment, they conceive it as extinguishment, they conceive that ‘extinguishment is mine’, they approve extinguishment. "
               },
               {
                 "scid": "mn1:26.3",
@@ -2164,7 +2164,7 @@
               {
                 "scid": "mn1:27.2",
                 "pli": "pathaviṁ pathavito abhiññāya pathaviṁ mā maññi, pathaviyā mā maññi, pathavito mā maññi, pathaviṁ meti mā maññi, pathaviṁ mābhinandi. ",
-                "en": "Having directly known earth as earth, let them not conceive it to be earth, let them not conceive it in earth, let them not conceive it as earth, let them not conceive that ‘earth is mine’, let them not take pleasure in earth. "
+                "en": "Having directly known earth as earth, let them not conceive it to be earth, let them not conceive it in earth, let them not conceive it as earth, let them not conceive that ‘earth is mine’, let them not approve earth. "
               },
               {
                 "scid": "mn1:27.3",
@@ -2294,7 +2294,7 @@
               {
                 "scid": "mn1:50.2",
                 "pli": "nibbānaṁ nibbānato abhiññāya nibbānaṁ mā maññi, nibbānasmiṁ mā maññi, nibbānato mā maññi, nibbānaṁ meti mā maññi, nibbānaṁ mābhinandi. ",
-                "en": "Having directly known extinguishment as extinguishment, let them not conceive it to be extinguishment, let them not conceive it in extinguishment, let them not conceive it as extinguishment, let them not conceive that ‘extinguishment is mine’, let them not take pleasure in extinguishment. "
+                "en": "Having directly known extinguishment as extinguishment, let them not conceive it to be extinguishment, let them not conceive it in extinguishment, let them not conceive it as extinguishment, let them not conceive that ‘extinguishment is mine’, let them not approve extinguishment. "
               },
               {
                 "scid": "mn1:50.3",
@@ -2313,12 +2313,12 @@
               {
                 "scid": "mn1:51.1",
                 "pli": "Yopi so, bhikkhave, bhikkhu arahaṁ khīṇāsavo vusitavā katakaraṇīyo ohitabhāro anuppattasadattho parikkhīṇabhavasaṁyojano sammadaññāvimutto, sopi pathaviṁ pathavito abhijānāti; ",
-                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetters of rebirth, and is rightly freed through enlightenment—directly knows earth as earth. "
+                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
               },
               {
                 "scid": "mn1:51.2",
                 "pli": "pathaviṁ pathavito abhiññāya pathaviṁ na maññati, pathaviyā na maññati, pathavito na maññati, pathaviṁ meti na maññati, pathaviṁ nābhinandati. ",
-                "en": "Having directly known earth as earth, they do not conceive it to be earth, they do not conceive it in earth, they do not conceive it as earth, they do not conceive that ‘earth is mine’, they do not take pleasure in earth. "
+                "en": "Having directly known earth as earth, they do not conceive it to be earth, they do not conceive it in earth, they do not conceive it as earth, they do not conceive that ‘earth is mine’, they do not approve earth. "
               },
               {
                 "scid": "mn1:51.3",
@@ -2448,7 +2448,7 @@
               {
                 "scid": "mn1:74.2",
                 "pli": "nibbānaṁ nibbānato abhiññāya nibbānaṁ na maññati, nibbānasmiṁ na maññati, nibbānato na maññati, nibbānaṁ meti na maññati, nibbānaṁ nābhinandati. ",
-                "en": "Having directly known extinguishment as extinguishment, they do not conceive it to be extinguishment, they do not conceive it in extinguishment, they do not conceive it as extinguishment, they do not conceive that ‘extinguishment is mine’, they do not take pleasure in extinguishment. "
+                "en": "Having directly known extinguishment as extinguishment, they do not conceive it to be extinguishment, they do not conceive it in extinguishment, they do not conceive it as extinguishment, they do not conceive that ‘extinguishment is mine’, they do not approve extinguishment. "
               },
               {
                 "scid": "mn1:74.3",
@@ -2467,12 +2467,12 @@
               {
                 "scid": "mn1:75.1",
                 "pli": "Yopi so, bhikkhave, bhikkhu arahaṁ khīṇāsavo vusitavā katakaraṇīyo ohitabhāro anuppattasadattho parikkhīṇabhavasaṁyojano sammadaññā vimutto, sopi pathaviṁ pathavito abhijānāti; ",
-                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetters of rebirth, and is rightly freed through enlightenment—directly knows earth as earth. "
+                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
               },
               {
                 "scid": "mn1:75.2",
                 "pli": "pathaviṁ pathavito abhiññāya pathaviṁ na maññati, pathaviyā na maññati, pathavito na maññati, pathaviṁ meti na maññati, pathaviṁ nābhinandati. ",
-                "en": "Having directly known earth as earth, they do not conceive it to be earth, they do not conceive it in earth, they do not conceive it as earth, they do not conceive that ‘earth is mine’, they do not take pleasure in earth. "
+                "en": "Having directly known earth as earth, they do not conceive it to be earth, they do not conceive it in earth, they do not conceive it as earth, they do not conceive that ‘earth is mine’, they do not approve earth. "
               },
               {
                 "scid": "mn1:75.3",
@@ -2602,7 +2602,7 @@
               {
                 "scid": "mn1:98.2",
                 "pli": "nibbānaṁ nibbānato abhiññāya nibbānaṁ na maññati, nibbānasmiṁ na maññati, nibbānato na maññati, nibbānaṁ meti na maññati, nibbānaṁ nābhinandati. ",
-                "en": "Having directly known extinguishment as extinguishment, they do not conceive it to be extinguishment, they do not conceive it in extinguishment, they do not conceive it as extinguishment, they do not conceive that ‘extinguishment is mine’, they do not take pleasure in extinguishment. "
+                "en": "Having directly known extinguishment as extinguishment, they do not conceive it to be extinguishment, they do not conceive it in extinguishment, they do not conceive it as extinguishment, they do not conceive that ‘extinguishment is mine’, they do not approve extinguishment. "
               },
               {
                 "scid": "mn1:98.3",
@@ -2621,12 +2621,12 @@
               {
                 "scid": "mn1:99.1",
                 "pli": "Yopi so, bhikkhave, bhikkhu arahaṁ khīṇāsavo vusitavā katakaraṇīyo ohitabhāro anuppattasadattho parikkhīṇabhavasaṁyojano sammadaññāvimutto, sopi pathaviṁ pathavito abhijānāti; ",
-                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetters of rebirth, and is rightly freed through enlightenment—directly knows earth as earth. "
+                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
               },
               {
                 "scid": "mn1:99.2",
                 "pli": "pathaviṁ pathavito abhiññāya pathaviṁ na maññati, pathaviyā na maññati, pathavito na maññati, pathaviṁ meti na maññati, pathaviṁ nābhinandati. ",
-                "en": "Having directly known earth as earth, they do not conceive it to be earth, they do not conceive it in earth, they do not conceive it as earth, they do not conceive that ‘earth is mine’, they do not take pleasure in earth. "
+                "en": "Having directly known earth as earth, they do not conceive it to be earth, they do not conceive it in earth, they do not conceive it as earth, they do not conceive that ‘earth is mine’, they do not approve earth. "
               },
               {
                 "scid": "mn1:99.3",
@@ -2756,7 +2756,7 @@
               {
                 "scid": "mn1:122.2",
                 "pli": "nibbānaṁ nibbānato abhiññāya nibbānaṁ na maññati, nibbānasmiṁ na maññati, nibbānato na maññati, nibbānaṁ meti na maññati, nibbānaṁ nābhinandati. ",
-                "en": "Having directly known extinguishment as extinguishment, they do not conceive it to be extinguishment, they do not conceive it in extinguishment, they do not conceive it as extinguishment, they do not conceive that ‘extinguishment is mine’, they do not take pleasure in extinguishment. "
+                "en": "Having directly known extinguishment as extinguishment, they do not conceive it to be extinguishment, they do not conceive it in extinguishment, they do not conceive it as extinguishment, they do not conceive that ‘extinguishment is mine’, they do not approve extinguishment. "
               },
               {
                 "scid": "mn1:122.3",
@@ -2775,12 +2775,12 @@
               {
                 "scid": "mn1:123.1",
                 "pli": "Yopi so, bhikkhave, bhikkhu arahaṁ khīṇāsavo vusitavā katakaraṇīyo ohitabhāro anuppattasadattho parikkhīṇabhavasaṁyojano sammadaññāvimutto, sopi pathaviṁ pathavito abhijānāti; ",
-                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetters of rebirth, and is rightly freed through enlightenment—directly knows earth as earth. "
+                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
               },
               {
                 "scid": "mn1:123.2",
                 "pli": "pathaviṁ pathavito abhiññāya pathaviṁ na maññati, pathaviyā na maññati, pathavito na maññati, pathaviṁ meti na maññati, pathaviṁ nābhinandati. ",
-                "en": "Having directly known earth as earth, they do not conceive it to be earth, they do not conceive it in earth, they do not conceive it as earth, they do not conceive that ‘earth is mine’, they do not take pleasure in earth. "
+                "en": "Having directly known earth as earth, they do not conceive it to be earth, they do not conceive it in earth, they do not conceive it as earth, they do not conceive that ‘earth is mine’, they do not approve earth. "
               },
               {
                 "scid": "mn1:123.3",
@@ -2910,7 +2910,7 @@
               {
                 "scid": "mn1:146.2",
                 "pli": "nibbānaṁ nibbānato abhiññāya nibbānaṁ na maññati, nibbānasmiṁ na maññati, nibbānato na maññati, nibbānaṁ meti na maññati, nibbānaṁ nābhinandati. ",
-                "en": "Having directly known extinguishment as extinguishment, they do not conceive it to be extinguishment, they do not conceive it in extinguishment, they do not conceive it as extinguishment, they do not conceive that ‘extinguishment is mine’, they do not take pleasure in extinguishment. "
+                "en": "Having directly known extinguishment as extinguishment, they do not conceive it to be extinguishment, they do not conceive it in extinguishment, they do not conceive it as extinguishment, they do not conceive that ‘extinguishment is mine’, they do not approve extinguishment. "
               },
               {
                 "scid": "mn1:146.3",
@@ -2934,7 +2934,7 @@
               {
                 "scid": "mn1:147.2",
                 "pli": "pathaviṁ pathavito abhiññāya pathaviṁ na maññati, pathaviyā na maññati, pathavito na maññati, pathaviṁ meti na maññati, pathaviṁ nābhinandati. ",
-                "en": "Having directly known earth as earth, he does not conceive it to be earth, he does not conceive it in earth, he does not conceive it as earth, he does not conceive that ‘earth is mine’, he does not take pleasure in earth. "
+                "en": "Having directly known earth as earth, he does not conceive it to be earth, he does not conceive it in earth, he does not conceive it as earth, he does not conceive that ‘earth is mine’, he does not approve earth. "
               },
               {
                 "scid": "mn1:147.3",
@@ -3064,7 +3064,7 @@
               {
                 "scid": "mn1:170.2",
                 "pli": "nibbānaṁ nibbānato abhiññāya nibbānaṁ na maññati, nibbānasmiṁ na maññati, nibbānato na maññati, nibbānaṁ meti na maññati, nibbānaṁ nābhinandati. ",
-                "en": "Having directly known extinguishment as extinguishment, he does not conceive it to be extinguishment, he does not conceive it in extinguishment, he does not conceive it as extinguishment, he does not conceive that ‘extinguishment is mine’, he does not take pleasure in extinguishment. "
+                "en": "Having directly known extinguishment as extinguishment, he does not conceive it to be extinguishment, he does not conceive it in extinguishment, he does not conceive it as extinguishment, he does not conceive that ‘extinguishment is mine’, he does not approve extinguishment. "
               },
               {
                 "scid": "mn1:170.3",
@@ -3088,7 +3088,7 @@
               {
                 "scid": "mn1:171.2",
                 "pli": "pathaviṁ pathavito abhiññāya pathaviṁ na maññati, pathaviyā na maññati, pathavito na maññati, pathaviṁ meti na maññati, pathaviṁ nābhinandati. ",
-                "en": "Having directly known earth as earth, he does not conceive it to be earth, he does not conceive it in earth, he does not conceive it as earth, he does not conceive that ‘earth is mine’, he does not take pleasure in earth. "
+                "en": "Having directly known earth as earth, he does not conceive it to be earth, he does not conceive it in earth, he does not conceive it as earth, he does not conceive that ‘earth is mine’, he does not approve earth. "
               },
               {
                 "scid": "mn1:171.3",
@@ -3098,7 +3098,7 @@
               {
                 "scid": "mn1:171.4",
                 "pli": "‘Nandī dukkhassa mūlan’ti—",
-                "en": "Because he has understood that taking pleasure <span class=\"scv-matched\">is the root of suffering</span>, ",
+                "en": "Because he has understood that approval <span class=\"scv-matched\">is the root of suffering</span>, ",
                 "matched": true
               },
               {
@@ -3229,7 +3229,7 @@
               {
                 "scid": "mn1:194.2",
                 "pli": "nibbānaṁ nibbānato abhiññāya nibbānaṁ na maññati, nibbānasmiṁ na maññati, nibbānato na maññati, nibbānaṁ meti na maññati, nibbānaṁ nābhinandati. ",
-                "en": "Having directly known extinguishment as extinguishment, he does not conceive it to be extinguishment, he does not conceive it in extinguishment, he does not conceive it as extinguishment, he does not conceive that ‘extinguishment is mine’, he does not take pleasure in extinguishment. "
+                "en": "Having directly known extinguishment as extinguishment, he does not conceive it to be extinguishment, he does not conceive it in extinguishment, he does not conceive it as extinguishment, he does not conceive that ‘extinguishment is mine’, he does not approve extinguishment. "
               },
               {
                 "scid": "mn1:194.3",
@@ -3239,7 +3239,7 @@
               {
                 "scid": "mn1:194.4",
                 "pli": "‘Nandī dukkhassa mūlan’ti—",
-                "en": "Because he has understood that taking pleasure <span class=\"scv-matched\">is the root of suffering</span>, ",
+                "en": "Because he has understood that approval <span class=\"scv-matched\">is the root of suffering</span>, ",
                 "matched": true
               },
               {
@@ -3264,7 +3264,7 @@
               {
                 "scid": "mn1:194.9",
                 "pli": "Na te bhikkhū bhagavato bhāsitaṁ abhinandunti. ",
-                "en": "But the mendicants took no pleasure in what the Buddha said. "
+                "en": "But the mendicants did not approve what the Buddha said. "
               },
               {
                 "scid": "mn1:194.10",
@@ -3283,12 +3283,12 @@
         "blurb": "The Buddha examines how the notion of a permanent self emerges from the process of perception. A wide range of phenomena are considered, embracing both naturalistic and cosmological dimensions. An unawakened person interprets experience in terms of a self, while those more advanced have the same experiences without attachment."
       },
       "stats": {
-        "text": 16125,
+        "text": 15944,
         "lang": "en",
         "nSegments": 334,
         "nEmptySegments": 9,
         "nSections": 2,
-        "seconds": 1390.9236546292295
+        "seconds": 1377.692991985342
       }
     },
     {
@@ -3440,7 +3440,7 @@
               {
                 "scid": "mn66:2.3",
                 "pli": "Taṁ vanasaṇḍaṁ ajjhogāhetvā aññatarasmiṁ rukkhamūle divāvihāraṁ nisīdi. ",
-                "en": "Having plunged deep into it, he sat at the root of a certain tree for the day’s meditation. "
+                "en": "Having plunged deep into it, he sat at the root of a certain tree to meditate. "
               },
               {
                 "scid": "mn66:3.1",
@@ -3450,12 +3450,12 @@
               {
                 "scid": "mn66:3.2",
                 "pli": "Āpaṇe piṇḍāya caritvā pacchābhattaṁ piṇḍapātapaṭikkanto yena so vanasaṇḍo tenupasaṅkami divāvihārāya. ",
-                "en": "He wandered for alms in Āpaṇa. After the meal, on his return from almsround, he went to a certain forest grove for the day’s meditation. "
+                "en": "He wandered for alms in Āpaṇa. After the meal, on his return from almsround, he went to that forest grove for the day’s meditation. "
               },
               {
                 "scid": "mn66:3.3",
                 "pli": "Taṁ vanasaṇḍaṁ ajjhogāhetvā aññatarasmiṁ rukkhamūle divāvihāraṁ nisīdi. ",
-                "en": "Having plunged deep into it, he sat at the root of a certain tree for the day’s meditation. "
+                "en": "Having plunged deep into it, he sat at the root of a certain tree to meditate. "
               },
               {
                 "scid": "mn66:3.4",
@@ -3615,7 +3615,7 @@
               {
                 "scid": "mn66:6.28",
                 "pli": "Varaṁ te, bhikkhu, tiṇhena govikantanena kucchi parikanto, na tveva varaṁ yaṁ rattandhakāratimisāyaṁ kucchihetu piṇḍāya carasī’ti. ",
-                "en": "Better to have your belly sliced open with a meat cleaver than to wander for alms in the dark of night for the sake of your belly!’ "
+                "en": "Better to have your belly sliced open with a sharp meat cleaver than to wander for alms in the dark of night for the sake of your belly!’ "
               },
               {
                 "scid": "mn66:6.29",
@@ -3635,7 +3635,7 @@
               {
                 "scid": "mn66:7.1",
                 "pli": "“Evameva panudāyi, idhekacce moghapurisā ‘idaṁ pajahathā’ti mayā vuccamānā te evamāhaṁsu: ",
-                "en": "“This is exactly what happens when some foolish people are told by me to give something up. They say, "
+                "en": "“This is exactly what happens when some silly people are told by me to give something up. They say, "
               },
               {
                 "scid": "mn66:7.2",
@@ -3685,7 +3685,7 @@
               {
                 "scid": "mn66:8.7",
                 "pli": "“Evameva kho, udāyi, idhekacce moghapurisā ‘idaṁ pajahathā’ti mayā vuccamānā te evamāhaṁsu: ",
-                "en": "“In the same way, when some foolish people are told by me to give something up, they say, "
+                "en": "“In the same way, when some silly people are told by me to give something up, they say, "
               },
               {
                 "scid": "mn66:8.8",
@@ -3855,7 +3855,7 @@
               {
                 "scid": "mn66:11.15",
                 "pli": "“Evameva kho, udāyi, idhekacce moghapurisā ‘idaṁ pajahathā’ti mayā vuccamānā te evamāhaṁsu: ",
-                "en": "“In the same way, when some foolish people are told by me to give something up, they say, "
+                "en": "“In the same way, when some silly people are told by me to give something up, they say, "
               },
               {
                 "scid": "mn66:11.16",
@@ -3875,7 +3875,7 @@
               {
                 "scid": "mn66:12.1",
                 "pli": "Seyyathāpi, udāyi, gahapati vā gahapatiputto vā aḍḍho mahaddhano mahābhogo, nekānaṁ nikkhagaṇānaṁ cayo, nekānaṁ dhaññagaṇānaṁ cayo, nekānaṁ khettagaṇānaṁ cayo, nekānaṁ vatthugaṇānaṁ cayo, nekānaṁ bhariyagaṇānaṁ cayo, nekānaṁ dāsagaṇānaṁ cayo, nekānaṁ dāsigaṇānaṁ cayo; ",
-                "en": "Suppose there was a rich man, affluent, and wealthy. He had a vast amount of gold coin, grain, fields, lands, wives, and male and female bondservants. "
+                "en": "Suppose there was a rich householder or householder’s child, affluent, and wealthy. He had a vast amount of gold ingots, grain, fields, lands, wives, and male and female bondservants. "
               },
               {
                 "scid": "mn66:12.2",
@@ -3900,7 +3900,7 @@
               {
                 "scid": "mn66:12.6",
                 "pli": "So sakkuṇeyya nekāni nikkhagaṇāni pahāya, nekāni dhaññagaṇāni pahāya, nekāni khettagaṇāni pahāya, nekāni vatthugaṇāni pahāya, nekāni bhariyagaṇāni pahāya, nekāni dāsagaṇāni pahāya, nekāni dāsigaṇāni pahāya kesamassuṁ ohāretvā kāsāyāni vatthāni acchādetvā agārasmā anagāriyaṁ pabbajituṁ. ",
-                "en": "And he is able to give up his vast amount of gold coin, grain, fields, lands, wives, and male and female bondservants in order to go forth. "
+                "en": "And he is able to give up his vast amount of gold ingots, grain, fields, lands, wives, and male and female bondservants in order to go forth. "
               },
               {
                 "scid": "mn66:12.7",
@@ -3910,7 +3910,7 @@
               {
                 "scid": "mn66:12.8",
                 "pli": "‘yehi so gahapati vā gahapatiputto vā bandhanehi baddho, sakkoti nekāni nikkhagaṇāni pahāya, nekāni dhaññagaṇāni pahāya, nekāni khettagaṇāni pahāya, nekāni vatthugaṇāni pahāya, nekāni bhariyagaṇāni pahāya, nekāni dāsagaṇāni pahāya, nekāni dāsigaṇāni pahāya kesamassuṁ ohāretvā kāsāyāni vatthāni acchādetvā agārasmā anagāriyaṁ pabbajituṁ, tañhi tassa balavaṁ bandhanaṁ, daḷhaṁ bandhanaṁ, thiraṁ bandhanaṁ, apūtikaṁ bandhanaṁ, thūlo, kaliṅgaro’ti; ",
-                "en": "for that man, they are a strong, firm, stout bond, a tie that has not rotted, and a heavy yoke?” "
+                "en": "for that householder, they are a strong, firm, stout bond, a tie that has not rotted, and a heavy yoke?” "
               },
               {
                 "scid": "mn66:12.9",
@@ -3925,7 +3925,7 @@
               {
                 "scid": "mn66:12.11",
                 "pli": "Yehi so, bhante, gahapati vā gahapatiputto vā bandhanehi baddho, sakkoti nekāni nikkhagaṇāni pahāya, nekāni dhaññagaṇāni pahāya, nekāni khettagaṇāni pahāya, nekāni vatthugaṇāni pahāya, nekāni bhariyagaṇāni pahāya, nekāni dāsagaṇāni pahāya, nekāni dāsigaṇāni pahāya kesamassuṁ ohāretvā kāsāyāni vatthāni acchādetvā agārasmā anagāriyaṁ pabbajituṁ; ",
-                "en": "For that man, "
+                "en": "For that householder, "
               },
               {
                 "scid": "mn66:12.12",
@@ -4136,7 +4136,7 @@
               {
                 "scid": "mn66:18.3",
                 "pli": "Cakkhuviññeyyā rūpā iṭṭhā kantā manāpā piyarūpā kāmūpasaṁhitā rajanīyā, ",
-                "en": "Sights known by the eye that are likable, desirable, agreeable, pleasant, sensual, and arousing. "
+                "en": "Sights known by the eye, which are likable, desirable, agreeable, pleasant, sensual, and arousing. "
               },
               {
                 "scid": "mn66:18.4",
@@ -4156,7 +4156,7 @@
               {
                 "scid": "mn66:18.7",
                 "pli": "kāyaviññeyyā phoṭṭhabbā iṭṭhā kantā manāpā piyarūpā kāmūpasaṁhitā rajanīyā. ",
-                "en": "Touches known by the body that are likable, desirable, agreeable, pleasant, sensual, and arousing. "
+                "en": "Touches known by the body, which are likable, desirable, agreeable, pleasant, sensual, and arousing. "
               },
               {
                 "scid": "mn66:18.8",
@@ -4261,7 +4261,7 @@
               {
                 "scid": "mn66:25.2",
                 "pli": "idaṁ kho ahaṁ, udāyi, aniñjitasmiṁ vadāmi. ",
-                "en": "This belongs to the imperturbable. "
+                "en": "This belongs to the imperturbable, I say. "
               },
               {
                 "scid": "mn66:26.1",
@@ -4411,7 +4411,7 @@
               {
                 "scid": "mn66:34.6",
                 "pli": "Attamano āyasmā udāyī bhagavato bhāsitaṁ abhinandīti. ",
-                "en": "Satisfied, Venerable Udāyī was happy with what the Buddha said. "
+                "en": "Satisfied, Venerable Udāyī approved what the Buddha said. "
               },
               {
                 "scid": "mn66:34.7",
@@ -4430,12 +4430,12 @@
         "blurb": "Again raising the rule regarding eating, but this time as a reflection of gratitude for the Buddha in eliminating things that cause complexity and stress. The Buddha emphasizes how attachment even to little things can be dangerous."
       },
       "stats": {
-        "text": 15783,
+        "text": 15808,
         "lang": "en",
         "nSegments": 202,
         "nEmptySegments": 5,
         "nSections": 2,
-        "seconds": 1702.7728384253376
+        "seconds": 1705.7071003556491
       }
     }
   ]
