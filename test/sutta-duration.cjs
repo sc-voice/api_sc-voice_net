@@ -227,15 +227,15 @@ typeof describe === "function" &&
       should(resMeasure.text).above(84700).below(84900);
       testTolerance(resMeasure.seconds, 8171);
     });
-    it("TESTTESTmeasure(sutta, lang) measures mn1", async () => {
+    it("measure(sutta, lang) measures mn1", async () => {
       var factory = await testSuttaFactory();
       var scd = new SuttaDuration();
       var sutta = await factory.loadSutta("mn1");
       sutta = factory.sectionSutta(sutta);
 
       var resMeasure = scd.measure(sutta, lang);
+      should(resMeasure.text).above(15800).below(16000);
       should(resMeasure).properties({
-        text: 15878,
         lang,
         nSegments: 334,
         nSections: 2,

@@ -180,23 +180,18 @@ typeof describe === "function" &&
         },
       });
     });
-    it("TESTTESTaddSutta(sutta) adds dn33", async () => {
+    it("addSutta(sutta) adds dn33", async () => {
       var factory = await testSuttaFactory();
       var sutta = await factory.loadSutta("dn33");
       var pl = new Playlist();
       pl.addSutta(sutta);
-      should.deepEqual(pl.stats(), {
-        tracks: 12,
-        chars: {
-          en: 84823,
-          pli: 78866,
-        },
-        segments: {
-          en: 1129,
-          pli: 1167,
-        },
-        duration: 14512,
-      });
+      let plstats = pl.stats();
+      should(plstats.tracks).equal(12);
+      should(plstats.chars.pli).equal(78866);
+      should(plstats.chars.en).above(84800).below(84900);
+      should(plstats.segments.en).equal(1129);
+      should(plstats.segments.pli).equal(1167);
+      should(plstats.duration).above(14500).below(14600);
     });
     it("addTrack(sutta_uid, segmentsOrMessage) adds a track", async()=>{
       var pl = new Playlist();

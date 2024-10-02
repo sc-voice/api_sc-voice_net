@@ -59,7 +59,8 @@ typeof describe === "function" &&
       should(store.bilaraData.logger).equal(store);
       should(store.seeker.logger).equal(store);
     });
-    it("initialize() initializes SuttaStore", async () => {
+    it("TESTTESTinitialize() initializes SuttaStore", async () => {
+      const msg = 'test.sutta-store@63';
       var autoSyncSeconds = 1;
       var store = new SuttaStore({autoSyncSeconds});
       should(store.maxDuration).equal(3 * 60 * 60);
@@ -72,6 +73,7 @@ typeof describe === "function" &&
       should(store.seeker.logger).equal(store);
 
       //store.logLevel = 'info';
+      console.warn(msg, 'WARNING BEGIN: fails intermittently');
       should(store.autoSyncSeconds).equal(autoSyncSeconds);
       await new Promise(r=>setTimeout(()=>r(),autoSyncSeconds*1000));
       should(store.autoSyncCount).equal(1);
@@ -80,6 +82,7 @@ typeof describe === "function" &&
       should(store.autoSyncCount).equal(2);
       await new Promise(r=>setTimeout(()=>r(),autoSyncSeconds*1000));
       should(store.autoSyncCount).equal(2);
+      console.warn(msg, 'WARNING END: rerun test on failure');
     });
     it("search() thig1.1/pt -ra sujato -ml1", async () => {
       // no pt translation, but reference is available
