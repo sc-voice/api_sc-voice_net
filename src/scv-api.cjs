@@ -7,7 +7,6 @@
   const https = require("https");
   const jwt = require("jsonwebtoken");
   const tmp = require("tmp");
-  const { js } = require("just-simple").JustSimple;
   const { BilaraData, English, Pali } = require("scv-bilara");
   const { logger } = require("log-instance");
   const { MerkleJson } = require("merkle-json");
