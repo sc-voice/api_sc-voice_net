@@ -35,7 +35,7 @@ SCV_SERVER
 COPY --link --chown=$USER . $APPDIR
 
 # Start application server
-ENV APISCV_VERSION=29.0.59
+ENV APISCV_VERSION=29.0.60
 ENV START=start:8080
 EXPOSE 8080
 CMD npm run $START
