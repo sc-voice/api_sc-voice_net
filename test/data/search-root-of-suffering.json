@@ -49,7 +49,15 @@
         "parallel_count": 2,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": ""
+        "verseNo": "",
+        "previous": {
+          "name": "With Maṇicūḷaka ",
+          "uid": "sn42.10"
+        },
+        "next": {
+          "name": "With Rāsiya ",
+          "uid": "sn42.12"
+        }
       },
       "sutta": {
         "sutta_uid": "sn42.11",
@@ -86,7 +94,15 @@
           "parallel_count": 2,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": ""
+          "verseNo": "",
+          "previous": {
+            "name": "With Maṇicūḷaka ",
+            "uid": "sn42.10"
+          },
+          "next": {
+            "name": "With Rāsiya ",
+            "uid": "sn42.12"
+          }
         },
         "translation": {
           "author_uid": "sujato",
@@ -463,7 +479,15 @@
         "parallel_count": 1,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": ""
+        "verseNo": "",
+        "previous": {
+          "name": "At Sāmagāma ",
+          "uid": "mn104"
+        },
+        "next": {
+          "name": "Conducive to the Imperturbable ",
+          "uid": "mn106"
+        }
       },
       "sutta": {
         "sutta_uid": "mn105",
@@ -503,7 +527,15 @@
           "parallel_count": 1,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": ""
+          "verseNo": "",
+          "previous": {
+            "name": "At Sāmagāma ",
+            "uid": "mn104"
+          },
+          "next": {
+            "name": "Conducive to the Imperturbable ",
+            "uid": "mn106"
+          }
         },
         "translation": {
           "author_uid": "sujato",
@@ -1542,7 +1574,15 @@
         "parallel_count": 4,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": ""
+        "verseNo": "",
+        "previous": {
+          "name": null,
+          "uid": ""
+        },
+        "next": {
+          "name": "All the Defilements ",
+          "uid": "mn2"
+        }
       },
       "sutta": {
         "sutta_uid": "mn1",
@@ -1582,7 +1622,15 @@
           "parallel_count": 4,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": ""
+          "verseNo": "",
+          "previous": {
+            "name": null,
+            "uid": ""
+          },
+          "next": {
+            "name": "All the Defilements ",
+            "uid": "mn2"
+          }
         },
         "translation": {
           "author_uid": "sujato",
@@ -3342,7 +3390,15 @@
         "parallel_count": 6,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": ""
+        "verseNo": "",
+        "previous": {
+          "name": "With Bhaddāli ",
+          "uid": "mn65"
+        },
+        "next": {
+          "name": "At Cātumā ",
+          "uid": "mn67"
+        }
       },
       "sutta": {
         "sutta_uid": "mn66",
@@ -3382,7 +3438,15 @@
           "parallel_count": 6,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": ""
+          "verseNo": "",
+          "previous": {
+            "name": "With Bhaddāli ",
+            "uid": "mn65"
+          },
+          "next": {
+            "name": "At Cātumā ",
+            "uid": "mn67"
+          }
         },
         "translation": {
           "author_uid": "sujato",
