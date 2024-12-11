@@ -273,7 +273,8 @@ typeof describe === "function" &&
         voices,
         volume: "test-playlist",
       });
-      should(result.signature.guid).match(/bc705e3f17c1716d6e1a98ee06999173/);
+      should(result.signature.guid)
+      .match(/eb7f9364059896bcccd737ed073ccc30/);
     });
     it("speak(opts) => task progress", async () => {
       let factory = await testSuttaFactory();
