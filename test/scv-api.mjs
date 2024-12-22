@@ -972,7 +972,7 @@ typeof describe === "function" && describe("scv-api", function() {
     should(res.vnameTrans).equal('Amy');
     should(res.customIpaLimit).above(1).below(50);
   });
-  it("getDictionary() custom IPA", async()=>{
+  it("TESTTESTgetDictionary() custom IPA", async()=>{
     let api = new ScvApi({bilaraData});
     await api.initialize();
     let paliWord = "dhamma";
@@ -990,7 +990,7 @@ typeof describe === "function" && describe("scv-api", function() {
     should(res.vnameTrans).equal('Amy');
     let { definition } = res;
     should(definition.length).equal(17);
-    should.deepEqual(Object.keys(definition[0]), [
+    should(definition[0]).properties([
       'type', 'meaning', 'literal', 'construction',
     ]);
     should(res.customIpaLimit).above(1).below(50);

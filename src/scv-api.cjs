@@ -397,7 +397,7 @@
 
     async getDictionary(req, res) {
       const msg = "ScvApi.getDictionary()";
-      const dbg = DBG.GET_DICTIONARY;;
+      const dbg = DBG.GET_DICTIONARY;
       const dbgv = DBG.VERBOSE && dbg;
       let { 
         dictionary:dict, soundStore, voiceFactory,
@@ -411,10 +411,10 @@
       var volume = 'dpd';
       let result;
       try {
-        const { Dictionary } = await import("@sc-voice/pali/main.mjs");
+        const { Dictionary } = await import("@sc-voice/ms-dpd/main.mjs");
         const language = 'pli';
         if (!dict) {
-          this.dictionary = dict = Dictionary.create();
+          this.dictionary = dict = await Dictionary.create();
         }
         dict = await dict;
 
