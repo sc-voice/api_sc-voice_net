@@ -880,7 +880,7 @@ typeof describe === "function" && describe("scv-api", function() {
       'files', 'ffree',
     ]);
   });
-  it("TESTTESTgetMonitors()", async()=>{
+  it("getMonitors()", async()=>{
     let interval = 500;
     //let url="http://worldtimeapi.org/api/timezone/America/Los_Angeles";
     let url="https://raw.githubusercontent.com/sc-voice/scv-bilara/main/package.json";
@@ -972,7 +972,7 @@ typeof describe === "function" && describe("scv-api", function() {
     should(res.vnameTrans).equal('Amy');
     should(res.customIpaLimit).above(1).below(50);
   });
-  it("TESTTESTgetDictionary() custom IPA", async()=>{
+  it("getDictionary() custom IPA", async()=>{
     let api = new ScvApi({bilaraData});
     await api.initialize();
     let paliWord = "dhamma";

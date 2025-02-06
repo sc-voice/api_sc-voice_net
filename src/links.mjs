@@ -1,9 +1,7 @@
 import { SuttaRef }  from "scv-esm/main.mjs";
 import Voice from "./voice.cjs";
 import { logger } from "log-instance";
-import {
-  DBG_SC_LINKS
-} from './defines.cjs'
+import { DBG, } from './defines.cjs'
 
 export default class Links {
   constructor() {
@@ -22,17 +20,18 @@ export default class Links {
 
   ebtSuttaRefLink(sref,src="sc") {
     const msg = "Links.ebtSuttaRefLink() ";
-    const dbg = DBG_SC_LINKS;
+    const dbg = DBG.SC_LINKS;
     let { lang='en' }= sref;
+    dbg && console.log(msg, '[1]sref', {sref, src});
     let suttaRef = SuttaRef.createOpts(sref, {
       normalize: true,
       defaultLang: lang,
     });
     lang = suttaRef && suttaRef.lang || lang;
     if (Voice.supportedLanguages[lang]) {
-      dbg && console.log(msg, '[1]supportedLanguage', {sref});
+      dbg && console.log(msg, '[2]supportedLanguage', {sref});
     } else {
-      dbg && console.log(msg, '[2]!supportedLanguage', {sref});
+      dbg && console.log(msg, '[3]!supportedLanguage', {sref});
       lang = 'en';
       suttaRef.lang = lang;
     }

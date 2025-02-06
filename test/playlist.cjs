@@ -260,7 +260,7 @@ typeof describe === "function" &&
       });
       should(result.signature.guid).match(/f497ee752fd1bb6fdbf578f1ec4f8da6/);
     });
-    it("TESTTESTspeak(opts) creates opus audio file", async () => {
+    it("speak(opts) creates opus audio file", async () => {
       var factory = await testSuttaFactory();
       var sutta = await factory.loadSutta("sn2.3");
       var voiceTrans = Voice.createVoice({ name: "matthew" });

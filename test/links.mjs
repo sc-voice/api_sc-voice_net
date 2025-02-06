@@ -19,7 +19,7 @@ typeof describe === "function" && describe("links", function() {
     should(test('site', 'de')).equal(`${DHAMMAREGEN}`);
     should(test('site', 'fr')).equal(`${FR_SC_VOICE_NET}`);
   });
-  it ("ebtSuttaRefLink)() suttaplex", ()=>{
+  it ("TESTTESTebtSuttaRefLink)() suttaplex", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
@@ -30,15 +30,11 @@ typeof describe === "function" && describe("links", function() {
     should(test('mil1/in')).equal(
       `${SC_VOICE_NET}#/sutta/mil1/en`);
 
-    // de
+    // EBT-Sites
     should(test('mn8', 'fr')).equal(
       `${FR_SC_VOICE_NET}#/sutta/mn8/fr/noeismet`);
-
-    // de
     should(test('thig1.1', 'de')).equal(
       `${DHAMMAREGEN}#/sutta/thig1.1/de/sabbamitta`);
-
-    // en
     should(test('mil1')).equal(
       `${SC_VOICE_NET}#/sutta/mil1/en`);
     should(test('mil3.1.1')).equal(

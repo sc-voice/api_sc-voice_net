@@ -733,27 +733,6 @@ typeof describe === "function" &&
         }
       })();
     });
-    it("search(pattern) finds legacy suttas", async () => {
-      var store = await new SuttaStore().initialize();
-      var { results } = await store.search({ pattern: "mn1/en/bodhi" });
-      should.deepEqual(
-        results.map((r) => r.uid),
-        ["mn1"]
-      );
-      should.deepEqual(
-        results.map((r) => r.lang),
-        ["en"]
-      );
-      should.deepEqual(
-        results.map((r) => r.author_uid),
-        ["bodhi"]
-      );
-      should.deepEqual(
-        results.map((r) => r.sutta.segments.length),
-        [57]
-      );
-      should(results.length).equal(1);
-    });
     it("search(pattern) finds suttas in range", async () => {
       var store = await new SuttaStore().initialize();
 

@@ -49,7 +49,7 @@
         "parallel_count": 2,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": "",
+        "verseNo": null,
         "previous": {
           "name": "With Maṇicūḷaka ",
           "uid": "sn42.10"
@@ -94,7 +94,7 @@
           "parallel_count": 2,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": "",
+          "verseNo": null,
           "previous": {
             "name": "With Maṇicūḷaka ",
             "uid": "sn42.10"
@@ -479,7 +479,7 @@
         "parallel_count": 1,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": "",
+        "verseNo": null,
         "previous": {
           "name": "At Sāmagāma ",
           "uid": "mn104"
@@ -527,7 +527,7 @@
           "parallel_count": 1,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": "",
+          "verseNo": null,
           "previous": {
             "name": "At Sāmagāma ",
             "uid": "mn104"
@@ -1574,7 +1574,7 @@
         "parallel_count": 4,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": "",
+        "verseNo": null,
         "previous": {
           "name": null,
           "uid": ""
@@ -1622,7 +1622,7 @@
           "parallel_count": 4,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": "",
+          "verseNo": null,
           "previous": {
             "name": null,
             "uid": ""
@@ -3390,7 +3390,7 @@
         "parallel_count": 6,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": "",
+        "verseNo": null,
         "previous": {
           "name": "With Bhaddāli ",
           "uid": "mn65"
@@ -3438,7 +3438,7 @@
           "parallel_count": 6,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": "",
+          "verseNo": null,
           "previous": {
             "name": "With Bhaddāli ",
             "uid": "mn65"
@@ -3869,7 +3869,7 @@
               {
                 "scid": "mn66:11.5",
                 "pli": "‘sukhaṁ vata bho sāmaññaṁ, ārogyaṁ vata bho sāmaññaṁ. ",
-                "en": "‘The ascetic life is so very pleasant! The ascetic life is so very skillful! "
+                "en": "‘The ascetic life is so very pleasant! The ascetic life is so very healthy! "
               },
               {
                 "scid": "mn66:11.6",
@@ -3954,7 +3954,7 @@
               {
                 "scid": "mn66:12.4",
                 "pli": "‘sukhaṁ vata bho sāmaññaṁ, ārogyaṁ vata bho sāmaññaṁ. ",
-                "en": "‘The ascetic life is so very pleasant! The ascetic life is so very skillful! "
+                "en": "‘The ascetic life is so very pleasant! The ascetic life is so very healthy! "
               },
               {
                 "scid": "mn66:12.5",
@@ -4079,7 +4079,7 @@
               {
                 "scid": "mn66:15.4",
                 "pli": "Imampi kho ahaṁ, udāyi, puggalaṁ ‘saṁyutto’ti vadāmi no ‘visaṁyutto’. ",
-                "en": "I call this person ‘fettered’, not ‘detached’. "
+                "en": "I also call this person ‘fettered’, not ‘detached’. "
               },
               {
                 "scid": "mn66:15.5",
@@ -4099,17 +4099,17 @@
               {
                 "scid": "mn66:16.2",
                 "pli": "Tamenaṁ upadhipahānāya paṭipannaṁ upadhipaṭinissaggāya kadāci karahaci satisammosā upadhipaṭisaṁyuttā sarasaṅkappā samudācaranti; ",
-                "en": "As they do so, every so often they lose mindfulness, and memories and thoughts connected with attachments beset them. "
+                "en": "As they do so, memories and thoughts connected with attachments beset them every so often, due to the loss of mindfulness. "
               },
               {
                 "scid": "mn66:16.3",
                 "pli": "dandho, udāyi, satuppādo. ",
-                "en": "Their mindfulness is slow to come up, "
+                "en": "Slowly mindfulness arises, "
               },
               {
                 "scid": "mn66:16.4",
                 "pli": "Atha kho naṁ khippameva pajahati, vinodeti, byantīkaroti, anabhāvaṁ gameti. ",
-                "en": "but they quickly give up, get rid of, eliminate, and obliterate those thoughts. "
+                "en": "then they quickly give up, get rid of, eliminate, and obliterate those thoughts. "
               },
               {
                 "scid": "mn66:16.5",
@@ -4119,7 +4119,7 @@
               {
                 "scid": "mn66:16.6",
                 "pli": "dandho, udāyi, udakaphusitānaṁ nipāto. Atha kho naṁ khippameva parikkhayaṁ pariyādānaṁ gaccheyya. ",
-                "en": "The drops would be slow to fall, but they’d quickly dry up and evaporate. "
+                "en": "Slowly the drops fall, but then they quickly dry up and evaporate. "
               },
               {
                 "scid": "mn66:16.7",
@@ -4129,17 +4129,17 @@
               {
                 "scid": "mn66:16.8",
                 "pli": "Tamenaṁ upadhipahānāya paṭipannaṁ upadhipaṭinissaggāya kadāci karahaci satisammosā upadhipaṭisaṁyuttā sarasaṅkappā samudācaranti; ",
-                "en": "As they do so, every so often they lose mindfulness, and memories and thoughts connected with attachments beset them. "
+                "en": "As they do so, memories and thoughts connected with attachments beset them every so often, due to the loss of mindfulness. "
               },
               {
                 "scid": "mn66:16.9",
                 "pli": "dandho, udāyi, satuppādo. ",
-                "en": "Their mindfulness is slow to come up, "
+                "en": "Slowly mindfulness arises, "
               },
               {
                 "scid": "mn66:16.10",
                 "pli": "Atha kho naṁ khippameva pajahati, vinodeti, byantīkaroti, anabhāvaṁ gameti. ",
-                "en": "but they quickly give them up, get rid of, eliminate, and obliterate those thoughts. "
+                "en": "but then they quickly give up, get rid of, eliminate, and obliterate those thoughts. "
               },
               {
                 "scid": "mn66:16.11",
@@ -4494,12 +4494,12 @@
         "blurb": "Again raising the rule regarding eating, but this time as a reflection of gratitude for the Buddha in eliminating things that cause complexity and stress. The Buddha emphasizes how attachment even to little things can be dangerous."
       },
       "stats": {
-        "text": 15808,
+        "text": 15793,
         "lang": "en",
         "nSegments": 202,
         "nEmptySegments": 5,
         "nSections": 2,
-        "seconds": 1705.7071003556491
+        "seconds": 1703.9464532053953
       }
     }
   ]
