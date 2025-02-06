@@ -276,6 +276,8 @@
     }
 
     async getPlaySegment(req, res) {
+      const msg = 's4i.getPlaySegment:';
+      const dbg = DBG.S4I_GET_PLAY_SEGMENT;
       let { suttaStore, soundStore } = this;
       let { 
         sutta_uid, langTrans, translator, scid, vnameTrans, vnameRoot,
@@ -286,8 +288,14 @@
       var scAudio = this.scAudio;
       var voice = Voice.voiceOfName(vnameTrans);
       var voiceRoot = this.voiceFactory.voiceOfName(vnameRoot);
-      this.debug(`GET ${req.url}`);
-      var usage = voice.usage || 'recite';
+      dbg && console.log(msg, '[1]', {
+        sutta_uid, langTrans, translator, scid, 
+        vnameTrans: vnameTrans + 
+          (voice?.name===vnameTrans ? '\u2713' : '?'), 
+        vnameRoot: vnameRoot + 
+          (voiceRoot?.name===vnameRoot ? '\u2713' : '?'),
+        iVoice,
+      });
       var sutta = await suttaStore.loadSutta({
         scid: sutta_uid,
         translator,
@@ -301,14 +309,19 @@
         var suttaRef = `${sutta_uid}/${langTrans}/${translator}`;
         throw new Error(`Sutta ${suttaRef} has no section:${iSection}`);
       }
+      let { name, localeIPA='pli', usage='recite' } = voice;
       var voiceTrans = Voice.createVoice({
-        name: voice.name,
+        name,
         usage,
         soundStore: soundStore,
-        localeIPA: "pli",
+        localeIPA,
         audioFormat: soundStore.audioFormat,
         audioSuffix: soundStore.audioSuffix,
         scAudio,
+      });
+      dbg && console.log(msg, '[2]createVoice', {
+        name: voiceTrans.name,
+        localeIPA: voiceTrans.localeIPA,
       });
       var sections = sutta.sections;
       var iSegment = sutta.segments
@@ -494,6 +507,8 @@
     }
 
     async getAudio(req, res) {
+      const msg = 's4i.getAudio:';
+      const dbg = DBG.S4I_GET_AUDIO;
       var { 
         filename, guid, sutta_uid, langTrans, translator, vnameTrans 
       } = req.params;
@@ -516,6 +531,10 @@
       var soundOpts = { volume };
       var filePath = this.soundStore.guidPath(guid, soundOpts);
       var data = fs.readFileSync(filePath);
+      dbg && console.log(msg, {
+        filename, filePath, guid, volume,
+        sutta_uid, langTrans, translator, vnameTrans,
+      });
       res.set("accept-ranges", "bytes");
       res.set("do_stream", "true");
       filename &&

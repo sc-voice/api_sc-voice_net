@@ -7,6 +7,7 @@
   const WORDS_PATH = path.join(__dirname, `..`, `words`);
   const { English } = require("scv-bilara");
   const { logger } = require("log-instance");
+  const { DBG } = require('./defines.cjs');
   var fwsEn;
 
   var instances = 0;
@@ -286,8 +287,10 @@
     }
 
     tokenize(text) {
+      const msg = 'w3s.tokenize:';
+      const dbg = DBG.W3S_TOKENIZE;
       var textParts = text.split(" ");
-      return textParts.reduce((acc, tok) => {
+      let tokens = textParts.reduce((acc, tok) => {
         var prevMatches = null;
         for (;;) {
           let matchNum = RE_NUMBER.exec(tok);
@@ -347,6 +350,8 @@
         tok && acc.push(tok);
         return acc;
       }, []);
+      dbg && console.log(msg, '[2]tokens', tokens);
+      return tokens;
     }
 
     canonical(word) {

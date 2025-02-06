@@ -995,5 +995,27 @@ typeof describe === "function" && describe("scv-api", function() {
     ]);
     should(res.customIpaLimit).above(1).below(50);
   });
+  it("getPlaySegment() => mn8:1.1", async()=>{
+    let api = await testScvApi();
+    let scid = "mn8:1.1";
+    let langTrans = 'ru';
+    let translator = 'sv';
+    let vnameTrans = 'Tatyana';
+    let params = { langTrans, translator, scid, vnameTrans };
+    let query = {};
+    
+    let res = await api.getPlaySegment({params, query});
+    should.deepEqual(res.segment, {
+      scid,
+      pli: 'Evaṁ me sutaṁ—',
+      ru: 'Так я слышал. ', // SV
+      ref: 'So I have heard. ', // Sujato
+      matched: true,
+      audio: {
+        pli: '3ada6d9ac3fe0efb8ca9f804d3cb2f80',
+        ru: '9278ca65b989ebee4f258b28f0a5fa36', 
+      },
+    });
+  });
 });
 

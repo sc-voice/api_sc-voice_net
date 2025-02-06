@@ -19,18 +19,14 @@ typeof describe === "function" && describe("links", function() {
     should(test('site', 'de')).equal(`${DHAMMAREGEN}`);
     should(test('site', 'fr')).equal(`${FR_SC_VOICE_NET}`);
   });
-  it ("TESTTESTebtSuttaRefLink)() suttaplex", ()=>{
+  it ("ebtSuttaRefLink)() suttaplex", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({
       sutta_uid, lang, author });
 
-    // Unsupported languages
-    should(test('mil1/ru')).equal(
-      `${SC_VOICE_NET}#/sutta/mil1/en`);
-    should(test('mil1/in')).equal(
-      `${SC_VOICE_NET}#/sutta/mil1/en`);
-
     // EBT-Sites
+    should(test('mn8/ru')).equal(
+      `${SC_VOICE_NET}#/sutta/mn8/ru/sv`);
     should(test('mn8', 'fr')).equal(
       `${FR_SC_VOICE_NET}#/sutta/mn8/fr/noeismet`);
     should(test('thig1.1', 'de')).equal(
@@ -47,6 +43,11 @@ typeof describe === "function" && describe("links", function() {
       `${SC_VOICE_NET}#/sutta/thig1.1:1.2/en/sujato`);
     should(test('thig1.1', 'en')).equal(
       `${SC_VOICE_NET}#/sutta/thig1.1/en/sujato`);
+
+    // Unsupported languages
+    should(test('mil1/in')).equal(
+      `${SC_VOICE_NET}#/sutta/mil1/en`);
+
   });
   it ("ebtSuttaRefLink)() sutta", ()=>{
     let links = new Links();

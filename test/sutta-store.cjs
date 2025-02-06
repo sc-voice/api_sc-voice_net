@@ -59,7 +59,7 @@ typeof describe === "function" &&
       should(store.bilaraData.logger).equal(store);
       should(store.seeker.logger).equal(store);
     });
-    it("TESTTESTinitialize() initializes SuttaStore", async () => {
+    it("initialize() initializes SuttaStore", async () => {
       const msg = 'test.sutta-store@63';
       var autoSyncSeconds = 1;
       var store = new SuttaStore({autoSyncSeconds});

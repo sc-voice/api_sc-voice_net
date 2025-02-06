@@ -19,8 +19,8 @@ export default class Links {
   }
 
   ebtSuttaRefLink(sref,src="sc") {
-    const msg = "Links.ebtSuttaRefLink() ";
-    const dbg = DBG.SC_LINKS;
+    const msg = "l3s.ebtSuttaRefLink() ";
+    const dbg = DBG.L3S_EBT_SUTTA_REF_LINK;
     let { lang='en' }= sref;
     dbg && console.log(msg, '[1]sref', {sref, src});
     let suttaRef = SuttaRef.createOpts(sref, {

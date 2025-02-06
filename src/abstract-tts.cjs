@@ -4,6 +4,7 @@
   const Queue = require("promise-queue");
   const { MerkleJson } = require("merkle-json");
   const { logger } = require("log-instance");
+  const { DBG } = require("./defines.cjs");
   const SoundStore = require("./sound-store.cjs");
   const Words = require("./words.cjs");
   const AudioTrans = require("./audio-trans.cjs");
@@ -30,9 +31,19 @@
 
   class AbstractTTS {
     constructor(opts = {}) {
+      const msg = 'a14s.ctor:';
+      const dbg = DBG.A14S_CTOR;
       (opts.logger || logger).logInstance(this, opts);
-      this.language = opts.language || "en";
-      this.localeIPA = opts.localeIPA || this.language;
+      let {
+        language,
+        localeIPA,
+      } = opts;
+      dbg && console.log(msg, '[1]opts', {
+        language,
+        localeIPA,
+      });
+      this.language = language || 'en';
+      this.localeIPA = localeIPA || this.language;
       this.hits = 0;
       this.misses = 0;
       this.voice = null;
@@ -193,60 +204,66 @@
     }
 
     wordSSML(word, lang = this.language.split("-")[0]) {
+      const msg = 'a14s.wordSSML:';
+      const dbg = DBG.A14S_WORD_SSML;
       var wi = this.wordInfo(word, lang);
       var symbols = this.words.symbols;
       var ipa = null;
       if (wi) {
         if (wi.ipa) {
           // use custom IPA
-          this.debug(`wordSSML1.1`, { word }, wi);
+          dbg && console.log(msg, '[1.1]wi.ipa', {word}, wi);
           ipa = wi.ipa;
         } else if (lang === "en" && wi.language !== lang) {
           // use IPA for non-English words in English
-          this.debug(`wordSSML1.3`, { word, lang }, wi);
+          dbg && console.log(msg, '[1.2]wi.ipa', { word, lang }, wi);
           ipa = this.wordIPA(word, wi.language);
         } else if (lang === "pli" || wi.language === "pli") {
           // generate IPA
           // use IPA for root text
-          this.debug(`wordSSML1.4`, { word }, wi);
+          dbg && console.log(msg, '[1.3]wi.ipa', { word }, wi);
           ipa = this.wordIPA(word, wi.language);
         } else {
-          this.debug(`wordSSML1.5`, { word, lang }, wi);
+          dbg && console.log(msg, '[1.4]', { word, lang }, wi);
         }
       } else {
         // unknown word or punctuation
         if (Words.RE_ACRONYM.test(word)) {
-          this.debug(`wordSSML2.1`, { word }, wi);
+          dbg && console.log(msg, '[2.1]', {word}, wi);
           return word
             .replace("{", '<say-as interpret-as="spell">')
             .replace("}", "</say-as>");
         } else if (word.trim() === "") {
           // ipa = null
-          this.debug(`wordSSML2.2`, { word }, wi);
+          dbg && console.log(msg, '[2.2]', {word}, wi);
         } else if (this.words.isWord(word)) {
           var w = word.endsWith(`’`)
             ? word.substring(0, word.length - 1)
             : word;
-          if (this.localeIPA !== this.language && this.words.isForeignWord(w)) {
-            var ipa = this.wordIPA(word, this.localeIPA);
-            this.debug(`wordSSML2.3.1`, { word, w }, wi);
+          let { language, localeIPA, words } = this;
+          if (localeIPA !== language && words.isForeignWord(w)) {
+            var ipa = this.wordIPA(word, localeIPA);
+            dbg && console.log(msg, '[2.3.1]', 
+              {word, w, language, localeIPA}, wi, 
+            );
           } else {
-            this.debug(`wordSSML2.3.2`, { word, w }, wi);
+            dbg && console.log(msg, '[2.3.2]', {word, w}, wi);
           }
         } else if (word.endsWith(`’`)) {
           // ipa = null
+          dbg && console.log(msg, '[2.4]', {word}, wi);
           this.debug(`wordSSML2.4`, { word }, wi);
         } else {
           var symInfo = symbols[word];
           if (0 && symInfo && symInfo.isEllipsis) {
-            this.debug(`w&ordSSML2.5.1`, word);
+            dbg && console.log(msg, '[2.5.1]', word);
             return this.ellipsisBreak;
           }
-          this.debug(`wordSSML2.5.2`, { word }, wi);
+          dbg && console.log(msg, '[2.5.2]', {word}, wi);
         }
       }
       if (ipa) {
-        this.debug(`wordSSML3`, word, ipa);
+        dbg && console.log(msg, '[3.1]', word, ipa);
         if (ipa.endsWith("(.)")) {
           var pauses = ipa.split("(.)");
           ipa = pauses
@@ -268,6 +285,8 @@
     }
 
     tokensSSML(text) {
+      const msg = 'a14s.tokensSSML:';
+      const dbg = DBG.A14S_TOKENS_SSML;
       if (this.stripNumbers) {
         text = text.replace(RE_STRIPNUMBER, " ");
       }
@@ -287,17 +306,17 @@
           acc.length && acc.push("\n");
           acc.push(`${this.break(4)}`);
           acc.push("\n");
-          this.debug(`tokensSSML() RE_PARA_EOL`, { token });
+          dbg && console.log(msg, '[1]RE_PARA_EOL', {token});
         } else if (RE_PAUSE3.test(token)) {
           acc.length && acc.push(" ");
           acc.push(`${this.break(3)} `);
-          this.debug(`tokensSSML() RE_PAUSE3`, { token });
+          dbg && console.log(msg, '[2]PAUSE3', {token});
         } else if (token === "&") {
-          this.debug(`tokensSSML() ampersand`, { token });
+          dbg && console.log(msg, '[3]ampersand', { token });
           acc.push("&amp;");
         } else {
           let wordSSML = this.wordSSML(token) || token;
-          this.debug(`tokensSSML() wordSSML`, { token, wordSSML });
+          dbg && console.log(msg, '[4]wordSSML', {token, wordSSML});
           acc.push(wordSSML);
         }
         return acc;

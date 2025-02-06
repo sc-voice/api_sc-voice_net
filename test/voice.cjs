@@ -59,10 +59,12 @@ typeof describe === "function" &&
           "Marlene",
           "Matthew",
           "Mathieu",
+          "Maxim",
           "Mizuki",
           "Raveena",
           "Ricardo",
           "Takumi",
+          "Tatyana",
           "Vicki",
           "sujato_en",
           "sujato_pli",
@@ -762,6 +764,7 @@ typeof describe === "function" &&
         "de": true,
         "jpn": true, // Web:ja SC:jpn Polly:ja-JP
         "pli": true,
+        "ru": true,
       });
     });
   });

@@ -611,4 +611,13 @@ typeof describe === "function" &&
       should(tts.stripHtml("faithless")).equal("faithless");
       should(tts.stripHtml("faithless ...")).equal("faithless \u2026");
     });
+    it("TESTTESTtokensSSML(text) RU", () => {
+      var tts = new AbstractTTS({
+        localeIPA: "ru-RU",
+        language: 'ru-RU',
+      });
+      var text = "так я слышал.";
+      var tssml = tts.tokensSSML(text);
+      should.deepEqual(tssml, [ 'так', 'я', 'слышал', '.' ]);
+    });
   });
