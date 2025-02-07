@@ -24,7 +24,7 @@
     }
 
     async processRequest(req, res, next) {
-      const msg = "RestApi.processRequest() ";
+      const msg = "r12d.processRequest() ";
       let { method, mime, handler } = this;
       let statusOk = 200;
       try {
@@ -36,7 +36,7 @@
           res.send(value);
         }
       } catch(e) {
-        this.warn(msg, `HTTP${res.statusCode}:`, e.message);
+        this.warn(msg, `HTTP${res.statusCode}:`, req.params, '=>', e);
         if (!res.headersSent) {
           res.type("application/json");
           let { statusCode = statusOk } = res;
