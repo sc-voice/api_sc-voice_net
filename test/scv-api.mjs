@@ -995,7 +995,7 @@ typeof describe === "function" && describe("scv-api", function() {
     ]);
     should(res.customIpaLimit).above(1).below(50);
   });
-  it("getPlaySegment() => mn8:1.1", async()=>{
+  it("getPlaySegment() => mn8:1.1 ru", async()=>{
     let api = await testScvApi();
     let scid = "mn8:1.1";
     let langTrans = 'ru';
