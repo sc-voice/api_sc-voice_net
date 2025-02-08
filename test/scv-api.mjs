@@ -1013,7 +1013,7 @@ typeof describe === "function" && describe("scv-api", function() {
       matched: true,
       audio: {
         pli: '3ada6d9ac3fe0efb8ca9f804d3cb2f80',
-        ru: '9278ca65b989ebee4f258b28f0a5fa36', 
+        ru: 'a5a37d8afa37db5feddc6393fca50009', 
       },
     });
   });

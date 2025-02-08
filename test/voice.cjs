@@ -6,6 +6,7 @@ typeof describe === "function" &&
     const { logger, LogInstance } = require("log-instance");
     logger.logLevel = "warn";
     const { SayAgain } = require("say-again");
+    const { DBG } = require('../src/defines.cjs');
     const Polly = require("../src/polly.cjs");
     const S3Creds = require("../src/s3-creds.cjs");
     const SCAudio = require("../src/sc-audio.cjs");
@@ -22,22 +23,18 @@ typeof describe === "function" &&
       return ph;
     }
 
-    it("custom ctor", (done) => {
-      (async function () {
-        try {
-          var soundStore = new SoundStore();
-          var raveena = Voice.createVoice({
-            locale: "en-IN",
-            soundStore,
-          });
-          should(raveena.usage).equal("review");
-          should(raveena.soundStore).equal(soundStore);
-
-          done();
-        } catch (e) {
-          done(e);
-        }
-      })();
+    it("custom ctor", async () => {
+      const msg = 'v3e.custom-ctor:';
+      let soundStore = new SoundStore();
+      let voiceVersion = 1;
+      let raveena = Voice.createVoice({
+        locale: "en-IN",
+        soundStore,
+        voiceVersion,
+      });
+      should(raveena.voiceVersion).equal(voiceVersion);
+      should(raveena.usage).equal("review");
+      should(raveena.soundStore).equal(soundStore);
     });
     it("loadVoices(voicePath) should return voices", () => {
       var voices = Voice.loadVoices();
@@ -70,6 +67,10 @@ typeof describe === "function" &&
           "sujato_pli",
         ].sort()
       );
+      let maxim = voices.filter(v=>v.name === 'Maxim')[0];
+      should(maxim.voiceVersion).equal(1);
+
+      var amy = voices.filter((voice) => voice.name === "Amy")[0];
       var raveena = voices.filter((voice) => voice.name === "Raveena")[0];
       should(raveena).instanceOf(Voice);
       should(raveena).properties({
@@ -83,11 +84,11 @@ typeof describe === "function" &&
           navigate: "+5%",
           recite: "-30%",
         },
+        voiceVersion: 0,
       });
       should(!!raveena.ipa).equal(true);
       should(!!raveena.ipa.pli).equal(true);
 
-      var amy = voices.filter((voice) => voice.name === "Amy")[0];
       should(amy).instanceOf(Voice);
       should(amy).properties({
         locale: "en-GB",
@@ -765,6 +766,51 @@ typeof describe === "function" &&
         "jpn": true, // Web:ja SC:jpn Polly:ja-JP
         "pli": true,
         "ru": true,
+      });
+    });
+    it("createVoice() Tatyana", ()=>{
+      const msg = 'tv3e.createVoice-tatyana:';
+      const dbg = 0;
+      let name = "Tatyana";
+      let locale = 'ru-RU';
+      let voice = Voice.createVoice({ name });
+      should(voice).instanceOf(Voice);
+      should(voice.locale).equal(locale);
+      should(voice.name).equal(name);
+      should(voice.usage).equal("recite");
+      should(voice.voiceVersion).equal(1);
+      let { recite } = voice.services;
+      should(recite.language).equal('ru-RU');
+      let sigRecite = recite.signature();
+      should(sigRecite).properties({
+        voiceVersion:1,
+      });
+    });
+    it("createVoice() Maxim", ()=>{
+      const msg = 'tv3e.createVoice-maxim:';
+      const dbg = 0;
+      let name = 'Maxim';
+      let locale = 'ru-RU';
+      let voice = Voice.createVoice({name});
+      should(voice).instanceOf(Voice);
+      should(voice.locale).equal(locale);
+      should(voice.name).equal(name);
+      should(voice.usage).equal("recite");
+      should(voice.voiceVersion).equal(1);
+      let { recite } = voice.services;
+      should(recite.language).equal('ru-RU');
+      let sigRecite = recite.signature();
+      should(sigRecite).properties({
+        voiceVersion:1,
+      });
+    });
+    it("TESTTESTvoiceOfName(name) RU", ()=>{
+      let maxim = Voice.voiceOfName("Maxim");
+      should(maxim).properties({
+        name: "Maxim",
+        locale: 'ru-RU',
+        localeIPA: 'ru-RU',
+        voiceVersion: 1,
       });
     });
   });

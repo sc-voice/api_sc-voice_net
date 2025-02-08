@@ -1820,15 +1820,16 @@
 }, {
     "service": "aws-polly",
     "name": "Maxim",
-    "label": "\ud83e\udd16 Tatyana-robot (veloce)",
+    "label": "\ud83e\udd16 Maxim-робот (быстрый)",
     "gender": "male",
     "langTrans": "ru",
     "locale": "ru-RU",
-    "localeIPA": "pli",
+    "localeIPA": "ru-RU",
     "stripNumbers": false,
     "stripQuotes": false,
     "ellipsisBreak": "<break time=\"0.300s\"/>",
     "iVoice": 24,
+    "voiceVersion": 1,
     "usage": "recite",
     "rates": {
         "navigate": "+5%", 
@@ -1910,7 +1911,7 @@
 }, {
     "service": "aws-polly",
     "name": "Tatyana",
-    "label": "\ud83e\udd16 Tatyana-robot (slower)",
+    "label": "\ud83e\udd16 Tatyana-робот (медленный)",
     "gender": "female",
     "langTrans": "ru",
     "locale": "ru-RU",
@@ -1919,6 +1920,7 @@
     "stripQuotes": false,
     "ellipsisBreak": "<break time=\"0.300s\"/>",
     "iVoice": 25,
+    "voiceVersion": 1,
     "usage": "recite",
     "rates": {
         "navigate": "+5%", 

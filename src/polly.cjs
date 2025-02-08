@@ -26,6 +26,9 @@
         )
       );
       this.voice = opts.voice || "Amy";
+      if (opts.voiceVersion) {
+        this.voiceVersion = opts.voiceVersion;
+      }
       this.api = opts.api || "aws-polly";
       this.apiVersion = opts.apiVersion || "v4";
       let sayAgain = (this.sayAgain =

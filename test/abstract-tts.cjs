@@ -94,21 +94,56 @@ typeof describe === "function" &&
         maxSSML,
       });
     });
-    it("signature(text) returns signature that identifies synthesized speech", function () {
-      var tts = new AbstractTTS();
-      var sig = tts.signature("hello world");
+    it("signature(text) signature", ()=>{
+      const msg = 'ta9s.signature:';
+      // return signature that identifies synthesized speech
+      let tts = new AbstractTTS();
+      let sig = tts.signature("hello world");
       var guid = tts.mj.hash(sig);
       should.deepEqual(sig, {
         api: null,
         apiVersion: null,
         audioFormat: "audio/ogg",
         language: "en",
-        voice: null,
         prosody: {
           rate: "-10%",
         },
         text: "hello world",
+        voice: null,
         guid,
+      });
+
+      let voice = 'voice-test';
+      tts.voice = voice;
+      let sig1 = tts.signature("hello world");
+      should.deepEqual(sig1, {
+        api: null,
+        apiVersion: null,
+        audioFormat: "audio/ogg",
+        language: "en",
+        voice,
+        prosody: {
+          rate: "-10%",
+        },
+        text: "hello world",
+        guid: tts.mj.hash(sig1),
+      });
+
+      let voiceVersion = 2;
+      tts.voiceVersion = voiceVersion;
+      let sig2 = tts.signature("hello world");
+      should.deepEqual(sig2, {
+        api: null,
+        apiVersion: null,
+        audioFormat: "audio/ogg",
+        language: "en",
+        voice,
+        voiceVersion,
+        prosody: {
+          rate: "-10%",
+        },
+        text: "hello world",
+        guid: tts.mj.hash(sig2),
       });
     });
     it("wordInfo(word) returns information about a word", function () {
@@ -611,7 +646,7 @@ typeof describe === "function" &&
       should(tts.stripHtml("faithless")).equal("faithless");
       should(tts.stripHtml("faithless ...")).equal("faithless \u2026");
     });
-    it("TESTTESTtokensSSML(text) RU", () => {
+    it("tokensSSML(text) RU", () => {
       var tts = new AbstractTTS({
         localeIPA: "ru-RU",
         language: 'ru-RU',
@@ -619,5 +654,11 @@ typeof describe === "function" &&
       var text = "так я слышал.";
       var tssml = tts.tokensSSML(text);
       should.deepEqual(tssml, [ 'так', 'я', 'слышал', '.' ]);
+    });
+    it("wordSSML(word) RU", function () {
+      let localeIPA = 'ru-RU';
+      let locale = 'ru-RU';
+      var tts = new AbstractTTS({ localeIPA, language:locale });
+      should(tts.wordSSML(`отстранённым’`)).equal(`отстранённым’`);
     });
   });

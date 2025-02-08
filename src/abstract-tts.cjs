@@ -37,9 +37,11 @@
       let {
         language,
         localeIPA,
+        langTrans,
       } = opts;
       dbg && console.log(msg, '[1]opts', {
         language,
+        langTrans,
         localeIPA,
       });
       this.language = language || 'en';
@@ -275,6 +277,8 @@
         } else {
           return this.ipa_word(ipa, word);
         }
+      } else {
+        dbg && console.log(msg, '[4]', word);
       }
       return word;
     }
@@ -400,15 +404,27 @@
     }
 
     signature(text) {
-      var signature = {
-        api: this.api,
-        apiVersion: this.apiVersion,
-        audioFormat: this.audioFormat,
-        voice: this.voice,
-        prosody: this.prosody,
-        language: this.language,
+      let { 
+        api, 
+        apiVersion, 
+        audioFormat, 
+        language,
+        prosody, 
+        voice, 
+        voiceVersion, 
+      } = this;
+      let signature = {
+        api,
+        apiVersion,
+        audioFormat,
+        language,
+        prosody,
         text,
+        voice,
       };
+      if (voiceVersion) {
+        signature.voiceVersion = voiceVersion;
+      }
       signature[this.mj.hashTag] = this.mj.hash(signature);
       return signature;
     }

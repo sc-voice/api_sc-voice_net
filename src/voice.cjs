@@ -3,6 +3,7 @@
   const path = require("path");
   const { logger } = require("log-instance");
   const { SayAgain } = require("say-again");
+  const { DBG } = require("./defines.cjs");
   const Polly = require("./polly.cjs");
   const JSON5 = require("json5");
   const HumanTts = require("./human-tts.cjs");
@@ -33,6 +34,7 @@
       this.fullStopComma = opts.fullStopComma;
       this.service = opts.service || "aws-polly";
       this.name = opts.name || "Raveena";
+      this.voiceVersion = opts.voiceVersion || 0;
       this.label = opts.label || this.name;
       this.rates = opts.rates || {
         navigate: Voice.RATE_FAST,
@@ -119,23 +121,30 @@
     }
 
     static voiceOfName(name = "Amy") {
+      const msg = 'v3e.voiceOfName:';
+      const dbg = DBG.V3E_VOICE_OF_NAME;
       var voices = Voice.loadVoices();
       var iVoice = Number(name);
+      let voice = null;
       if (!isNaN(iVoice)) {
-        return voices.reduce((acc, voice) => {
+        voice = voices.reduce((acc, voice) => {
           if (iVoice === Number(voice.iVoice)) {
             return voice;
           }
           return acc;
         }, null);
+        dbg && console.log(msg, '[1]', {name, iVoice}, !!voice);
+      } else {
+        let lowername = name.toLowerCase();
+        voice =  voices.reduce((acc, voice) => {
+          if (voice.name.toLowerCase() === lowername) {
+            return voice;
+          }
+          return acc;
+        }, null);
+        dbg && console.log(msg, '[2]', {name, lowername}, !!voice);
       }
-      var lowername = name.toLowerCase();
-      return voices.reduce((acc, voice) => {
-        if (voice.name.toLowerCase() === lowername) {
-          return voice;
-        }
-        return acc;
-      }, null);
+      return voice;
     }
 
     static compare(a, b) {
@@ -161,33 +170,38 @@
     }
 
     static createVoice(opts) {
+      const msg = 'v3e.createVoice:';
+      const dbg = DBG.V3E_CREATE_VOICE;
       var voices = Voice.loadVoices();
       if (opts === "navigate" || opts === "review" || opts === "recite") {
         opts = {
           usage: opts,
         };
-        console.log(`createVoice()`, opts);
+        dbg && console.log(msg, '[1]', opts);
       } else if (typeof opts === "string") {
         var voiceJson = voices.filter((v) => v.locale.match(`^${opts}`))[0];
         if (voiceJson) {
           opts = {
             locale: opts,
           };
+          dbg && console.log(msg, '[2]', opts);
         } else {
           var voiceJson = voices.filter((v) => eqIgnoreCase(v.name, opts))[0];
           if (voiceJson) {
             opts = {
               name: opts,
             };
+            dbg && console.log(msg, '[3]', opts);
           }
         }
         if (voiceJson == null) {
-          throw new Error(`Could not create voice:${opts}`);
+          throw new Error(`${msg} Could not create voice:${opts}`);
         }
       } else if (opts == null) {
         opts = {
           locale: "en-IN",
         };
+        dbg && console.log(msg, '[4]', opts);
       }
       if (voiceJson == null) {
         var voiceJson = voices
@@ -217,6 +231,7 @@
               return v1.name.localeCompare(v2.name);
             }
           })[0];
+        dbg && console.log(msg, '[5]', opts);
         if (voiceJson == null) {
           throw new Error(
             `Could not find pre-defined voice:` + `${JSON.stringify(opts)}`
@@ -225,7 +240,7 @@
       }
       if (voiceJson.ipa == null) {
         throw new Error(
-          `Expected IPA lexicon for pre-configured voice: ` +
+          `${msg} Expected IPA lexicon for pre-configured voice: ` +
             `${voiceJson.name}`
         );
       }
@@ -233,10 +248,13 @@
       if (voiceOpts.altTts == null) {
         if (opts.name === "sujato_pli") {
           voiceOpts.altTts = Voice.voiceOfName("Aditi").services.recite;
+          dbg && console.log(msg, '[6]', opts);
         } else if (opts.name === "sujato_en") {
           voiceOpts.altTts = Voice.voiceOfName("Amy").services.recite;
+          dbg && console.log(msg, '[7]', opts);
         }
       }
+      dbg && console.log(msg, '[8]', opts);
       voiceOpts = Object.assign(voiceOpts, opts);
       voiceOpts.locale = voiceJson.locale;
       voiceOpts.name = voiceJson.name;
@@ -245,6 +263,9 @@
     }
 
     get services() {
+      const msg = 'v3e.services:';
+      const dbg = DBG.V3E_SERVICES;
+      let { name, voiceVersion } = this;
       if (this._services == null) {
         var words = this.voiceWords();
         this._services = {};
@@ -273,6 +294,11 @@
             voice: this.name,
             words,
           };
+
+          dbg && console.log(msg, '[1]', {name, key, voiceVersion});
+          if (voiceVersion) {
+            props.voiceVersion = voiceVersion;
+          }
           this.noAudioPath && (props.noAudioPath = this.noAudioPath);
           if (this.service === "aws-polly") {
             this._services[key] = new Polly(props);
