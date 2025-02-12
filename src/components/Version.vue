@@ -1,1 +1,1 @@
-<template>v32.0.7</template>
+<template>v32.0.8</template>
