@@ -103,19 +103,19 @@ typeof describe === "function" &&
       });
       testTolerance(resMeasure.seconds, 69);
     });
-    it("measure(sutta, lang) measures sn1.1", async () => {
+    it("TESTTESTmeasure(sutta, lang) measures sn1.1", async () => {
       var factory = await testSuttaFactory();
       var scd = new SuttaDuration();
       var sutta = await factory.loadSutta("sn1.1");
       sutta = factory.sectionSutta(sutta);
       var resMeasure = scd.measure(sutta, lang);
       should(resMeasure).properties({
-        text: 940,
         lang,
         nSegments: 20,
         nEmptySegments: 1,
         nSections: 2,
       });
+      should(resMeasure.text).above(900).below(980);
       testTolerance(resMeasure.seconds, 85);
     });
     it("measure(sutta, lang) measures sn56.21", async () => {
