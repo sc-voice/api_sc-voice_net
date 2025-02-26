@@ -1,6 +1,6 @@
 {
   "name": "api_sc-voice_net",
-  "version": "32.0.50",
+  "version": "32.0.51",
   "description": "SuttaCentral Voice Server",
   "main": "index.js",
   "private": false,
