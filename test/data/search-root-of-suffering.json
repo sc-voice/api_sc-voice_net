@@ -49,7 +49,7 @@
         "parallel_count": 2,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": null,
+        "verseNo": "",
         "previous": {
           "name": "With Maṇicūḷaka ",
           "uid": "sn42.10"
@@ -94,7 +94,7 @@
           "parallel_count": 2,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": null,
+          "verseNo": "",
           "previous": {
             "name": "With Maṇicūḷaka ",
             "uid": "sn42.10"
@@ -231,12 +231,12 @@
               {
                 "scid": "sn42.11:2.7",
                 "pli": "“Yesaṁ me, bhante, uruvelakappiyānaṁ manussānaṁ vadhena vā bandhena vā jāniyā vā garahāya vā uppajjeyyuṁ sokaparidevadukkhadomanassupāyāsā, atthi me tesu chandarāgo. ",
-                "en": "“The people regarding whom this would give rise to sorrow are those I desire and love. "
+                "en": "“The people regarding whom this would give rise to sorrow are those I have desire and passion. "
               },
               {
                 "scid": "sn42.11:2.8",
                 "pli": "Yesaṁ pana, bhante, uruvelakappiyānaṁ manussānaṁ vadhena vā bandhena vā jāniyā vā garahāya vā nuppajjeyyuṁ sokaparidevadukkhadomanassupāyāsā, natthi me tesu chandarāgo”ti. ",
-                "en": "The people regarding whom this would not give rise to sorrow are those I don’t desire and love.” "
+                "en": "The people regarding whom this would not give rise to sorrow are those I don’t have desire and passion.” "
               },
               {
                 "scid": "sn42.11:2.9",
@@ -350,7 +350,7 @@
               {
                 "scid": "sn42.11:4.2",
                 "pli": "yadā te ciravāsimātā adiṭṭhā ahosi, assutā ahosi, te ciravāsimātuyā chando vā rāgo vā pemaṁ vā”ti? ",
-                "en": "Before you’d seen or heard of Ciravāsi’s mother, did you have any desire or love or fondness for her?” "
+                "en": "Before you’d seen or heard of Ciravāsi’s mother, did you have any desire or passion or fondness for her?” "
               },
               {
                 "scid": "sn42.11:4.3",
@@ -365,7 +365,7 @@
               {
                 "scid": "sn42.11:4.5",
                 "pli": "‘ciravāsimātuyā chando vā rāgo vā pemaṁ vā’”ti? ",
-                "en": "desire or love or fondness for her?” "
+                "en": "desire or passion or fondness for her?” "
               },
               {
                 "scid": "sn42.11:4.6",
@@ -420,12 +420,12 @@
         "blurb": "The chief Bhadraka asks the Buddha about the origin and ending of suffering, and the Buddha points out that a loss among Bhadraka’s own community would cause him suffering, due to his attachment."
       },
       "stats": {
-        "text": 3480,
+        "text": 3502,
         "lang": "en",
         "nSegments": 55,
         "nEmptySegments": 1,
         "nSections": 2,
-        "seconds": 340.96026484206675
+        "seconds": 343.1715239120653
       }
     },
     {
@@ -1574,7 +1574,7 @@
         "parallel_count": 4,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": null,
+        "verseNo": "",
         "previous": {
           "name": null,
           "uid": ""
@@ -1622,7 +1622,7 @@
           "parallel_count": 4,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": null,
+          "verseNo": "",
           "previous": {
             "name": null,
             "uid": ""
@@ -3390,7 +3390,7 @@
         "parallel_count": 6,
         "biblio": null,
         "priority_author_uid": "sujato",
-        "verseNo": null,
+        "verseNo": "",
         "previous": {
           "name": "With Bhaddāli ",
           "uid": "mn65"
@@ -3438,7 +3438,7 @@
           "parallel_count": 6,
           "biblio": null,
           "priority_author_uid": "sujato",
-          "verseNo": null,
+          "verseNo": "",
           "previous": {
             "name": "With Bhaddāli ",
             "uid": "mn65"

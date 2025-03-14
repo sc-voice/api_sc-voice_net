@@ -171,14 +171,14 @@ typeof describe === "function" &&
       var sutta = await factory.loadSutta("sn42.11");
       sutta = factory.sectionSutta(sutta);
       var resMeasure = scd.measure(sutta, lang);
+      should(resMeasure.text).above(3310).below(3350);
       should(resMeasure).properties({
-        text: 3315,
         lang,
         nSegments: 55,
         nEmptySegments: 1,
         nSections: 2,
       });
-      testTolerance(resMeasure.seconds, 292);
+      testTolerance(resMeasure.seconds, 326);
     });
     it("measure(sutta, lang) measures an2.1", async () => {
       var factory = await testSuttaFactory();
