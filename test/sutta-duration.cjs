@@ -103,7 +103,7 @@ typeof describe === "function" &&
       });
       testTolerance(resMeasure.seconds, 69);
     });
-    it("TESTTESTmeasure(sutta, lang) measures sn1.1", async () => {
+    it("measure(sutta, lang) measures sn1.1", async () => {
       var factory = await testSuttaFactory();
       var scd = new SuttaDuration();
       var sutta = await factory.loadSutta("sn1.1");

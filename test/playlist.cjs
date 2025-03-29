@@ -231,7 +231,8 @@ typeof describe === "function" &&
         voices,
         volume: "test-playlist",
       });
-      should(result.signature.guid).match(/7cd30eb2bff3d054870a1a48901ef17c/);
+      should(result.signature.guid)
+        .match(/88edc5f59ba4cfc7d8864e44944c050e/);
     });
     it("speak(opts) adds break between suttas", async () => {
       var factory = await testSuttaFactory();
@@ -274,7 +275,7 @@ typeof describe === "function" &&
         volume: "test-playlist",
       });
       should(result.signature.guid)
-      .match(/eb7f9364059896bcccd737ed073ccc30/);
+      .match(/ad4c653a94798686ea620d09fdc874b6/);
     });
     it("speak(opts) => task progress", async () => {
       let factory = await testSuttaFactory();

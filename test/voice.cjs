@@ -455,9 +455,9 @@ typeof describe === "function" &&
       var recite = aditi.services.recite;
       should(recite.wordSSML(`vasala`)).equal(phoneme("v\\ə sə la", "vasala"));
       should(recite.wordSSML(`Nāmañca`)).equal(
-        phoneme("nɑː məɲ cə", "Nāmañca")
+        phoneme("nɑː məɳ cə", "Nāmañca")
       );
-      should(recite.wordSSML(`anottappañca`)).match(/"ə not̪ t̪əp pəɲ cə"/);
+      should(recite.wordSSML(`anottappañca`)).match(/"ə not̪ t̪əp pəɳ cə"/);
       should(recite.wordSSML(`Atthi`)).match(/"ət̪.t̪ʰɪ"/);
       should(recite.wordSSML(`hoti`)).match(/"hot̪ɪ"/);
     });
@@ -804,7 +804,7 @@ typeof describe === "function" &&
         voiceVersion:1,
       });
     });
-    it("TESTTESTvoiceOfName(name) RU", ()=>{
+    it("voiceOfName(name) RU", ()=>{
       let maxim = Voice.voiceOfName("Maxim");
       should(maxim).properties({
         name: "Maxim",

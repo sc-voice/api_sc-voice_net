@@ -218,4 +218,10 @@ typeof describe === "function" &&
       var res = await aditi.speak("Katame pañca?");
       should(res.signature.text).match(/kə t̪ə me"/);
     });
+    it("TESTTESTkiñcī’ti paṭisañcikkhati", async () => {
+      var aditi = Voice.createVoice(ADITI_OPTS);
+      var res = await aditi.speak("kiñcī’ti paṭisañcikkhati");
+      should(res.signature.text).match(/kɪɳ cɪi/);
+      should(res.signature.text).match(/pə ʈɪ səɳ cɪk kʰə t̪ɪ"/);
+    });
   });
