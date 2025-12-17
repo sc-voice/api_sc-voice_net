@@ -64,3 +64,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# sed backup files
+*.bak
+
