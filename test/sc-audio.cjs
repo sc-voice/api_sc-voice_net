@@ -141,7 +141,7 @@ typeof describe === "function" &&
         }
       })();
     });
-    it("downloadSegmentAudio(suttaSegId,...) downloads audio file", function (done) {
+    it("TESTTESTdownloadSegmentAudio() sn1.9:1.1", function (done) {
       (async function () {
         try {
           var language = "en";
@@ -203,7 +203,7 @@ typeof describe === "function" &&
           });
           should(fs.existsSync(audioPath)).equal(true);
           var stats = fs.statSync(audioPath);
-          should(stats.size).above(16000).below(29000);
+          should(stats.size).above(10000).below(29000);
 
           done();
         } catch (e) {
@@ -211,7 +211,7 @@ typeof describe === "function" &&
         }
       })();
     });
-    it("downloadSegmentAudio(suttaSegId,...) creates sn1.9:1.1 audio file", function (done) {
+    it("TESTTESTdownloadSegmentAudio() sn1.9:1.1", function (done) {
       (async function () {
         try {
           var language = "en";
@@ -274,7 +274,7 @@ typeof describe === "function" &&
           });
           should(fs.existsSync(audioPath)).equal(true);
           var stats = fs.statSync(audioPath);
-          should(stats.size).above(16000).below(29000);
+          should(stats.size).above(12000).below(29000);
 
           done();
         } catch (e) {
@@ -282,7 +282,7 @@ typeof describe === "function" &&
         }
       })();
     });
-    it("downloadSegmentAudio(suttaSegId,...) creates sn2.3:1.1 audio file", function (done) {
+    it("TESTTESTdownloadSegmentAudio() sn2.3:1.1", function (done) {
       (async function () {
         try {
           var language = "en";

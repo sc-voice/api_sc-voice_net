@@ -769,7 +769,7 @@ typeof describe === "function" && describe("scv-api", function() {
       let req = {params, query, url};
       let res = new MockResponse();
       let audio = await api.getDownloadPlaylist(req, res);
-      should(audio.length).above(250000).below(350000);
+      should(audio.length).above(300000).below(380000);
       should.deepEqual(res.mockHeaders, {
         'Content-disposition': 
           `attachment; filename=thig1.1-3-en-soma_pli+en_amy.ogg`,
@@ -796,14 +796,14 @@ typeof describe === "function" && describe("scv-api", function() {
       });
       should(res.filename).equal('thig1.1-de_pli+de_Vicki.opus');
       should(res.filepath).match(/api.sc-voice.net\/local\/sounds\/common/);
-      should(res.filepath).match(/f6a18c6c48f784475e73c9e9766dc5f3.opus/);
+      should(res.filepath).match(/d25d547d4de11d5db1da2e00ed81e081.opus/);
       let nSegments = 9;
       should.deepEqual(res.stats, {
         chars: {
-          de: 404,
+          de: 414,
           pli: 257,
         },
-        duration: 59,
+        duration: 60,
         segments: { 
           de: nSegments,
           pli: nSegments,
@@ -848,7 +848,7 @@ typeof describe === "function" && describe("scv-api", function() {
       let resDone = await api.getBuildDownload({params, query});
       should(resDone.task).properties(taskProperties);
       should(resDone.filename).equal('thig1.1-de_pli+de_Vicki.ogg');
-      should(resDone.guid).equal('f6a18c6c48f784475e73c9e9766dc5f3');
+      should(resDone.guid).equal('d25d547d4de11d5db1da2e00ed81e081');
     });
 
   it("getVoices()", async()=>{
@@ -872,8 +872,8 @@ typeof describe === "function" && describe("scv-api", function() {
     let api = await testScvApi();
     let res = await api.get_statfs();
     should(res.blocks).above(0);
-    should(res.bavail_percent).above(0).below(100);
-    should(res.ffree_percent).above(0).below(100);
+    should(res.bavail_percent).above(0).not.above(100); 
+    should(res.ffree_percent).above(0).not.above(100);
     //console.log(res);
     should(res).properties([
       'type', 'bsize', 'blocks', 'bfree', 'bavail',

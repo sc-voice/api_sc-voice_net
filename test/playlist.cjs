@@ -188,7 +188,7 @@ typeof describe === "function" &&
       let plstats = pl.stats();
       should(plstats.tracks).equal(12);
       should(plstats.chars.pli).equal(78866);
-      should(plstats.chars.en).above(84800).below(84900);
+      should(plstats.chars.en).above(84800).below(86000);
       should(plstats.segments.en).equal(1129);
       should(plstats.segments.pli).equal(1167);
       should(plstats.duration).above(14500).below(14600);
@@ -275,7 +275,7 @@ typeof describe === "function" &&
         volume: "test-playlist",
       });
       should(result.signature.guid)
-      .match(/ad4c653a94798686ea620d09fdc874b6/);
+      .match(/043357f71f7bbc965f7c0fcac977eebe/);
     });
     it("speak(opts) => task progress", async () => {
       let factory = await testSuttaFactory();

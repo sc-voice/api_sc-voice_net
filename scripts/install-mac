@@ -1,0 +1,29 @@
+#!/bin/bash
+
+DIR=`dirname $0`
+SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+
+echo -e "${SCRIPT}: BEGIN `date` (OK)"
+
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo -e "${SCRIPT}: WARNING - This script is designed for macOS. Skipping installation on non-macOS systems."
+  exit 1
+fi
+
+function installApp() {
+  APP=$1
+  BREW=$2
+  if [ "$BREW" == "" ]; then BREW=$APP; fi
+  type $APP >& /dev/null
+  RC=$?; if [ "$RC" == "0" ]; then
+      echo -e "${SCRIPT}:" `type $APP` "[OK]"
+  else
+      echo -e "${SCRIPT}: installing $APP via brew... (sudo may be required)"
+      brew install $BREW
+  fi
+}
+
+installApp opusenc opus-tools &&
+installApp ffmpeg &&
+npm install &&
+echo -e "${SCRIPT}: END `date` (OK)"

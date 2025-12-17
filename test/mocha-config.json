@@ -3,7 +3,7 @@
   "inline-diffs": true,
   "glob": [ "TEST" ],
   "watch": true,
-  "parallel": true,
+  "parallel": false,
   "watch-ignore": [
     "node_modules",
     ".git",

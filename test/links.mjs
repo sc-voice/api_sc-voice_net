@@ -32,7 +32,7 @@ typeof describe === "function" && describe("links", function() {
     should(test('thig1.1', 'de')).equal(
       `${DHAMMAREGEN}#/sutta/thig1.1/de/sabbamitta`);
     should(test('mil1')).equal(
-      `${SC_VOICE_NET}#/sutta/mil1/en`);
+      `${SC_VOICE_NET}#/sutta/mil1/en/kelly`);
     should(test('mil3.1.1')).equal(
       `${SC_VOICE_NET}#/sutta/mil3.1.1/en/kelly`);
     should(test('thig1.1:1.2')).equal(

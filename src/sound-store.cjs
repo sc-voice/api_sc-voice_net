@@ -146,7 +146,7 @@
       this.info(`volumeInfo execOpts:${JSON.stringify(execOpts)}`);
       var du = [];
       try {
-        var cmd = `du -sb *`;
+        var cmd = `du -sk *`;
         du = execSync(cmd, execOpts).toString().trim().split("\n");
       } catch(e) {
         this.info(`volume ${storePath} is empty (${e.message})`);

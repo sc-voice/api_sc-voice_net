@@ -812,10 +812,10 @@ typeof describe === "function" &&
       should.deepEqual(playlist.stats(), {
         tracks: 4,
         chars: {
-          en: 3122,
+          en: 3152,
           pli: 2408,
         },
-        duration: 490,
+        duration: 492,
         segments: {
           pli: 40,
           en: 38,

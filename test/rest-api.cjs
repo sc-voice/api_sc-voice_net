@@ -152,18 +152,18 @@ typeof describe === "function" &&
     });
     it("diskusage", async () => {
       var execPromise = util.promisify(exec);
-      var cmd = "df --total -B 1 /";
+      var cmd = "df -H /";
       var execOpts = {
         cwd: __dirname,
       };
       var res = await execPromise(cmd, execOpts);
       var stdout = res.stdout.split("\n");
-      var stats = stdout[2].split(/\s+/);
-      let used = Number(stats[2]);
-      let avail = Number(stats[3]);
-      let total = used + avail;
+      var stats = stdout.at(1).split(/\s+/);
+      let total = RestApi.diskBytes(stats[1]);
+      let used = RestApi.diskBytes(stats[2]);
+      let avail = RestApi.diskBytes(stats[3]);
       let name="testDiskUsage";
-      //console.log(`dbg diskusage`, {used, avail, total});
+      //console.log(`dbg diskusage`, {stats, used, avail, total});
 
       let ra = new RestApi({ name, });
       let app = express();
@@ -198,13 +198,15 @@ typeof describe === "function" &&
         "loadavg",
         "totalmem",
         "freemem",
+        "diskused",
         "diskfree",
         "diskavail",
         "disktotal",
       ]);
-      should(res.body.diskavail).below(res.body.diskfree + 1);
-      should(res.body.diskfree).below(res.body.disktotal);
-      should(res.body.totalmem).below(res.body.disktotal);
+      should(res.body.diskused).above(0).below(res.body.disktotal);
+      should(res.body.diskavail).above(0).below(res.body.diskfree + 1);
+      should(res.body.diskfree).above(0).below(res.body.disktotal);
+      should(res.body.totalmem).above(0).below(res.body.disktotal);
       res.body.version.should.match(/\d+.\d+.\d+/);
     });
     it("POST /echo => HTTP200 response with a Promise", async()=>{

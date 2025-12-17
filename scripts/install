@@ -5,6 +5,11 @@ SCRIPT=`basename $0 | tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`
 
 echo -e "${SCRIPT}: BEGIN `date` (OK)"
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  echo -e "${SCRIPT}: WARNING - This script is designed for Linux. Skipping installation on macOS."
+  exit 1
+fi
+
 echo -e "${SCRIPT}: apt update; apt upgrade..."
 sudo apt-get update -y
 sudo apt-get upgrade -y

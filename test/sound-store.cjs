@@ -260,7 +260,7 @@ typeof describe === "function" &&
     it("volumeInfo() returns volume information", async()=>{
       let store = new SoundStore({});
       //store.logLevel = 'info';
-      let cmd = `du -sb *`;
+      let cmd = `du -sk *`;
       let cwd = store.storePath;
       should(fs.existsSync(cwd)).equal(true);
       let nFiles = 0;

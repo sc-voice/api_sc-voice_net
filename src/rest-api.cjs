@@ -45,6 +45,16 @@
 
     static get JWT_SECRET() { return JWT_SECRET; }
 
+    static diskBytes(dfString) {
+      let byteStr = dfString
+        .replace('T', "000000000000")
+        .replace('G', "000000000")
+        .replace('M', "000000")
+        .replace('K', "000")
+
+      return Number(byteStr)
+    }
+
     requireAdmin(req, res) {
       let authorization = req.headers.authorization || "";
       let decoded = jwt.decode(authorization.split(" ")[1]) || {};
@@ -137,16 +147,17 @@
     async getIdentity(req, res) {
       try {
         var execPromise = util.promisify(exec);
-        var cmd = "df --total -B 1 /";
+        var cmd = "df -H /";
         var execOpts = {
           cwd: __dirname,
         };
         var res = await execPromise(cmd, execOpts);
         var stdout = res.stdout.split("\n");
-        var stats = stdout[2].split(/\s\s*/);
-        let diskused = Number(stats[2]);
-        let diskavail = Number(stats[3]);
-        let disktotal = diskused + diskavail;
+        var stats = stdout.at(1).split(/\s\s*/);
+        //console.log('getIdentity', stdout);
+        let disktotal = RestApi.diskBytes(stats[1]);
+        let diskused = RestApi.diskBytes(stats[2]);
+        let diskavail = RestApi.diskBytes(stats[3]);
         return {
           name: this.name,
           package: srcPkg.name,
@@ -156,6 +167,7 @@
           loadavg: os.loadavg(),
           totalmem: os.totalmem(),
           freemem: os.freemem(),
+          diskused,
           diskavail,
           diskfree: diskavail,
           disktotal: disktotal,

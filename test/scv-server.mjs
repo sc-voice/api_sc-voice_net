@@ -349,7 +349,7 @@ typeof describe === "function" &&
       should(results).instanceOf(Array);
       should(results.length).equal(3);
       should.deepEqual(results.map(r => r.uid),[
-        'sn42.11', 'mn1', 'sn56.21', 
+        'sn42.11', 'mn105', 'mn1', 
       ]);
     })
     it("GET /scv/play/segment/...", async()=>{
@@ -533,7 +533,7 @@ typeof describe === "function" &&
         .expect(200)
         .expect('Content-Type', /audio.opus/)
         .expect('Content-disposition', /.*thig1.1-en-soma_pli\+en_Amy.opus/)
-        .expect('Content-length', '140605');
+        .expect('Content-length', '147436');
     });
 
   });

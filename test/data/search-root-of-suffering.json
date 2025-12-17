@@ -146,7 +146,7 @@
               {
                 "scid": "sn42.11:1.1",
                 "pli": "Ekaṁ samayaṁ bhagavā mallesu viharati uruvelakappaṁ nāma mallānaṁ nigamo. ",
-                "en": "At one time the Buddha was staying in the land of the Mallas, near the Mallian town called Uruvelakappa. "
+                "en": "At one time the Buddha was staying in the land of the Mallas, near the Mallian town named Uruvelakappa. "
               },
               {
                 "scid": "sn42.11:1.2",
@@ -156,12 +156,12 @@
               {
                 "scid": "sn42.11:1.3",
                 "pli": "“sādhu me, bhante, bhagavā dukkhassa samudayañca atthaṅgamañca desetū”ti. ",
-                "en": "“Please, sir, teach me the origin and cessation of suffering.” "
+                "en": "“Please, sir, let the Blessed One teach me the origin and cessation of suffering.” "
               },
               {
                 "scid": "sn42.11:1.4",
                 "pli": "“Ahañce te, gāmaṇi, atītamaddhānaṁ ārabbha dukkhassa samudayañca atthaṅgamañca deseyyaṁ: ",
-                "en": "“Chief, if I were to teach you about the origin and ending of suffering in the past, saying "
+                "en": "“Chief, if I were to teach you about the origin and disappearance of suffering in the past, saying "
               },
               {
                 "scid": "sn42.11:1.5",
@@ -171,7 +171,7 @@
               {
                 "scid": "sn42.11:1.6",
                 "pli": "Ahañce te, gāmaṇi, anāgatamaddhānaṁ ārabbha dukkhassa samudayañca atthaṅgamañca deseyyaṁ: ",
-                "en": "If I were to teach you about the origin and ending of suffering in the future, saying "
+                "en": "If I were to teach you about the origin and disappearance of suffering in the future, saying "
               },
               {
                 "scid": "sn42.11:1.7",
@@ -181,7 +181,7 @@
               {
                 "scid": "sn42.11:1.8",
                 "pli": "Api cāhaṁ, gāmaṇi, idheva nisinno ettheva te nisinnassa dukkhassa samudayañca atthaṅgamañca desessāmi. ",
-                "en": "Rather, chief, I will teach you about the origin and ending of suffering as I am sitting right here and you are sitting right there. "
+                "en": "Rather, chief, I will teach you about the origin and disappearance of suffering as I am sitting right here and you are sitting right there. "
               },
               {
                 "scid": "sn42.11:1.9",
@@ -241,7 +241,7 @@
               {
                 "scid": "sn42.11:2.9",
                 "pli": "“Iminā tvaṁ, gāmaṇi, dhammena diṭṭhena viditena akālikena pattena pariyogāḷhena atītānāgate nayaṁ nehi: ",
-                "en": "“With this present phenomenon that is seen, known, immediate, attained, and fathomed, you may infer to the past and future: "
+                "en": "“With this present phenomenon that you have seen, understood, immediately attained, and fathomed, you can apply the same method to the past and future: "
               },
               {
                 "scid": "sn42.11:2.10",
@@ -294,7 +294,7 @@
               {
                 "scid": "sn42.11:2.19",
                 "pli": "So khvāhaṁ, bhante, kālasseva vuṭṭhāya purisaṁ uyyojemi: ",
-                "en": "I rise early and send someone, saying: "
+                "en": "I rise early and dispatch someone, saying: "
               },
               {
                 "scid": "sn42.11:2.20",
@@ -412,7 +412,7 @@
             "prefix": "",
             "values": [],
             "prop": "en",
-            "title": "At one time the Buddha was staying in the land of the Mallas, near the Mallian town called Uruvelakappa. ",
+            "title": "At one time the Buddha was staying in the land of the Mallas, near the Mallian town named Uruvelakappa. ",
             "expandable": false
           }
         ],
@@ -420,12 +420,12 @@
         "blurb": "The chief Bhadraka asks the Buddha about the origin and ending of suffering, and the Buddha points out that a loss among Bhadraka’s own community would cause him suffering, due to his attachment."
       },
       "stats": {
-        "text": 3502,
+        "text": 3574,
         "lang": "en",
         "nSegments": 55,
         "nEmptySegments": 1,
         "nSections": 2,
-        "seconds": 343.1715239120653
+        "seconds": 350.413270341332
       }
     },
     {
@@ -758,17 +758,17 @@
               {
                 "scid": "mn105:8.1",
                 "pli": "Ṭhānaṁ kho panetaṁ, sunakkhatta, vijjati yaṁ idhekacco purisapuggalo lokāmisādhimutto assa. ",
-                "en": "It’s possible that a certain individual may be intent on worldly pleasures of the flesh. "
+                "en": "It’s possible that a certain individual person may be intent on worldly pleasures of the flesh. "
               },
               {
                 "scid": "mn105:8.2",
                 "pli": "Lokāmisādhimuttassa kho, sunakkhatta, purisapuggalassa tappatirūpī ceva kathā saṇṭhāti, tadanudhammañca anuvitakketi, anuvicāreti, tañca purisaṁ bhajati, tena ca vittiṁ āpajjati; ",
-                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it satisfying. "
+                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it rewarding. "
               },
               {
                 "scid": "mn105:8.3",
                 "pli": "āneñjapaṭisaṁyuttāya ca pana kathāya kacchamānāya na sussūsati, na sotaṁ odahati, na aññā cittaṁ upaṭṭhāpeti, na ca taṁ purisaṁ bhajati, na ca tena vittiṁ āpajjati. ",
-                "en": "But when talk connected with the imperturbable is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it satisfying. "
+                "en": "But when talk connected with the imperturbable is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it rewarding. "
               },
               {
                 "scid": "mn105:9.1",
@@ -798,7 +798,7 @@
               {
                 "scid": "mn105:9.6",
                 "pli": "api nu so puriso tassa purisassa sussūseyya, sotaṁ odaheyya, aññā cittaṁ upaṭṭhāpeyya, tañca purisaṁ bhajeyya, tena ca vittiṁ āpajjeyyā”ti? ",
-                "en": "Would that person want to listen to that other person? Would they actively listen and try to understand? Would they associate with that person, and find it satisfying?” "
+                "en": "Would that person want to listen to that other person? Would they actively listen and try to understand? Would they associate with that person, and find it rewarding?” "
               },
               {
                 "scid": "mn105:9.7",
@@ -813,12 +813,12 @@
               {
                 "scid": "mn105:9.9",
                 "pli": "Lokāmisādhimuttassa kho, sunakkhatta, purisapuggalassa tappatirūpī ceva kathā saṇṭhāti, tadanudhammañca anuvitakketi, anuvicāreti, tañca purisaṁ bhajati, tena ca vittiṁ āpajjati; ",
-                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it satisfying. "
+                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it rewarding. "
               },
               {
                 "scid": "mn105:9.10",
                 "pli": "āneñjapaṭisaṁyuttāya ca pana kathāya kacchamānāya na sussūsati, na sotaṁ odahati, na aññā cittaṁ upaṭṭhāpeti, na ca taṁ purisaṁ bhajati, na ca tena vittiṁ āpajjati. ",
-                "en": "But when talk connected with the imperturbable is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it satisfying. "
+                "en": "But when talk connected with the imperturbable is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it rewarding. "
               },
               {
                 "scid": "mn105:9.11",
@@ -833,17 +833,17 @@
               {
                 "scid": "mn105:10.1",
                 "pli": "Ṭhānaṁ kho panetaṁ, sunakkhatta, vijjati yaṁ idhekacco purisapuggalo āneñjādhimutto assa. ",
-                "en": "It’s possible that a certain individual may be intent on the imperturbable. "
+                "en": "It’s possible that a certain individual person may be intent on the imperturbable. "
               },
               {
                 "scid": "mn105:10.2",
                 "pli": "Āneñjādhimuttassa kho, sunakkhatta, purisapuggalassa tappatirūpī ceva kathā saṇṭhāti, tadanudhammañca anuvitakketi, anuvicāreti, tañca purisaṁ bhajati, tena ca vittiṁ āpajjati; ",
-                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it satisfying. "
+                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it rewarding. "
               },
               {
                 "scid": "mn105:10.3",
                 "pli": "lokāmisapaṭisaṁyuttāya ca pana kathāya kacchamānāya na sussūsati, na sotaṁ odahati, na aññā cittaṁ upaṭṭhāpeti, na ca taṁ purisaṁ bhajati, na ca tena vittiṁ āpajjati. ",
-                "en": "But when talk connected with worldly pleasures of the flesh is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it satisfying. "
+                "en": "But when talk connected with worldly pleasures of the flesh is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it rewarding. "
               },
               {
                 "scid": "mn105:11.1",
@@ -868,17 +868,17 @@
               {
                 "scid": "mn105:12.1",
                 "pli": "Ṭhānaṁ kho panetaṁ, sunakkhatta, vijjati yaṁ idhekacco purisapuggalo ākiñcaññāyatanādhimutto assa. ",
-                "en": "It’s possible that a certain individual may be intent on the dimension of nothingness. "
+                "en": "It’s possible that a certain individual person may be intent on the dimension of nothingness. "
               },
               {
                 "scid": "mn105:12.2",
                 "pli": "Ākiñcaññāyatanādhimuttassa kho, sunakkhatta, purisapuggalassa tappatirūpī ceva kathā saṇṭhāti, tadanudhammañca anuvitakketi, anuvicāreti, tañca purisaṁ bhajati, tena ca vittiṁ āpajjati; ",
-                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it satisfying. "
+                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it rewarding. "
               },
               {
                 "scid": "mn105:12.3",
                 "pli": "āneñjapaṭisaṁyuttāya ca pana kathāya kacchamānāya na sussūsati, na sotaṁ odahati, na aññā cittaṁ upaṭṭhāpeti, na ca taṁ purisaṁ bhajati, na ca tena vittiṁ āpajjati. ",
-                "en": "But when talk connected with the imperturbable is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it satisfying. "
+                "en": "But when talk connected with the imperturbable is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it rewarding. "
               },
               {
                 "scid": "mn105:13.1",
@@ -903,22 +903,22 @@
               {
                 "scid": "mn105:14.1",
                 "pli": "Ṭhānaṁ kho panetaṁ, sunakkhatta, vijjati yaṁ idhekacco purisapuggalo nevasaññānāsaññāyatanādhimutto assa. ",
-                "en": "It’s possible that a certain individual may be intent on the dimension of neither perception nor non-perception. "
+                "en": "It’s possible that a certain individual person may be intent on the dimension of neither perception nor non-perception. "
               },
               {
                 "scid": "mn105:14.2",
                 "pli": "Nevasaññānāsaññāyatanādhimuttassa kho, sunakkhatta, purisapuggalassa tappatirūpī ceva kathā saṇṭhāti, tadanudhammañca anuvitakketi, anuvicāreti, tañca purisaṁ bhajati, tena ca vittiṁ āpajjati; ",
-                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it satisfying. "
+                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it rewarding. "
               },
               {
                 "scid": "mn105:14.3",
                 "pli": "ākiñcaññāyatanapaṭisaṁyuttāya ca pana kathāya kacchamānāya na sussūsati, na sotaṁ odahati, na aññā cittaṁ upaṭṭhāpeti, na ca taṁ purisaṁ bhajati, na ca tena vittiṁ āpajjati. ",
-                "en": "But when talk connected with the dimension of nothingness is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it satisfying. "
+                "en": "But when talk connected with the dimension of nothingness is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it rewarding. "
               },
               {
                 "scid": "mn105:15.1",
                 "pli": "Seyyathāpi, sunakkhatta, puriso manuññabhojanaṁ bhuttāvī chaḍḍeyya. ",
-                "en": "Suppose someone had eaten some delectable food and thrown it up. "
+                "en": "Suppose someone had eaten some satisfying food and thrown it up. "
               },
               {
                 "scid": "mn105:15.2",
@@ -963,17 +963,17 @@
               {
                 "scid": "mn105:16.1",
                 "pli": "Ṭhānaṁ kho panetaṁ, sunakkhatta, vijjati yaṁ idhekacco purisapuggalo sammā nibbānādhimutto assa. ",
-                "en": "It’s possible that a certain individual may be rightly intent on extinguishment. "
+                "en": "It’s possible that a certain individual person may be rightly intent on extinguishment. "
               },
               {
                 "scid": "mn105:16.2",
                 "pli": "Sammā nibbānādhimuttassa kho, sunakkhatta, purisapuggalassa tappatirūpī ceva kathā saṇṭhāti, tadanudhammañca anuvitakketi, anuvicāreti, tañca purisaṁ bhajati, tena ca vittiṁ āpajjati; ",
-                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it satisfying. "
+                "en": "Such an individual engages in pertinent conversation, thinking and considering in line with that. They associate with that kind of person, and they find it rewarding. "
               },
               {
                 "scid": "mn105:16.3",
                 "pli": "nevasaññānāsaññāyatanapaṭisaṁyuttāya ca pana kathāya kacchamānāya na sussūsati, na sotaṁ odahati, na aññā cittaṁ upaṭṭhāpeti, na ca taṁ purisaṁ bhajati, na ca tena vittiṁ āpajjati. ",
-                "en": "But when talk connected with the dimension of neither perception nor non-perception is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it satisfying. "
+                "en": "But when talk connected with the dimension of neither perception nor non-perception is going on they don’t want to listen. They don’t actively listen or try to understand. They don’t associate with that kind of person, and they don’t find it rewarding. "
               },
               {
                 "scid": "mn105:17.1",
@@ -1128,7 +1128,7 @@
               {
                 "scid": "mn105:20.8",
                 "pli": "Tassa imissā ca asappāyakiriyāya, asuci visadoso apanīto saupādiseso tadubhayena vaṇo puthuttaṁ gaccheyya. ",
-                "en": "Then both because they did what was unsuitable, and because of the residue of unclean poison, the wound would spread, "
+                "en": "Then both because they did what was unsuitable, and because of the residue of unclean poison, the wound would expand, "
               },
               {
                 "scid": "mn105:20.9",
@@ -1173,7 +1173,7 @@
               {
                 "scid": "mn105:22.1",
                 "pli": "Maraṇañhetaṁ, sunakkhatta, ariyassa vinaye yo sikkhaṁ paccakkhāya hīnāyāvattati; ",
-                "en": "For it is death in the training of the Noble One to reject the training and return to a lesser life. "
+                "en": "For it is death in the training of the Noble One to disavow the training and return to a lesser life. "
               },
               {
                 "scid": "mn105:22.2",
@@ -1515,12 +1515,12 @@
         "blurb": "Not all of those who claim to be awakened are genuine. The Buddha teaches how true spiritual progress depends on an irreversible letting go of the forces that lead to suffering."
       },
       "stats": {
-        "text": 14386,
+        "text": 14409,
         "lang": "en",
         "nSegments": 188,
         "nEmptySegments": 8,
         "nSections": 2,
-        "seconds": 1241.8384917037417
+        "seconds": 1243.5500655039393
       }
     },
     {
@@ -2361,7 +2361,7 @@
               {
                 "scid": "mn1:51.1",
                 "pli": "Yopi so, bhikkhave, bhikkhu arahaṁ khīṇāsavo vusitavā katakaraṇīyo ohitabhāro anuppattasadattho parikkhīṇabhavasaṁyojano sammadaññāvimutto, sopi pathaviṁ pathavito abhijānāti; ",
-                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
+                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their heart’s goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
               },
               {
                 "scid": "mn1:51.2",
@@ -2515,7 +2515,7 @@
               {
                 "scid": "mn1:75.1",
                 "pli": "Yopi so, bhikkhave, bhikkhu arahaṁ khīṇāsavo vusitavā katakaraṇīyo ohitabhāro anuppattasadattho parikkhīṇabhavasaṁyojano sammadaññā vimutto, sopi pathaviṁ pathavito abhijānāti; ",
-                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
+                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their heart’s goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
               },
               {
                 "scid": "mn1:75.2",
@@ -2669,7 +2669,7 @@
               {
                 "scid": "mn1:99.1",
                 "pli": "Yopi so, bhikkhave, bhikkhu arahaṁ khīṇāsavo vusitavā katakaraṇīyo ohitabhāro anuppattasadattho parikkhīṇabhavasaṁyojano sammadaññāvimutto, sopi pathaviṁ pathavito abhijānāti; ",
-                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
+                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their heart’s goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
               },
               {
                 "scid": "mn1:99.2",
@@ -2823,7 +2823,7 @@
               {
                 "scid": "mn1:123.1",
                 "pli": "Yopi so, bhikkhave, bhikkhu arahaṁ khīṇāsavo vusitavā katakaraṇīyo ohitabhāro anuppattasadattho parikkhīṇabhavasaṁyojano sammadaññāvimutto, sopi pathaviṁ pathavito abhijānāti; ",
-                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their own true goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
+                "en": "A mendicant who is perfected—with defilements ended, who has completed the spiritual journey, done what had to be done, laid down the burden, achieved their heart’s goal, utterly ended the fetter of continued existence, and is rightly freed through enlightenment—directly knows earth as earth. "
               },
               {
                 "scid": "mn1:123.2",
@@ -3331,12 +3331,12 @@
         "blurb": "The Buddha examines how the notion of a permanent self emerges from the process of perception. A wide range of phenomena are considered, embracing both naturalistic and cosmological dimensions. An unawakened person interprets experience in terms of a self, while those more advanced have the same experiences without attachment."
       },
       "stats": {
-        "text": 16033,
+        "text": 16029,
         "lang": "en",
         "nSegments": 334,
         "nEmptySegments": 9,
         "nSections": 2,
-        "seconds": 1384.2054358564938
+        "seconds": 1383.913022408743
       }
     },
     {
@@ -3353,7 +3353,7 @@
       "quote": {
         "scid": "mn66:17.1",
         "pli": "Idha panudāyi, ekacco puggalo ‘upadhi dukkhassa mūlan’ti—",
-        "en": "Take another person who, understanding that attachment <span class=\"scv-matched\">is the root of suffering</span>, ",
+        "en": "Take another individual who, understanding that attachment <span class=\"scv-matched\">is the root of suffering</span>, ",
         "matched": true
       },
       "suttaplex": {
@@ -3559,7 +3559,7 @@
               {
                 "scid": "mn66:6.4",
                 "pli": "Mayañhi, bhante, pubbe sāyañceva bhuñjāma pāto ca divā ca vikāle. ",
-                "en": "For we used to eat in the evening, the morning, and at the wrong time of day. "
+                "en": "For we used to eat at dusk, at daybreak, and at the wrong time of day. "
               },
               {
                 "scid": "mn66:6.5",
@@ -3589,7 +3589,7 @@
               {
                 "scid": "mn66:6.10",
                 "pli": "Te mayaṁ, bhante, sāyañceva bhuñjāma pāto ca. ",
-                "en": "Then we ate in the evening and the morning. "
+                "en": "Then we ate at dusk and daybreak. "
               },
               {
                 "scid": "mn66:6.11",
@@ -3634,7 +3634,7 @@
               {
                 "scid": "mn66:6.19",
                 "pli": "Bhūtapubbaṁ, bhante, bhikkhū rattandhakāratimisāyaṁ piṇḍāya carantā candanikampi pavisanti, oligallepi papatanti, kaṇṭakāvāṭampi ārohanti, suttampi gāviṁ ārohanti, māṇavehipi samāgacchanti katakammehipi akatakammehipi, mātugāmopi te asaddhammena nimanteti. ",
-                "en": "In the past, mendicants went wandering for alms in the dark of the night. They walked into a swamp, or fell into a sewer, or collided with a thorn bush, or collided with a sleeping cow, or encountered youths escaping a crime or on their way to commit one, or were invited by a female to commit a lewd act. "
+                "en": "In the past, mendicants went wandering for alms in the dark of the night. They walked into a swamp, or fell into a sewer, or collided with a thorn bush, or collided with a sleeping cow, or encountered youths escaping a crime or on their way to commit one, or were invited by a lady to commit a lewd act. "
               },
               {
                 "scid": "mn66:6.20",
@@ -3699,12 +3699,12 @@
               {
                 "scid": "mn66:7.1",
                 "pli": "“Evameva panudāyi, idhekacce moghapurisā ‘idaṁ pajahathā’ti mayā vuccamānā te evamāhaṁsu: ",
-                "en": "“This is exactly what happens when some silly people are told by me to give something up. They say, "
+                "en": "“This is exactly what happens when some futile people are told by me to give something up. They say, "
               },
               {
                 "scid": "mn66:7.2",
                 "pli": "‘kiṁ panimassa appamattakassa oramattakassa adhisallikhatevāyaṁ samaṇo’ti. ",
-                "en": "‘What, such a trivial, insignificant thing as this? This ascetic is much too strict!’ "
+                "en": "‘What, such a trivial, trifling thing as this? This ascetic is much too strict!’ "
               },
               {
                 "scid": "mn66:7.3",
@@ -3749,12 +3749,12 @@
               {
                 "scid": "mn66:8.7",
                 "pli": "“Evameva kho, udāyi, idhekacce moghapurisā ‘idaṁ pajahathā’ti mayā vuccamānā te evamāhaṁsu: ",
-                "en": "“In the same way, when some silly people are told by me to give something up, they say, "
+                "en": "“In the same way, when some futile people are told by me to give something up, they say, "
               },
               {
                 "scid": "mn66:8.8",
                 "pli": "‘kiṁ panimassa appamattakassa oramattakassa adhisallikhatevāyaṁ samaṇo’ti? ",
-                "en": "‘What, such a trivial, insignificant thing as this? This ascetic is much too strict!’ "
+                "en": "‘What, such a trivial, trifling thing as this? This ascetic is much too strict!’ "
               },
               {
                 "scid": "mn66:8.9",
@@ -3774,7 +3774,7 @@
               {
                 "scid": "mn66:9.2",
                 "pli": "‘kiṁ panimassa appamattakassa oramattakassa pahātabbassa yassa no bhagavā pahānamāha, yassa no sugato paṭinissaggamāhā’ti? ",
-                "en": "‘What, we just have to give up such a trivial, insignificant thing as this, when the Blessed One tells us to give it up, the Holy One tells us to let it go?’ "
+                "en": "‘What, we just have to give up such a trivial, trifling thing as this, when the Blessed One tells us to give it up, the Holy One tells us to let it go?’ "
               },
               {
                 "scid": "mn66:9.3",
@@ -3829,7 +3829,7 @@
               {
                 "scid": "mn66:10.8",
                 "pli": "‘kiṁ panimassa appamattakassa oramattakassa pahātabbassa yassa no bhagavā pahānamāha, yassa no sugato paṭinissaggamāhā’ti? ",
-                "en": "‘What, we just have to give up such a trivial, insignificant thing as this, when the Blessed One tells us to give it up, the Holy One tells us to let it go?’ "
+                "en": "‘What, we just have to give up such a trivial, trifling thing as this, when the Blessed One tells us to give it up, the Holy One tells us to let it go?’ "
               },
               {
                 "scid": "mn66:10.9",
@@ -3859,7 +3859,7 @@
               {
                 "scid": "mn66:11.3",
                 "pli": "So ārāmagataṁ bhikkhuṁ passeyya sudhotahatthapādaṁ manuññaṁ bhojanaṁ bhuttāviṁ sītāya chāyāya nisinnaṁ adhicitte yuttaṁ. ",
-                "en": "He’d see a mendicant sitting in meditation in the cool shade, their hands and feet well washed after eating a delectable meal. "
+                "en": "He’d see a mendicant sitting in meditation in the cool shade, their hands and feet well washed after eating a satisfying meal. "
               },
               {
                 "scid": "mn66:11.4",
@@ -3919,12 +3919,12 @@
               {
                 "scid": "mn66:11.15",
                 "pli": "“Evameva kho, udāyi, idhekacce moghapurisā ‘idaṁ pajahathā’ti mayā vuccamānā te evamāhaṁsu: ",
-                "en": "“In the same way, when some silly people are told by me to give something up, they say, "
+                "en": "“In the same way, when some futile people are told by me to give something up, they say, "
               },
               {
                 "scid": "mn66:11.16",
                 "pli": "‘kiṁ panimassa appamattakassa oramattakassa adhisallikhatevāyaṁ samaṇo’ti? ",
-                "en": "‘What, such a trivial, insignificant thing as this? This ascetic is much too strict!’ "
+                "en": "‘What, such a trivial, trifling thing as this? This ascetic is much too strict!’ "
               },
               {
                 "scid": "mn66:11.17",
@@ -3944,7 +3944,7 @@
               {
                 "scid": "mn66:12.2",
                 "pli": "so ārāmagataṁ bhikkhuṁ passeyya sudhotahatthapādaṁ manuññaṁ bhojanaṁ bhuttāviṁ sītāya chāyāya nisinnaṁ adhicitte yuttaṁ. ",
-                "en": "He’d see a mendicant sitting in meditation in the cool shade, their hands and feet well washed after eating a delectable meal. "
+                "en": "He’d see a mendicant sitting in meditation in the cool shade, their hands and feet well washed after eating a satisfying meal. "
               },
               {
                 "scid": "mn66:12.3",
@@ -4004,7 +4004,7 @@
               {
                 "scid": "mn66:12.14",
                 "pli": "‘kiṁ panimassa appamattakassa oramattakassa pahātabbassa yassa no bhagavā pahānamāha, yassa no sugato paṭinissaggamāhā’ti? ",
-                "en": "‘What, we just have to give up such a trivial, insignificant thing as this, when the Blessed One tells us to give it up, the Holy One tells us to let it go?’ "
+                "en": "‘What, we just have to give up such a trivial, trifling thing as this, when the Blessed One tells us to give it up, the Holy One tells us to let it go?’ "
               },
               {
                 "scid": "mn66:12.15",
@@ -4024,7 +4024,7 @@
               {
                 "scid": "mn66:13.1",
                 "pli": "Cattārome, udāyi, puggalā santo saṁvijjamānā lokasmiṁ. ",
-                "en": "Udāyī, these four people are found in the world. "
+                "en": "Udāyī, these four individuals are found in the world. "
               },
               {
                 "scid": "mn66:13.2",
@@ -4034,7 +4034,7 @@
               {
                 "scid": "mn66:14.1",
                 "pli": "Idhudāyi, ekacco puggalo upadhipahānāya paṭipanno hoti upadhipaṭinissaggāya. ",
-                "en": "Take a certain person practicing to give up and let go of attachments. "
+                "en": "Take a certain individual practicing to give up and let go of attachments. "
               },
               {
                 "scid": "mn66:14.2",
@@ -4049,7 +4049,7 @@
               {
                 "scid": "mn66:14.4",
                 "pli": "Imaṁ kho ahaṁ, udāyi, puggalaṁ ‘saṁyutto’ti vadāmi no ‘visaṁyutto’. ",
-                "en": "I call this person ‘fettered’, not ‘detached’. "
+                "en": "I call this individual ‘fettered’, not ‘detached’. "
               },
               {
                 "scid": "mn66:14.5",
@@ -4059,12 +4059,12 @@
               {
                 "scid": "mn66:14.6",
                 "pli": "Indriyavemattatā hi me, udāyi, imasmiṁ puggale viditā. ",
-                "en": "Because I understand the diversity of faculties as it applies to this person. "
+                "en": "Because I understand the disparity of faculties as it applies to this individual. "
               },
               {
                 "scid": "mn66:15.1",
                 "pli": "Idha panudāyi, ekacco puggalo upadhipahānāya paṭipanno hoti upadhipaṭinissaggāya. ",
-                "en": "Take another person practicing to give up and let go of attachments. "
+                "en": "Take another individual practicing to give up and let go of attachments. "
               },
               {
                 "scid": "mn66:15.2",
@@ -4079,7 +4079,7 @@
               {
                 "scid": "mn66:15.4",
                 "pli": "Imampi kho ahaṁ, udāyi, puggalaṁ ‘saṁyutto’ti vadāmi no ‘visaṁyutto’. ",
-                "en": "I also call this person ‘fettered’, not ‘detached’. "
+                "en": "I also call this individual ‘fettered’, not ‘detached’. "
               },
               {
                 "scid": "mn66:15.5",
@@ -4089,12 +4089,12 @@
               {
                 "scid": "mn66:15.6",
                 "pli": "Indriyavemattatā hi me, udāyi, imasmiṁ puggale viditā. ",
-                "en": "Because I understand the diversity of faculties as it applies to this person. "
+                "en": "Because I understand the disparity of faculties as it applies to this individual. "
               },
               {
                 "scid": "mn66:16.1",
                 "pli": "Idha panudāyi, ekacco puggalo upadhipahānāya paṭipanno hoti upadhipaṭinissaggāya. ",
-                "en": "Take another person practicing to give up and let go of attachments. "
+                "en": "Take another individual practicing to give up and let go of attachments. "
               },
               {
                 "scid": "mn66:16.2",
@@ -4124,7 +4124,7 @@
               {
                 "scid": "mn66:16.7",
                 "pli": "Evameva kho, udāyi, idhekacco puggalo upadhipahānāya paṭipanno hoti upadhipaṭinissaggāya. ",
-                "en": "In the same way, take a person practicing to give up and let go of attachments. "
+                "en": "In the same way, take an individual practicing to give up and let go of attachments. "
               },
               {
                 "scid": "mn66:16.8",
@@ -4144,7 +4144,7 @@
               {
                 "scid": "mn66:16.11",
                 "pli": "Imampi kho ahaṁ, udāyi, puggalaṁ ‘saṁyutto’ti vadāmi no ‘visaṁyutto’. ",
-                "en": "I also call this person ‘fettered’, not ‘detached’. "
+                "en": "I also call this individual ‘fettered’, not ‘detached’. "
               },
               {
                 "scid": "mn66:16.12",
@@ -4154,12 +4154,12 @@
               {
                 "scid": "mn66:16.13",
                 "pli": "Indriyavemattatā hi me, udāyi, imasmiṁ puggale viditā. ",
-                "en": "Because I understand the diversity of faculties as it applies to this person. "
+                "en": "Because I understand the disparity of faculties as it applies to this individual. "
               },
               {
                 "scid": "mn66:17.1",
                 "pli": "Idha panudāyi, ekacco puggalo ‘upadhi dukkhassa mūlan’ti—",
-                "en": "Take another person who, understanding that attachment <span class=\"scv-matched\">is the root of suffering</span>, ",
+                "en": "Take another individual who, understanding that attachment <span class=\"scv-matched\">is the root of suffering</span>, ",
                 "matched": true
               },
               {
@@ -4170,7 +4170,7 @@
               {
                 "scid": "mn66:17.3",
                 "pli": "Imaṁ kho ahaṁ, udāyi, puggalaṁ ‘visaṁyutto’ti vadāmi no ‘saṁyutto’ti. ",
-                "en": "I call this person ‘detached’, not ‘fettered’. "
+                "en": "I call this individual ‘detached’, not ‘fettered’. "
               },
               {
                 "scid": "mn66:17.4",
@@ -4180,12 +4180,12 @@
               {
                 "scid": "mn66:17.5",
                 "pli": "Indriyavemattatā hi me, udāyi, imasmiṁ puggale viditā. ",
-                "en": "Because I understand the diversity of faculties as it applies to this person. "
+                "en": "Because I understand the disparity of faculties as it applies to this individual. "
               },
               {
                 "scid": "mn66:17.6",
                 "pli": "Ime kho, udāyi, cattāro puggalā santo saṁvijjamānā lokasmiṁ. ",
-                "en": "These are the four people found in the world. "
+                "en": "These are the four individuals found in the world. "
               },
               {
                 "scid": "mn66:18.1",
@@ -4390,7 +4390,7 @@
               {
                 "scid": "mn66:30.1",
                 "pli": "Idhudāyi, bhikkhu sabbaso rūpasaññānaṁ samatikkamā paṭighasaññānaṁ atthaṅgamā nānattasaññānaṁ amanasikārā ‘ananto ākāso’ti ākāsānañcāyatanaṁ upasampajja viharati, ayaṁ tassa samatikkamo; ",
-                "en": "Take a mendicant who, going totally beyond perceptions of form, with the ending of perceptions of impingement, not focusing on perceptions of diversity, aware that ‘space is infinite’, enters and remains in the dimension of infinite space. That goes beyond it. "
+                "en": "Take a mendicant who, going totally beyond perceptions of form, with the disappearance of perceptions of impingement, not focusing on perceptions of diversity, aware that ‘space is infinite’, enters and remains in the dimension of infinite space. That goes beyond it. "
               },
               {
                 "scid": "mn66:30.2",
@@ -4494,12 +4494,12 @@
         "blurb": "Again raising the rule regarding eating, but this time as a reflection of gratitude for the Buddha in eliminating things that cause complexity and stress. The Buddha emphasizes how attachment even to little things can be dangerous."
       },
       "stats": {
-        "text": 15793,
+        "text": 15817,
         "lang": "en",
         "nSegments": 202,
         "nEmptySegments": 5,
         "nSections": 2,
-        "seconds": 1703.9464532053953
+        "seconds": 1706.763618234378
       }
     }
   ]
