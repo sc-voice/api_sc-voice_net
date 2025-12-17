@@ -31,7 +31,7 @@
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue": "^6.0.0",
     "eslint": "^9.6.0",
     "execa": "^6.1.0",
     "mocha": "^10.0.0",
