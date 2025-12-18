@@ -20,8 +20,8 @@ sudo rm /var/lib/dpkg/info/grub*
 sudo dpkg --configure -a
 # HACK END
 
-${DIR}/install-node 20 &&
-${DIR}/update-npm 10 &&
+${DIR}/install-node 24 &&
+${DIR}/update-npm 11 &&
 ${DIR}/install-ripgrep &&
 ${DIR}/install-audio-tools &&
 npm install && 
