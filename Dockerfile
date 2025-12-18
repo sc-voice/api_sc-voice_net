@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM node:20-bookworm-slim
+FROM node:24-trixie-slim
 LABEL maintainer="karl@firepick.org"
 RUN apt-get update && apt-get upgrade -y
 SHELL [ "/bin/bash", "-c" ]
