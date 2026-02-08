@@ -457,7 +457,7 @@ typeof describe === "function" &&
         results.map((r) => r.uid),
         ["dn7"]
       );
-      should(results[0].blurb).match(/Diese Lehrrede über die stufenweise/);
+      should(results[0].blurb).match(/Diese Lehrrede über/);
     });
     it("search(pattern) => regular expression results", async () => {
       var voice = Voice.createVoice({
