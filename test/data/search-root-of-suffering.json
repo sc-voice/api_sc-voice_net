@@ -156,12 +156,12 @@
               {
                 "scid": "sn42.11:1.3",
                 "pli": "“sādhu me, bhante, bhagavā dukkhassa samudayañca atthaṅgamañca desetū”ti. ",
-                "en": "“Please, sir, let the Blessed One teach me the origin and cessation of suffering.” "
+                "en": "“Please, sir, let the Blessed One teach me the origin and disappearance of suffering.” "
               },
               {
                 "scid": "sn42.11:1.4",
                 "pli": "“Ahañce te, gāmaṇi, atītamaddhānaṁ ārabbha dukkhassa samudayañca atthaṅgamañca deseyyaṁ: ",
-                "en": "“Chief, if I were to teach you about the origin and disappearance of suffering in the past, saying "
+                "en": "“Chief, if I were to teach you about the origin and disappearance of suffering in connection with the past, saying "
               },
               {
                 "scid": "sn42.11:1.5",
@@ -171,7 +171,7 @@
               {
                 "scid": "sn42.11:1.6",
                 "pli": "Ahañce te, gāmaṇi, anāgatamaddhānaṁ ārabbha dukkhassa samudayañca atthaṅgamañca deseyyaṁ: ",
-                "en": "If I were to teach you about the origin and disappearance of suffering in the future, saying "
+                "en": "If I were to teach you about the origin and disappearance of suffering in connection with the future, saying "
               },
               {
                 "scid": "sn42.11:1.7",
@@ -299,7 +299,7 @@
               {
                 "scid": "sn42.11:2.20",
                 "pli": "‘gaccha, bhaṇe, ciravāsiṁ kumāraṁ jānāhī’ti. ",
-                "en": "‘Go, my man, and check on my boy Ciravāsi.’ "
+                "en": "‘Go, I must say, and check on my boy Ciravāsi.’ "
               },
               {
                 "scid": "sn42.11:2.21",
@@ -420,12 +420,12 @@
         "blurb": "The chief Bhadraka asks the Buddha about the origin and ending of suffering, and the Buddha points out that a loss among Bhadraka’s own community would cause him suffering, due to his attachment."
       },
       "stats": {
-        "text": 3574,
+        "text": 3614,
         "lang": "en",
         "nSegments": 55,
         "nEmptySegments": 1,
         "nSections": 2,
-        "seconds": 350.413270341332
+        "seconds": 354.4397053501888
       }
     },
     {
@@ -1063,7 +1063,7 @@
               {
                 "scid": "mn105:19.7",
                 "pli": "‘ambho purisa, ubbhataṁ kho te sallaṁ, apanīto visadoso saupādiseso. ",
-                "en": "‘My good man, the dart has been extracted and the poison expelled without residue. "
+                "en": "‘My friend, the dart has been extracted and the poison expelled without residue. "
               },
               {
                 "scid": "mn105:19.8",
@@ -1088,7 +1088,7 @@
               {
                 "scid": "mn105:19.12",
                 "pli": "Vaṇānurakkhī ca, ambho purisa, vihareyyāsi vaṇasāropī’ti. ",
-                "en": "Take care of the wound, my good fellow, heal it.’ "
+                "en": "Take care of the wound, my friend, heal it.’ "
               },
               {
                 "scid": "mn105:20.1",
@@ -1243,7 +1243,7 @@
               {
                 "scid": "mn105:24.7",
                 "pli": "‘ambho purisa, ubbhataṁ kho te sallaṁ, apanīto visadoso anupādiseso. ",
-                "en": "‘My good man, the dart has been extracted and the poison expelled with no residue. "
+                "en": "‘My friend, the dart has been extracted and the poison expelled with no residue. "
               },
               {
                 "scid": "mn105:24.8",
@@ -1268,7 +1268,7 @@
               {
                 "scid": "mn105:24.12",
                 "pli": "Vaṇānurakkhī ca, ambho purisa, vihareyyāsi vaṇasāropī’ti. ",
-                "en": "Take care of the wound, my good fellow, heal it.’ "
+                "en": "Take care of the wound, my friend, heal it.’ "
               },
               {
                 "scid": "mn105:25.1",
@@ -1515,12 +1515,12 @@
         "blurb": "Not all of those who claim to be awakened are genuine. The Buddha teaches how true spiritual progress depends on an irreversible letting go of the forces that lead to suffering."
       },
       "stats": {
-        "text": 14409,
+        "text": 14395,
         "lang": "en",
         "nSegments": 188,
         "nEmptySegments": 8,
         "nSections": 2,
-        "seconds": 1243.5500655039393
+        "seconds": 1242.5083420898086
       }
     },
     {
