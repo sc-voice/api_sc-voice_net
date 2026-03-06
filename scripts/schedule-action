@@ -8,8 +8,10 @@ set -e
 
 git pull
 echo -e "${SCRIPT}: updating dependencies..."
-npm install --save scv-bilara@latest\
-  #FROZEN at 3.12.1 vuetify@latest\
+
+npm install --save \
+  scv-bilara@latest\
+  vuetify@v3-stable\
   memo-again@latest\
   say-again@latest\
   suttacentral-api@latest\
