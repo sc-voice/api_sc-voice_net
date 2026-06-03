@@ -275,7 +275,7 @@ typeof describe === "function" &&
         volume: "test-playlist",
       });
       should(result.signature.guid)
-      .match(/043357f71f7bbc965f7c0fcac977eebe/);
+      .match(/e0d8439534fa53f1a81654838e167d00/);
     });
     it("speak(opts) => task progress", async () => {
       let factory = await testSuttaFactory();

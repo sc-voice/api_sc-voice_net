@@ -43,7 +43,7 @@
             "segmented": true,
             "title": "With Bhadraka ",
             "volpage": null,
-            "has_comment": false
+            "has_comment": true
           }
         ],
         "parallel_count": 2,
@@ -88,7 +88,7 @@
               "segmented": true,
               "title": "With Bhadraka ",
               "volpage": null,
-              "has_comment": false
+              "has_comment": true
             }
           ],
           "parallel_count": 2,
@@ -299,7 +299,7 @@
               {
                 "scid": "sn42.11:2.20",
                 "pli": "‘gaccha, bhaṇe, ciravāsiṁ kumāraṁ jānāhī’ti. ",
-                "en": "‘Go, I must say, and check on my boy Ciravāsi.’ "
+                "en": "‘Go, lad, and check on my boy Ciravāsi.’ "
               },
               {
                 "scid": "sn42.11:2.21",
@@ -420,12 +420,12 @@
         "blurb": "The chief Bhadraka asks the Buddha about the origin and ending of suffering, and the Buddha points out that a loss among Bhadraka’s own community would cause him suffering, due to his attachment."
       },
       "stats": {
-        "text": 3614,
+        "text": 3607,
         "lang": "en",
         "nSegments": 55,
         "nEmptySegments": 1,
         "nSections": 2,
-        "seconds": 354.4397053501888
+        "seconds": 353.73491202974964
       }
     },
     {
@@ -1063,7 +1063,7 @@
               {
                 "scid": "mn105:19.7",
                 "pli": "‘ambho purisa, ubbhataṁ kho te sallaṁ, apanīto visadoso saupādiseso. ",
-                "en": "‘My friend, the dart has been extracted and the poison expelled without residue. "
+                "en": "‘My man, the dart has been extracted and the poison expelled without residue. "
               },
               {
                 "scid": "mn105:19.8",
@@ -1088,7 +1088,7 @@
               {
                 "scid": "mn105:19.12",
                 "pli": "Vaṇānurakkhī ca, ambho purisa, vihareyyāsi vaṇasāropī’ti. ",
-                "en": "Take care of the wound, my friend, heal it.’ "
+                "en": "Take care of the wound, my man, heal it.’ "
               },
               {
                 "scid": "mn105:20.1",
@@ -1243,7 +1243,7 @@
               {
                 "scid": "mn105:24.7",
                 "pli": "‘ambho purisa, ubbhataṁ kho te sallaṁ, apanīto visadoso anupādiseso. ",
-                "en": "‘My friend, the dart has been extracted and the poison expelled with no residue. "
+                "en": "‘My man, the dart has been extracted and the poison expelled with no residue. "
               },
               {
                 "scid": "mn105:24.8",
@@ -1268,7 +1268,7 @@
               {
                 "scid": "mn105:24.12",
                 "pli": "Vaṇānurakkhī ca, ambho purisa, vihareyyāsi vaṇasāropī’ti. ",
-                "en": "Take care of the wound, my friend, heal it.’ "
+                "en": "Take care of the wound, my man, heal it.’ "
               },
               {
                 "scid": "mn105:25.1",
@@ -1515,12 +1515,12 @@
         "blurb": "Not all of those who claim to be awakened are genuine. The Buddha teaches how true spiritual progress depends on an irreversible letting go of the forces that lead to suffering."
       },
       "stats": {
-        "text": 14395,
+        "text": 14383,
         "lang": "en",
         "nSegments": 188,
         "nEmptySegments": 8,
         "nSections": 2,
-        "seconds": 1242.5083420898086
+        "seconds": 1241.6151784941699
       }
     },
     {
@@ -3584,7 +3584,7 @@
               {
                 "scid": "mn66:6.9",
                 "pli": "Te mayaṁ, bhante, bhagavati pemañca gāravañca hiriñca ottappañca sampassamānā evaṁ taṁ divāvikālabhojanaṁ pajahimhā. ",
-                "en": "But when we considered our love and respect for the Buddha, and our sense of conscience and prudence, we gave up that meal at the wrong time of day. "
+                "en": "But when we considered our fondness and respect for the Buddha, and our sense of conscience and prudence, we gave up that meal at the wrong time of day. "
               },
               {
                 "scid": "mn66:6.10",
@@ -3794,7 +3794,7 @@
               {
                 "scid": "mn66:10.1",
                 "pli": "seyyathāpi, udāyi, rañño nāgo īsādanto urūḷhavā abhijāto saṅgāmāvacaro daḷhehi varattehi bandhanehi baddho īsakaṁyeva kāyaṁ sannāmetvā tāni bandhanāni saṁchinditvā sampadāletvā yena kāmaṁ pakkamati. ",
-                "en": "Suppose there was a royal bull elephant with tusks like chariot-poles, able to draw a heavy load, pedigree and battle-hardened. And it was bound with a strong harness. But just by twisting its body a little, it would break apart its bonds and go wherever it wants. "
+                "en": "Suppose there was a royal bull elephant with tusks like draft-poles, able to draw a heavy load, pedigree and battle-hardened. And it was bound with a strong harness. But just by twisting its body a little, it would break apart its bonds and go wherever it wants. "
               },
               {
                 "scid": "mn66:10.2",
@@ -4494,12 +4494,12 @@
         "blurb": "Again raising the rule regarding eating, but this time as a reflection of gratitude for the Buddha in eliminating things that cause complexity and stress. The Buddha emphasizes how attachment even to little things can be dangerous."
       },
       "stats": {
-        "text": 15817,
+        "text": 15819,
         "lang": "en",
         "nSegments": 202,
         "nEmptySegments": 5,
         "nSections": 2,
-        "seconds": 1706.763618234378
+        "seconds": 1706.9984131840436
       }
     }
   ]

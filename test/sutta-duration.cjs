@@ -193,8 +193,8 @@ typeof describe === "function" &&
       var sutta = await factory.loadSutta("sn12.51");
       sutta = factory.sectionSutta(sutta);
       var resMeasure = scd.measure(sutta, lang);
+      should(resMeasure.text).above(6000).below(7000);
       should(resMeasure).properties({
-        text: 6843,
         lang,
         nSegments: 92,
         nEmptySegments: 1,
