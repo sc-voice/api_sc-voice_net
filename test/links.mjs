@@ -1,3 +1,4 @@
+import { describe, it } from '@sc-voice/vitest';
 import Links from "../src/links.mjs";
 import { SuttaRef }  from "scv-esm/main.mjs";
 import should from "should";
@@ -7,7 +8,7 @@ const DHAMMAREGEN = "https://dhammaregen.net/?src=sc";
 const FR_SC_VOICE_NET = "https://fr.sc-voice.net/?src=sc";
 const SC_VOICE_NET = "https://sc-voice.net/?src=sc";
 
-typeof describe === "function" && describe("links", function() {
+describe("links", () => {
   it ("ebtSuttaRefLink)() site", ()=>{
     let links = new Links();
     let test = (sutta_uid, lang, author)=>links.ebtSuttaRefLink({

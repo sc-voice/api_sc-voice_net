@@ -25,17 +25,17 @@
     "scv-bilara": "^3.205.20",
     "serve-favicon": "^2.5.0",
     "suttacentral-api": "^2.25.0",
-    "uuid": "^9.0.1",
+    "uuid": "^14.0.0",
     "vue": "^3.5.11",
     "vue-i18n": "^9.2.2",
     "vuetify": "^3.12.8",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
+    "@sc-voice/vitest": "^4.1.7",
     "@vitejs/plugin-vue": "^6.0.0",
     "eslint": "^9.6.0",
     "execa": "^6.1.0",
-    "mocha": "^10.0.0",
     "should": "^13.2.3",
     "supertest": "^7.0.0",
     "vite": "^7.3.0",
@@ -63,11 +63,11 @@
     "start:8080": "scripts/sc-voice.sh --port:8080",
     "start:ssl": "scripts/sc-voice.sh --ssl",
     "start:staging": "scripts/sc-voice.sh --staging",
-    "test": "npm run test:verbose",
-    "test:test": "mocha --config test/mocha-config.json -g TESTTEST",
-    "test:verbose": "mocha --inline-diffs",
-    "test:one": "mocha --inline-diffs -g TESTTEST",
-    "test:watch": "mocha -w --inline-diffs"
+    "test": "vitest run --config test/vitest.config.mjs",
+    "test:test": "vitest --config test/vitest.config.mjs ",
+    "test:verbose": "vitest run --config test/vitest.config.mjs",
+    "test:one": "vitest --config test/vitest.config.mjs ",
+    "test:watch": "vitest --config test/vitest.config.mjs"
   },
   "repository": {
     "tag": "git"

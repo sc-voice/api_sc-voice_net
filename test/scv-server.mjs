@@ -1,3 +1,4 @@
+import { describe, it, afterAll } from '@sc-voice/vitest';
 import should from "should";
 import fs from "fs";
 import path from "path";
@@ -20,21 +21,19 @@ const SHARED_TEST_PORT = 3001;
 
 logger.logLevel = 'warn';
 
-typeof describe === "function" &&
-  describe("scv-server", function() {
-    const msStart = Date.now();
-    const TEST_SERVERS = {};
-    this.timeout(15*1000);
+describe("scv-server", () => {
+  const msStart = Date.now();
+  const TEST_SERVERS = {};
 
-    after(async() => {
-      let ports = Object.keys(TEST_SERVERS);
-      for (let i = 0; i < ports.length; i++) {
-        let port = ports[i];
-        let scv = TEST_SERVERS[port];
-        logger.info(`after() closing test server on port:${port}`);
-        await scv.close();
-      }
-    });
+  afterAll(async() => {
+    let ports = Object.keys(TEST_SERVERS);
+    for (let i = 0; i < ports.length; i++) {
+      let port = ports[i];
+      let scv = TEST_SERVERS[port];
+      logger.info(`after() closing test server on port:${port}`);
+      await scv.close();
+    }
+  });
 
     function sleep(ms = 600) {
       // The testing server takes a while to wakeup

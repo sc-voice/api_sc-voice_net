@@ -1,3 +1,5 @@
+import { describe, it, beforeAll } from '@sc-voice/vitest';
+import should from "should"
 import ScvApi from "../src/scv-api.cjs";
 import { BilaraData } from "scv-bilara";
 import Links from "../src/links.mjs";
@@ -31,13 +33,12 @@ async function nap(ms) {
   return new Promise(resolve=>setTimeout(()=>resolve(), ms));
 }
 
-typeof describe === "function" && describe("scv-api", function() {
-    this.timeout(15*1000);
+describe("scv-api", () => {
     let params = {};              // testing default
     let query = { maxResults: 3}; // testing default
     let bilaraData;
 
-    before(async ()=>{
+    beforeAll(async ()=>{
       bilaraData = new BilaraData({ name: 'ebt-data', });
       await bilaraData.initialize();
       should(bilaraData.initialized).equal(true);
@@ -67,8 +68,8 @@ typeof describe === "function" && describe("scv-api", function() {
         jwtExpires: '1h',
         downloadMap: {},
       });
-      should(api.mj).instanceOf(MerkleJson);
-      should(api.soundStore).instanceOf(SoundStore);
+      should(api.mj.constructor.name).equal('MerkleJson');
+      should(api.soundStore.constructor.name).equal('SoundStore');
     });
     it("ScvApi must be initialized", async()=>{
       let api = new ScvApi();

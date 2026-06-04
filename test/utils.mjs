@@ -1,29 +1,30 @@
-import Utils from "../src/utils.mjs";
-import should from "should";
+import { describe, it, expect } from '@sc-voice/vitest';
+import should from 'should';
+import Utils from '../src/utils.mjs';
 
-typeof describe === "function" && describe("utils", function() {
-  it ("assignTyped()", ()=>{
-    let initial = {
+describe('utils', () => {
+  it('assignTyped()', () => {
+    const initial = {
       aString: 'init-string',
-      aDate: new Date(2020,2,1),
+      aDate: new Date(2020, 2, 1),
       aBool: true,
       aNumber: 42,
-      aInitial: "initial",
+      aInitial: 'initial',
     };
-    let srcDate = new Date(2021, 3, 2);
-    let src = {
+    const srcDate = new Date(2021, 3, 2);
+    const src = {
       aString: 123,
       aDate: srcDate.toString(),
-      aBool: "false",
-      aIgnore: "ignore",
-      aNumber: "123",
+      aBool: 'false',
+      aIgnore: 'ignore',
+      aNumber: '123',
     };
-    let dst = {};
+    const dst = {};
     should.deepEqual(Utils.assignTyped(dst, src, initial), {
-      aString: "123",
+      aString: '123',
       aDate: srcDate,
       aBool: false,
       aNumber: 123,
     });
   });
-})
+});

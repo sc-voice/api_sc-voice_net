@@ -1,11 +1,11 @@
+import { describe, it } from '@sc-voice/vitest';
 import should from "should";
 import supertest from "supertest";
 import express from "express";
 import ResourceMethod from "../src/resource-method.cjs"
 import util from "util";
 
-typeof describe === "function" &&
-  describe("resource-method", function() {
+describe("resource-method", () => {
     it("default ctor()", async()=>{
       let eCaught;
       try {
