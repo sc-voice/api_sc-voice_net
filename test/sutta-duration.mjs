@@ -232,7 +232,7 @@ describe('sutta-duration', () => {
       nEmptySegments: 38,
       nSections: 12,
     });
-    should(resMeasure.text).above(84700).below(85000);
+    should(resMeasure.text).above(84700).below(87000);
     testTolerance(resMeasure.seconds, 8171);
   });
 

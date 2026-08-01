@@ -1673,7 +1673,7 @@
               {
                 "scid": "mn1:1.2",
                 "pli": "ekaṁ samayaṁ bhagavā ukkaṭṭhāyaṁ viharati subhagavane sālarājamūle. ",
-                "en": "At one time the Buddha was staying near Ukkaṭṭhā, in the Subhaga Forest at the root of a magnificent sal tree. "
+                "en": "At one time the Buddha was staying near Ukkaṭṭhā in the Subhaga Forest at the root of a magnificent sal tree. "
               },
               {
                 "scid": "mn1:1.3",
@@ -3331,12 +3331,12 @@
         "blurb": "The Buddha examines how the notion of a permanent self emerges from the process of perception. A wide range of phenomena are considered, embracing both naturalistic and cosmological dimensions. An unawakened person interprets experience in terms of a self, while those more advanced have the same experiences without attachment."
       },
       "stats": {
-        "text": 16029,
+        "text": 16028,
         "lang": "en",
         "nSegments": 334,
         "nEmptySegments": 9,
         "nSections": 2,
-        "seconds": 1383.913022408743
+        "seconds": 1383.8399149194697
       }
     },
     {
@@ -3709,7 +3709,7 @@
               {
                 "scid": "mn66:7.3",
                 "pli": "Te tañceva nappajahanti, mayi ca appaccayaṁ upaṭṭhāpenti. ",
-                "en": "They don’t give it up, and they nurse bitterness towards me; "
+                "en": "They don’t give it up, and they nurse bitterness toward me; "
               },
               {
                 "scid": "mn66:7.4",
@@ -3759,7 +3759,7 @@
               {
                 "scid": "mn66:8.9",
                 "pli": "Te tañceva nappajahanti, mayi ca appaccayaṁ upaṭṭhāpenti. ",
-                "en": "They don’t give it up, and they nurse bitterness towards me; "
+                "en": "They don’t give it up, and they nurse bitterness toward me; "
               },
               {
                 "scid": "mn66:8.10",
@@ -3779,7 +3779,7 @@
               {
                 "scid": "mn66:9.3",
                 "pli": "Te tañceva pajahanti, mayi ca na appaccayaṁ upaṭṭhāpenti. ",
-                "en": "They give it up, and they don’t nurse bitterness towards me; "
+                "en": "They give it up, and they don’t nurse bitterness toward me; "
               },
               {
                 "scid": "mn66:9.4",
@@ -3834,7 +3834,7 @@
               {
                 "scid": "mn66:10.9",
                 "pli": "Te tañceva pajahanti, mayi ca na appaccayaṁ upaṭṭhāpenti. ",
-                "en": "They give it up, and they don’t nurse bitterness towards me; "
+                "en": "They give it up, and they don’t nurse bitterness toward me; "
               },
               {
                 "scid": "mn66:10.10",
@@ -3929,7 +3929,7 @@
               {
                 "scid": "mn66:11.17",
                 "pli": "Te tañceva nappajahanti, mayi ca appaccayaṁ upaṭṭhāpenti. ",
-                "en": "They don’t give it up, and they nurse bitterness towards me; "
+                "en": "They don’t give it up, and they nurse bitterness toward me; "
               },
               {
                 "scid": "mn66:11.18",
@@ -4009,7 +4009,7 @@
               {
                 "scid": "mn66:12.15",
                 "pli": "Te tañceva pajahanti, mayi ca na appaccayaṁ upaṭṭhāpenti. ",
-                "en": "They give it up, and they don’t nurse bitterness towards me; "
+                "en": "They give it up, and they don’t nurse bitterness toward me; "
               },
               {
                 "scid": "mn66:12.16",
@@ -4044,7 +4044,7 @@
               {
                 "scid": "mn66:14.3",
                 "pli": "So te adhivāseti, nappajahati, na vinodeti, na byantīkaroti, na anabhāvaṁ gameti. ",
-                "en": "They tolerate them and don’t give them up, get rid of them, eliminate them, and obliterate them. "
+                "en": "They tolerate them and don’t give them up, dispel them, eliminate them, and obliterate them. "
               },
               {
                 "scid": "mn66:14.4",
@@ -4074,7 +4074,7 @@
               {
                 "scid": "mn66:15.3",
                 "pli": "So te nādhivāseti, pajahati, vinodeti, byantīkaroti, anabhāvaṁ gameti. ",
-                "en": "They don’t tolerate them, but give them up, get rid of them, eliminate them, and obliterate them. "
+                "en": "They don’t tolerate them, but give them up, dispel them, eliminate them, and obliterate them. "
               },
               {
                 "scid": "mn66:15.4",
@@ -4109,7 +4109,7 @@
               {
                 "scid": "mn66:16.4",
                 "pli": "Atha kho naṁ khippameva pajahati, vinodeti, byantīkaroti, anabhāvaṁ gameti. ",
-                "en": "then they quickly give up, get rid of, eliminate, and obliterate those thoughts. "
+                "en": "then they quickly give up, dispel, eliminate, and obliterate those thoughts. "
               },
               {
                 "scid": "mn66:16.5",
@@ -4139,7 +4139,7 @@
               {
                 "scid": "mn66:16.10",
                 "pli": "Atha kho naṁ khippameva pajahati, vinodeti, byantīkaroti, anabhāvaṁ gameti. ",
-                "en": "but then they quickly give up, get rid of, eliminate, and obliterate those thoughts. "
+                "en": "but then they quickly give up, dispel, eliminate, and obliterate those thoughts. "
               },
               {
                 "scid": "mn66:16.11",
@@ -4494,12 +4494,12 @@
         "blurb": "Again raising the rule regarding eating, but this time as a reflection of gratitude for the Buddha in eliminating things that cause complexity and stress. The Buddha emphasizes how attachment even to little things can be dangerous."
       },
       "stats": {
-        "text": 15819,
+        "text": 15797,
         "lang": "en",
         "nSegments": 202,
         "nEmptySegments": 5,
         "nSections": 2,
-        "seconds": 1706.9984131840436
+        "seconds": 1704.4159327144564
       }
     }
   ]
