@@ -1,1 +1,1 @@
-<template>v42.0.22</template>
+<template>v42.0.23</template>
