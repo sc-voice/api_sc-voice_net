@@ -405,7 +405,8 @@
               },
               {
                 "scid": "sn42.11:5.7",
-                "pli": "Ekādasamaṁ. "
+                "pli": "Ekādasamaṁ. ",
+                "en": ""
               }
             ],
             "type": "Section",
@@ -1500,7 +1501,8 @@
               },
               {
                 "scid": "mn105:30.12",
-                "pli": "Sunakkhattasuttaṁ niṭṭhitaṁ pañcamaṁ. "
+                "pli": "Sunakkhattasuttaṁ niṭṭhitaṁ pañcamaṁ. ",
+                "en": ""
               }
             ],
             "type": "Section",
@@ -1883,12 +1885,12 @@
               {
                 "scid": "mn1:11.1",
                 "pli": "Ābhassare ābhassarato sañjānāti; ",
-                "en": "They perceive those of streaming radiance as those of streaming radiance. "
+                "en": "They perceive those of sublime luminosity as those of sublime luminosity. "
               },
               {
                 "scid": "mn1:11.2",
                 "pli": "ābhassare ābhassarato saññatvā ābhassare maññati, ābhassaresu maññati, ābhassarato maññati, ābhassare meti maññati, ābhassare abhinandati. ",
-                "en": "Having perceived those of streaming radiance as those of streaming radiance, they conceive them to be those of streaming radiance … "
+                "en": "Having perceived those of sublime luminosity as those of sublime luminosity, they conceive them to be those of sublime luminosity … "
               },
               {
                 "scid": "mn1:11.3",
@@ -2202,7 +2204,8 @@
               },
               {
                 "scid": "mn1:26.5",
-                "pli": "Puthujjanavasena paṭhamanayabhūmiparicchedo niṭṭhito. "
+                "pli": "Puthujjanavasena paṭhamanayabhūmiparicchedo niṭṭhito. ",
+                "en": ""
               },
               {
                 "scid": "mn1:27.1",
@@ -2262,7 +2265,7 @@
               {
                 "scid": "mn1:35.1",
                 "pli": "ābhassare … ",
-                "en": "those of streaming radiance … "
+                "en": "those of sublime luminosity … "
               },
               {
                 "scid": "mn1:36.1",
@@ -2356,7 +2359,8 @@
               },
               {
                 "scid": "mn1:50.5",
-                "pli": "Sekkhavasena dutiyanayabhūmiparicchedo niṭṭhito. "
+                "pli": "Sekkhavasena dutiyanayabhūmiparicchedo niṭṭhito. ",
+                "en": ""
               },
               {
                 "scid": "mn1:51.1",
@@ -2416,7 +2420,7 @@
               {
                 "scid": "mn1:59.1",
                 "pli": "ābhassare … ",
-                "en": "those of streaming radiance … "
+                "en": "those of sublime luminosity … "
               },
               {
                 "scid": "mn1:60.1",
@@ -2510,7 +2514,8 @@
               },
               {
                 "scid": "mn1:74.5",
-                "pli": "Khīṇāsavavasena tatiyanayabhūmiparicchedo niṭṭhito. "
+                "pli": "Khīṇāsavavasena tatiyanayabhūmiparicchedo niṭṭhito. ",
+                "en": ""
               },
               {
                 "scid": "mn1:75.1",
@@ -2570,7 +2575,7 @@
               {
                 "scid": "mn1:83.1",
                 "pli": "ābhassare … ",
-                "en": "those of streaming radiance … "
+                "en": "those of sublime luminosity … "
               },
               {
                 "scid": "mn1:84.1",
@@ -2664,7 +2669,8 @@
               },
               {
                 "scid": "mn1:98.5",
-                "pli": "Khīṇāsavavasena catutthanayabhūmiparicchedo niṭṭhito. "
+                "pli": "Khīṇāsavavasena catutthanayabhūmiparicchedo niṭṭhito. ",
+                "en": ""
               },
               {
                 "scid": "mn1:99.1",
@@ -2724,7 +2730,7 @@
               {
                 "scid": "mn1:107.1",
                 "pli": "ābhassare … ",
-                "en": "those of streaming radiance … "
+                "en": "those of sublime luminosity … "
               },
               {
                 "scid": "mn1:108.1",
@@ -2818,7 +2824,8 @@
               },
               {
                 "scid": "mn1:122.5",
-                "pli": "Khīṇāsavavasena pañcamanayabhūmiparicchedo niṭṭhito. "
+                "pli": "Khīṇāsavavasena pañcamanayabhūmiparicchedo niṭṭhito. ",
+                "en": ""
               },
               {
                 "scid": "mn1:123.1",
@@ -2878,7 +2885,7 @@
               {
                 "scid": "mn1:131.1",
                 "pli": "ābhassare … ",
-                "en": "those of streaming radiance … "
+                "en": "those of sublime luminosity … "
               },
               {
                 "scid": "mn1:132.1",
@@ -2972,7 +2979,8 @@
               },
               {
                 "scid": "mn1:146.5",
-                "pli": "Khīṇāsavavasena chaṭṭhanayabhūmiparicchedo niṭṭhito. "
+                "pli": "Khīṇāsavavasena chaṭṭhanayabhūmiparicchedo niṭṭhito. ",
+                "en": ""
               },
               {
                 "scid": "mn1:147.1",
@@ -3032,7 +3040,7 @@
               {
                 "scid": "mn1:155.1",
                 "pli": "ābhassare … ",
-                "en": "those of streaming radiance … "
+                "en": "those of sublime luminosity … "
               },
               {
                 "scid": "mn1:156.1",
@@ -3126,7 +3134,8 @@
               },
               {
                 "scid": "mn1:170.5",
-                "pli": "Tathāgatavasena sattamanayabhūmiparicchedo niṭṭhito. "
+                "pli": "Tathāgatavasena sattamanayabhūmiparicchedo niṭṭhito. ",
+                "en": ""
               },
               {
                 "scid": "mn1:171.1",
@@ -3197,7 +3206,7 @@
               {
                 "scid": "mn1:179.1",
                 "pli": "ābhassare … ",
-                "en": "those of streaming radiance … "
+                "en": "those of sublime luminosity … "
               },
               {
                 "scid": "mn1:180.1",
@@ -3302,7 +3311,8 @@
               },
               {
                 "scid": "mn1:194.7",
-                "pli": "Tathāgatavasena aṭṭhamanayabhūmiparicchedo niṭṭhito. "
+                "pli": "Tathāgatavasena aṭṭhamanayabhūmiparicchedo niṭṭhito. ",
+                "en": ""
               },
               {
                 "scid": "mn1:194.8",
@@ -3316,7 +3326,8 @@
               },
               {
                 "scid": "mn1:194.10",
-                "pli": "Mūlapariyāyasuttaṁ niṭṭhitaṁ paṭhamaṁ. "
+                "pli": "Mūlapariyāyasuttaṁ niṭṭhitaṁ paṭhamaṁ. ",
+                "en": ""
               }
             ],
             "type": "Section",
@@ -3714,7 +3725,7 @@
               {
                 "scid": "mn66:7.4",
                 "pli": "Ye ca bhikkhū sikkhākāmā tesaṁ taṁ, udāyi, hoti balavaṁ bandhanaṁ, daḷhaṁ bandhanaṁ, thiraṁ bandhanaṁ, apūtikaṁ bandhanaṁ, thūlo, kaliṅgaro—",
-                "en": "and for the mendicants who want to train, that becomes a strong, firm, stout bond, a tie that has not rotted, and a heavy yoke. "
+                "en": "and for the mendicants eager to train, that becomes a strong, firm, stout bond, a tie that has not rotted, and a heavy yoke. "
               },
               {
                 "scid": "mn66:8.1",
@@ -3764,7 +3775,7 @@
               {
                 "scid": "mn66:8.10",
                 "pli": "Ye ca bhikkhū sikkhākāmā tesaṁ taṁ, udāyi, hoti balavaṁ bandhanaṁ, daḷhaṁ bandhanaṁ, thiraṁ bandhanaṁ, apūtikaṁ bandhanaṁ, thūlo, kaliṅgaro. ",
-                "en": "and for the mendicants who want to train, that becomes a strong, firm, stout bond, a tie that has not rotted, and a heavy yoke. "
+                "en": "and for the mendicants eager to train, that becomes a strong, firm, stout bond, a tie that has not rotted, and a heavy yoke. "
               },
               {
                 "scid": "mn66:9.1",
@@ -3784,7 +3795,7 @@
               {
                 "scid": "mn66:9.4",
                 "pli": "Ye ca bhikkhū sikkhākāmā te taṁ pahāya appossukkā pannalomā paradattavuttā migabhūtena cetasā viharanti. ",
-                "en": "and when the mendicants who want to train have given that up, they live relaxed, unruffled, surviving on charity, their hearts free as a wild deer. "
+                "en": "and when the mendicants eager to train have given that up, they live relaxed, unruffled, surviving on charity, their hearts free as a wild deer. "
               },
               {
                 "scid": "mn66:9.5",
@@ -3839,7 +3850,7 @@
               {
                 "scid": "mn66:10.10",
                 "pli": "Ye ca bhikkhū sikkhākāmā te taṁ pahāya appossukkā pannalomā paradattavuttā migabhūtena cetasā viharanti. ",
-                "en": "and when the mendicants who want to train have given that up, they live relaxed, unruffled, surviving on charity, their hearts free as a wild deer. "
+                "en": "and when the mendicants eager to train have given that up, they live relaxed, unruffled, surviving on charity, their hearts free as a wild deer. "
               },
               {
                 "scid": "mn66:10.11",
@@ -3934,7 +3945,7 @@
               {
                 "scid": "mn66:11.18",
                 "pli": "Ye ca bhikkhū sikkhākāmā tesaṁ taṁ, udāyi, hoti balavaṁ bandhanaṁ, daḷhaṁ bandhanaṁ, thiraṁ bandhanaṁ, apūtikaṁ bandhanaṁ, thūlo, kaliṅgaro. ",
-                "en": "and for the mendicants who want to train, that becomes a strong, firm, stout bond, a tie that has not rotted, and a heavy yoke. "
+                "en": "and for the mendicants eager to train, that becomes a strong, firm, stout bond, a tie that has not rotted, and a heavy yoke. "
               },
               {
                 "scid": "mn66:12.1",
@@ -4014,7 +4025,7 @@
               {
                 "scid": "mn66:12.16",
                 "pli": "Ye ca bhikkhū sikkhākāmā te taṁ pahāya appossukkā pannalomā paradattavuttā migabhūtena cetasā viharanti. ",
-                "en": "and when the mendicants who want to train have given that up, they live relaxed, unruffled, surviving on charity, their hearts free as a wild deer. "
+                "en": "and when the mendicants eager to train have given that up, they live relaxed, unruffled, surviving on charity, their hearts free as a wild deer. "
               },
               {
                 "scid": "mn66:12.17",
@@ -4479,7 +4490,8 @@
               },
               {
                 "scid": "mn66:34.7",
-                "pli": "Laṭukikopamasuttaṁ niṭṭhitaṁ chaṭṭhaṁ. "
+                "pli": "Laṭukikopamasuttaṁ niṭṭhitaṁ chaṭṭhaṁ. ",
+                "en": ""
               }
             ],
             "type": "Section",
@@ -4494,12 +4506,12 @@
         "blurb": "Again raising the rule regarding eating, but this time as a reflection of gratitude for the Buddha in eliminating things that cause complexity and stress. The Buddha emphasizes how attachment even to little things can be dangerous."
       },
       "stats": {
-        "text": 15797,
+        "text": 15779,
         "lang": "en",
         "nSegments": 202,
         "nEmptySegments": 5,
         "nSections": 2,
-        "seconds": 1704.4159327144564
+        "seconds": 1702.3034261103528
       }
     }
   ]
