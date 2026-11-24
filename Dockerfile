@@ -25,14 +25,14 @@ ENV USER=node
 USER $USER
 ENV APPDIR=/home/$USER/api_sc-voice_net/
 WORKDIR $APPDIR
-COPY --link --chown=$USER package* $APPDIR
+COPY --link --chown=1000:1000 package* $APPDIR
 RUN <<SCV_SERVER
   mkdir -p $APPDIR/local
   cd $APPDIR
   npm install --production
   echo "cd $APPDIR" >> ~/.bashrc
 SCV_SERVER
-COPY --link --chown=$USER . $APPDIR
+COPY --link --chown=1000:1000 . $APPDIR
 
 # Start application server
 ENV APISCV_VERSION=42.1.0
