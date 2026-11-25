@@ -43,7 +43,7 @@ echo $SCRIPT: upgrade nginx
 sudo apt install -y --only-upgrade nginx
 
 echo $SCRIPT: installed version
-nginx -v
+sudo nginx -v
 sudo nginx -t
 
 echo $SCRIPT: END `date`
